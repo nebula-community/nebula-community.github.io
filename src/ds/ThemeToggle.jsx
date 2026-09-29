@@ -7,7 +7,7 @@ export function ThemeToggle({ onChange }) {
   const [theme, setTheme] = React.useState('dark');
   React.useEffect(() => {
     const saved = localStorage.getItem(KEY);
-    const t = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    const t = saved || 'dark';
     document.documentElement.setAttribute('data-theme', t); setTheme(t);
   }, []);
   const toggle = (e) => {

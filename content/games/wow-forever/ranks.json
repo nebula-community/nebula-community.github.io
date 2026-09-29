@@ -1,0 +1,107 @@
+{
+  "_readme": "Ruoli Discord e ranghi in gioco della sezione. Aggiornare insieme a sezione-wow-forever/canali/00-struttura-canali.md §1.",
+  "discord": [
+    {
+      "id": "ospite",
+      "name": "Ospite",
+      "icon": "door-open",
+      "tone": "neutral",
+      "badge": "Accesso sezione",
+      "who": "Chiunque apre la porta della sezione con la spunta in sblocca-sezione.",
+      "can": "Vede la vetrina e le FAQ: sta ancora guardando.",
+      "grantedBy": "Entrando su Discord."
+    },
+    {
+      "id": "recluta",
+      "name": "Recluta",
+      "icon": "scroll-text",
+      "tone": "warn",
+      "badge": "Candidatura",
+      "who": "Chi vuole entrare in gilda.",
+      "can": "Può candidarsi e leggere le informazioni di base.",
+      "grantedBy": "Reaction su sblocca-sezione."
+    },
+    {
+      "id": "membro",
+      "name": "Membro",
+      "icon": "user-check",
+      "tone": "ok",
+      "badge": "In gilda",
+      "who": "Chi è stato approvato e fa parte della gilda.",
+      "can": "Accede all’hub: chat, roster, loot, calendario, banca di gilda.",
+      "grantedBy": "Candidatura accettata e due chiacchiere in vocale, con decisione condivisa."
+    },
+    {
+      "id": "ufficiale",
+      "name": "Ufficiale",
+      "icon": "shield",
+      "tone": "accent",
+      "badge": "Direzione",
+      "who": "Il team di direzione.",
+      "can": "Candidature, calendario, loot council, decisioni di tutti i giorni.",
+      "grantedBy": "Candidatura in candidatura-officer, più presenza, modo di operare e comportamento."
+    },
+    {
+      "id": "gm",
+      "name": "GM",
+      "icon": "crown",
+      "tone": "accent",
+      "badge": "Guild Master",
+      "who": "Il GM della community e il GM di ciascuna gilda.",
+      "can": "Tutto quello che fa un Ufficiale: si aggiunge, non lo sostituisce.",
+      "grantedBy": "Nomina diretta."
+    }
+  ],
+  "ingame": [
+    {
+      "id": "gm",
+      "name": "Guild Master",
+      "icon": "crown",
+      "tone": "accent",
+      "text": "Guida la gilda in gioco."
+    },
+    {
+      "id": "ufficiale",
+      "name": "Ufficiale",
+      "icon": "shield",
+      "tone": "accent",
+      "text": "Il team di direzione, in gioco."
+    },
+    {
+      "id": "raider",
+      "name": "Raider",
+      "icon": "swords",
+      "tone": "ok",
+      "text": "Partecipa ai raid ufficiali ed entra nei crediti del loot."
+    },
+    {
+      "id": "trial",
+      "name": "Trial",
+      "icon": "hourglass",
+      "tone": "warn",
+      "text": "In prova per entrare nel roster dei raid."
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "icon": "coffee",
+      "tone": "neutral",
+      "text": "Non interessato ai raid: dungeon, professioni, compagnia."
+    },
+    {
+      "id": "alt",
+      "name": "Alt",
+      "icon": "copy",
+      "tone": "neutral",
+      "text": "Personaggi secondari di chi è già in gilda."
+    },
+    {
+      "id": "inattivo",
+      "name": "Inattivo",
+      "icon": "moon",
+      "tone": "neutral",
+      "text": "Chi non sta più giocando. Il posto resta: al ritorno si riparte da dove eri."
+    }
+  ],
+  "note": "Stessi ruoli Discord per entrambe le gilde: chi ha personaggi su Nebulaa e Nebulah resta un solo Membro."
+}

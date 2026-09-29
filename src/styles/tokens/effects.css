@@ -1,0 +1,48 @@
+:root{
+/* Radii — soft, never pill-everything. Spiral = circle, so full round only for marks/avatars/toggles */
+--radius-xs:4px;--radius-sm:8px;--radius-md:12px;--radius-lg:18px;--radius-xl:28px;--radius-full:999px;
+/* Shadows — on dark, depth comes from light, not from black shadow */
+--shadow-1:0 1px 0 rgba(255,255,255,.04) inset,0 1px 2px rgba(0,0,0,.4);
+--shadow-2:0 1px 0 rgba(255,255,255,.05) inset,0 8px 24px -8px rgba(0,0,0,.6);
+--shadow-3:0 1px 0 rgba(255,255,255,.06) inset,0 24px 60px -20px rgba(0,0,0,.75);
+--glow-neon:0 0 0 1px rgba(196,91,196,.55),0 0 18px rgba(154,42,154,.55),0 0 48px rgba(154,42,154,.28);
+--glow-amber:0 0 24px rgba(252,126,70,.35);
+--glow-text:0 0 12px rgba(196,91,196,.8),0 0 36px rgba(154,42,154,.55);
+--ring-focus:0 0 0 2px var(--bg),0 0 0 4px var(--focus-ring);
+/* Blur — only on floating chrome over imagery (header, dialogs) */
+--blur-chrome:saturate(140%) blur(14px); /* @kind other */
+
+/* Motion — slow, discreet. Pulse is ≥2.4s (ADR-004 §2.4) */
+--ease-out:cubic-bezier(.22,1,.36,1); /* @kind other */
+
+--ease-in-out:cubic-bezier(.65,0,.35,1); /* @kind other */
+
+--ease-spring:cubic-bezier(.34,1.4,.64,1); /* @kind other */
+
+--dur-1:120ms; /* @kind other */
+--dur-2:200ms; /* @kind other */
+--dur-3:320ms; /* @kind other */
+--dur-4:560ms; /* @kind other */
+--dur-5:900ms; /* @kind other */
+
+--dur-pulse:3200ms; /* @kind other */
+
+}
+[data-theme="light"]{
+--shadow-1:0 1px 2px rgba(11,27,43,.06);
+--shadow-2:0 8px 24px -10px rgba(11,27,43,.18);
+--shadow-3:0 24px 60px -24px rgba(11,27,43,.28);
+--glow-neon:0 0 0 1px rgba(0,168,154,.45),0 0 18px rgba(0,168,154,.25);
+--glow-amber:0 0 24px rgba(0,84,182,.18);
+--glow-text:none;
+}
+@keyframes nb-pulse{0%,100%{opacity:1;filter:drop-shadow(0 0 6px rgba(196,91,196,.7))}50%{opacity:.82;filter:drop-shadow(0 0 16px rgba(196,91,196,.95))}}
+@keyframes nb-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes nb-shimmer{from{background-position:-200% 0}to{background-position:200% 0}}
+@keyframes nb-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){:root{--dur-1:0ms; /* @kind other */
+--dur-2:0ms; /* @kind other */
+--dur-3:0ms; /* @kind other */
+--dur-4:0ms; /* @kind other */
+--dur-5:0ms; /* @kind other */
+}}

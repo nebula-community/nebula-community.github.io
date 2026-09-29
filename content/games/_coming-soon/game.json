@@ -1,0 +1,16 @@
+{
+  "slug": "_coming-soon",
+  "order": 99,
+  "placeholder": true,
+  "title": "[[NOME GIOCO]]",
+  "section": "Prossimo tavolo",
+  "status": "In arrivo",
+  "genre": "Altro",
+  "tags": [
+    "[[GENERE]]"
+  ],
+  "card": {
+    "image": "media/art/009-b-geometria-ospitalita.webp",
+    "description": "Un nuovo tavolo si apre quando c’è chi lo coltiva. Proponilo in richieste."
+  }
+}

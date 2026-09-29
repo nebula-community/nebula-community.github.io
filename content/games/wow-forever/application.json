@@ -1,0 +1,36 @@
+{
+  "intro": "Leggi ogni domanda e rispondi sotto in modo completo. Il tempo che dedichi a questo modulo è già parte del tuo impegno verso la gilda: più sei esaustivo, meglio possiamo valutare se siamo il posto giusto per te.",
+  "groups": [
+    {
+      "title": "IN GIOCO",
+      "questions": [
+        "Nome, classe, livello e fazione del personaggio:",
+        "Ruolo che vuoi coprire nei raid (tank / healer / dps / non lo so ancora):",
+        "Professioni che stai portando avanti:",
+        "Da quanto giochi a WoW, e a cosa hai giocato prima:",
+        "Raider o social (scegli social se non sei interessato ad i raid):"
+      ]
+    },
+    {
+      "title": "IL TUO TEMPO",
+      "questions": [
+        "Quante sere a settimana riesci a esserci, e in che fascia oraria:",
+        "Le sere di raid (sono due da decidere, 20:00-24:00) ti tornano? Se no, quali sì:",
+        "Cosa cerchi qui: raid, dungeon, compagnia, un po' di tutto:"
+      ]
+    },
+    {
+      "title": "CHI SEI",
+      "questions": [
+        "Tre righe su di te: quanti anni hai, cosa fai fuori dal gioco, come sei fatto:",
+        "Da dove arrivi: la tua ultima gilda, e perché non ci sei più:",
+        "Sono le 23:40 ed è il nono wipe sullo stesso boss. Cosa scrivi in chat?",
+        "Cade l'oggetto che aspetti da un mese e lo prende un altro. Cosa fai nei dieci secondi dopo?",
+        "Un officer prende una decisione che secondo te è sbagliata. Come te la giochi?",
+        "Una cosa che in un gruppo non sopporti:",
+        "Come ci hai trovati (amici, facebook, sitoweb, discord, etc):"
+      ]
+    }
+  ],
+  "note": "L’età la chiediamo per un motivo solo: qui la media è alta e vogliamo che tu ti trovi bene, non per metterti un numero accanto al nome."
+}

@@ -1,0 +1,132 @@
+{
+  "title": "Il Regolamento",
+  "subtitle": "Cosa non si fa, e cosa succede se.",
+  "teaser": "Il testo che si consulta. Ogni regola ha il suo perché scritto accanto, vale di più per chi ha un ruolo, e la scala delle conseguenze è dichiarata in anticipo.",
+  "signature": "— Il Presidente",
+  "groups": [
+    {
+      "title": "Rispetto e convivenza",
+      "icon": "heart-handshake",
+      "rules": [
+        {
+          "rule": "Niente molestie",
+          "why": "nei canali o in privato. «Se l’è cercata» non è mai una spiegazione."
+        },
+        {
+          "rule": "Mai discriminazioni",
+          "why": "né le parole che le veicolano, nemmeno dette per ridere. Chi legge non sa ancora che stai scherzando."
+        },
+        {
+          "rule": "Discussioni civili, e nel canale giusto",
+          "why": "spostare una conversazione non è censura, è un trasloco."
+        },
+        {
+          "rule": "Non si tagga senza motivo",
+          "why": "una menzione è una notifica sul telefono di qualcuno, quasi sempre la sera."
+        }
+      ]
+    },
+    {
+      "title": "Identità e lingua",
+      "icon": "languages",
+      "rules": [
+        {
+          "rule": "Si scrive in italiano",
+          "why": "chi modera deve poter leggere ciò che succede."
+        },
+        {
+          "rule": "Non si impersona nessuno",
+          "why": "altri membri, chi ha un ruolo, persone reali."
+        },
+        {
+          "rule": "Profilo non offensivo",
+          "why": "la richiesta di cambiarlo arriva sempre prima di qualunque provvedimento."
+        }
+      ]
+    },
+    {
+      "title": "Contenuti e promozione",
+      "icon": "megaphone-off",
+      "rules": [
+        {
+          "rule": "Niente contenuti per adulti",
+          "why": "fuori dagli spazi dedicati e regolati."
+        },
+        {
+          "rule": "Niente spam né autopromozione",
+          "why": "né nei canali né in privato."
+        },
+        {
+          "rule": "Non si promuovono progetti esterni",
+          "why": "se hai un’idea, chiedi di aprirla qui: si crea uno spazio e ci partecipiamo tutti."
+        }
+      ]
+    },
+    {
+      "title": "I canali vocali",
+      "icon": "mic",
+      "rules": [
+        {
+          "rule": "Niente modificatori di voce o musica alta",
+          "why": "divertono una volta e stancano dalla seconda."
+        },
+        {
+          "rule": "Niente entra-ed-esci ripetuto",
+          "why": "per disturbare chi sta parlando."
+        }
+      ]
+    }
+  ],
+  "toxicity": [
+    "Accanirsi su una persona, anche sotto forma di battuta.",
+    "La lamentela come modo di stare.",
+    "Creare fazioni.",
+    "Sminuire chi sa meno."
+  ],
+  "scale": [
+    {
+      "level": 1,
+      "step": "Se ne parla",
+      "text": "Qualcuno con un ruolo te ne parla in privato. La grandissima parte dei casi finisce qui."
+    },
+    {
+      "level": 2,
+      "step": "Richiamo",
+      "text": "Formale, registrato, con scritto cosa deve cambiare."
+    },
+    {
+      "level": 3,
+      "step": "Limitazione",
+      "text": "Per un periodo definito, mai senza scadenza."
+    },
+    {
+      "level": 4,
+      "step": "Allontanamento",
+      "text": "Persistenza, oppure gravità."
+    }
+  ],
+  "immediate": [
+    "molestia",
+    "discriminazione",
+    "minacce",
+    "contenuti illegali"
+  ],
+  "enforcement": [
+    {
+      "title": "Si ascolta sempre",
+      "text": "prima del passo 2 hai modo di dire la tua."
+    },
+    {
+      "title": "Mai una persona sola",
+      "text": "dal passo 3 si decide in almeno tre."
+    },
+    {
+      "title": "Niente gogna",
+      "text": "i provvedimenti non si annunciano con nome e cognome."
+    },
+    {
+      "title": "Riesame",
+      "text": "puoi chiederlo a chi presiede la community. Ultima parola sul momento, non per sempre."
+    }
+  ]
+}

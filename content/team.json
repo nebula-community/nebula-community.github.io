@@ -1,0 +1,15 @@
+{
+  "_readme": "Cariche, non persone: i testi istituzionali non usano nomi propri (ADR-005 §2.7).",
+  "members": [
+    {
+      "role": "Il Presidente",
+      "name": "[[NOME]]",
+      "avatar": null
+    },
+    {
+      "role": "Moderatore",
+      "name": "[[NOME]]",
+      "avatar": null
+    }
+  ]
+}

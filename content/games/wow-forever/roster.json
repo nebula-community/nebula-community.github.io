@@ -1,0 +1,103 @@
+{
+  "_readme": "Roster raid attivo, per fazione. Solo main dichiarati (Raider e Trial). Social e Alt non compaiono qui.",
+  "example": true,
+  "updated": "[[AAAA-MM-GG]]",
+  "players": [
+    {
+      "name": "Aurel",
+      "class": "warrior",
+      "spec": "Protection",
+      "role": "tank",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Bryn",
+      "class": "priest",
+      "spec": "Holy",
+      "role": "healer",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Corin",
+      "class": "mage",
+      "spec": "Frost",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Dessa",
+      "class": "rogue",
+      "spec": "Combat",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Elwin",
+      "class": "shaman",
+      "spec": "Restoration",
+      "role": "healer",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Fenn",
+      "class": "hunter",
+      "spec": "Marksmanship",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Gilda",
+      "class": "warlock",
+      "spec": "Destruction",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Hadri",
+      "class": "druid",
+      "spec": "Restoration",
+      "role": "healer",
+      "faction": "Nebulah",
+      "rank": "Trial"
+    },
+    {
+      "name": "Ivo",
+      "class": "shaman",
+      "spec": "Enhancement",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Kael",
+      "class": "warlock",
+      "spec": "Affliction",
+      "role": "dps",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Lyra",
+      "class": "priest",
+      "spec": "Holy",
+      "role": "healer",
+      "faction": "Nebulah",
+      "rank": "Raider"
+    },
+    {
+      "name": "Mordo",
+      "class": "warrior",
+      "spec": "Protection",
+      "role": "tank",
+      "faction": "Nebulah",
+      "rank": "Trial"
+    }
+  ]
+}

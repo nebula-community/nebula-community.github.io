@@ -1,0 +1,354 @@
+{
+  "slug": "wow-forever",
+  "order": 1,
+  "title": "World of Warcraft Forever",
+  "section": "Sezione · MMO",
+  "status": "Attiva",
+  "genre": "MMO",
+  "tags": [
+    "MMO",
+    "PvE",
+    "EU"
+  ],
+  "card": {
+    "image": "media/art/004-b-il-neon-fra-noi.webp",
+    "logo": "media/sections/wow-forever-card-logo.avif",
+    "description": "Nebulah, la gilda della Nebula Inn. Oggi in Orda, con la porta aperta a una seconda bandiera."
+  },
+  "hero": {
+    "image": "media/art/004-b-il-neon-fra-noi.webp",
+    "lead": "Stesso Discord, stesse regole, stessa gente.",
+    "badges": [
+      "MMO",
+      "PvE"
+    ],
+    "ctaApply": "Candidati",
+    "ctaDiscord": "Apri la sezione su Discord"
+  },
+  "links": {
+    "discord": "[[LINK SEZIONE]]",
+    "apply": "[[LINK CANDIDATURA]]"
+  },
+  "signature": "— Gli Officers",
+  "info": {
+    "who": [
+      {
+        "title": "Nebulah, in Orda",
+        "text": "Oggi la gilda è una, in Orda. La casa è pronta per una seconda bandiera: se nasce, stesso Discord, stesse regole, stessa gente.",
+        "onlyIf": "single"
+      },
+      {
+        "title": "Due gilde, una sola casa",
+        "text": "Nebulaa tiene la bandiera dell’Alleanza, Nebulah quella dell’Orda. Stesso Discord, stesse regole, stessa gente.",
+        "onlyIf": "multi"
+      },
+      {
+        "title": "Adulti, sul serio",
+        "text": "La maggior parte di noi ha passato i trenta: lavoro, famiglia, una sveglia che suona presto. Si gioca intorno alla vita, non contro."
+      },
+      {
+        "title": "Venticinque anni di MMO alle spalle",
+        "text": "Abbiamo visto community nascere bene e finire male: sappiamo cosa rompe un gruppo, e lo teniamo fuori dalla porta."
+      },
+      {
+        "title": "PvE dal casual al progress",
+        "text": "I boss si provano sul serio, il gioco resta un gioco. Anche quando qualcuno pulla per sbaglio."
+      }
+    ],
+    "server": [
+      {
+        "label": "Regione",
+        "value": "EU"
+      },
+      {
+        "label": "Ruleset",
+        "value": "Normal (PvE)"
+      },
+      {
+        "label": "Lingua",
+        "value": "Italiano, sempre"
+      },
+      {
+        "label": "Focus",
+        "value": "PvE, dal casual al progress"
+      },
+      {
+        "label": "Raid",
+        "value": "Due sere a settimana, [[GIORNI-RAID]]"
+      },
+      {
+        "label": "Orario",
+        "value": "Dopo le 20:00, si chiude entro le 24:00"
+      },
+      {
+        "label": "Loot",
+        "value": "Sistema a crediti, comunicato prima della season"
+      },
+      {
+        "label": "Ricambi",
+        "value": "Ne teniamo apposta: se entri alle 21:15 o stacchi prima, il raid va avanti lo stesso"
+      },
+      {
+        "label": "Fuori dai raid",
+        "value": "Gente collegata dal tardo pomeriggio fino a notte: dungeon, quest, professioni, o solo il Fuoco acceso in vocale"
+      }
+    ],
+    "factions": [
+      {
+        "name": "Nebulaa",
+        "faction": "Alleanza"
+      },
+      {
+        "name": "Nebulah",
+        "faction": "Orda"
+      }
+    ],
+    "roles": [
+      {
+        "icon": "crown",
+        "title": "I GM",
+        "text": "Il GM della community segue entrambe le gilde su Discord; in gioco ogni gilda ha il suo GM ([[GM-SECONDA-GILDA]])."
+      },
+      {
+        "icon": "shield",
+        "title": "Gli officers",
+        "text": "Seguono candidature, calendario e le decisioni di tutti i giorni. Mai uno da solo: le scelte che contano si prendono in più persone."
+      },
+      {
+        "icon": "user",
+        "title": "Tu",
+        "text": "Se noti qualcosa che non va, non serve aspettare che se ne accorga un officer. Dillo, in privato o nel canale giusto."
+      }
+    ],
+    "firstDay": [
+      {
+        "title": "Presentati",
+        "text": "Nome, fazione, due righe su di te. È il gesto più veloce per smettere di essere “quello nuovo”."
+      },
+      {
+        "title": "Leggi il Patto",
+        "text": "Dieci minuti, e sai come giochiamo il loot prima che ti serva saperlo davvero."
+      },
+      {
+        "title": "Guarda il calendario",
+        "text": "E iscriviti alla prossima serata che ti torna."
+      },
+      {
+        "title": "Entra in un vocale",
+        "text": "Anche senza un motivo preciso. È il modo più rapido per conoscere qualcuno."
+      }
+    ]
+  },
+  "pact": {
+    "rules": [
+      {
+        "icon": "users",
+        "title": "Guild first",
+        "text": "Si gioca per il gruppo, non accanto al gruppo."
+      },
+      {
+        "icon": "heart-handshake",
+        "title": "Maturità",
+        "text": "Non l’anagrafe, la testa."
+      },
+      {
+        "icon": "eye",
+        "title": "Presenza, non presenzialismo",
+        "text": "Non servono le ore, serve farsi vedere."
+      },
+      {
+        "icon": "mic",
+        "title": "Vocali",
+        "text": "Parlare non è obbligatorio: stare in ascolto è già esserci."
+      },
+      {
+        "icon": "bell",
+        "title": "Avvisare",
+        "text": "Se sparisci per un mese va benissimo, basta dirlo."
+      },
+      {
+        "icon": "sprout",
+        "title": "Longevità",
+        "text": "Costruiamo qualcosa che regga negli anni."
+      }
+    ],
+    "notForYou": [
+      "Il nome del tuo personaggio è una battuta da chat pubblica",
+      "Retail è ancora casa tua",
+      "Passi il tempo a confrontare Forever con retail",
+      "Cerchi la mentalità da Mitico+",
+      "Conta solo il gear score"
+    ]
+  },
+  "loot": {
+    "rules": [
+      {
+        "title": "Vince chi ha meno crediti",
+        "text": "non chi tira più alto. A parità di crediti vince il roll più alto; a parità di roll si rirolla."
+      },
+      {
+        "title": "Rolla chi lo userà",
+        "text": "sul main dichiarato, per la spec dichiarata. Solo nei raid ufficiali."
+      },
+      {
+        "title": "Chi vince paga",
+        "text": "il pezzo costa crediti e rimette in fondo alla fila."
+      },
+      {
+        "title": "Si azzera a ogni season",
+        "text": "nessuno si trascina vantaggi o penalità."
+      },
+      {
+        "title": "Se ruoti, non ci rimetti",
+        "text": "chi gioca meno serate ha meno crediti, quindi più precedenza."
+      },
+      {
+        "title": "Chi arriva a season iniziata",
+        "text": "parte dalla media del roster, arrotondata per difetto."
+      }
+    ],
+    "costs": [
+      {
+        "credits": 2,
+        "what": "Armi, trinket, oggetti di quest"
+      },
+      {
+        "credits": 1,
+        "what": "Tutto il resto"
+      },
+      {
+        "credits": 0,
+        "what": "Off-spec — solo se nessuno lo vuole per la main"
+      }
+    ],
+    "source": {
+      "type": "repo",
+      "path": "games/wow-forever/loot.json"
+    }
+  },
+  "factions": [
+    {
+      "name": "Nebulah",
+      "faction": "Orda",
+      "active": true
+    },
+    {
+      "name": "Nebulaa",
+      "faction": "Alleanza",
+      "active": false
+    }
+  ],
+  "_factions": "Metti active:true su Nebulaa quando nasce la gilda in Alleanza: roster, progress, reclutamento e testi si adattano da soli. Le voci con onlyIf:\"multi\" compaiono solo con due fazioni attive, quelle con onlyIf:\"single\" solo con una.",
+  "tabs": [
+    {
+      "id": "info",
+      "label": "Info"
+    },
+    {
+      "id": "pact",
+      "label": "Il patto"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    },
+    {
+      "id": "ranks",
+      "label": "Ranghi"
+    },
+    {
+      "id": "recruitment",
+      "label": "Chi cerchiamo"
+    },
+    {
+      "id": "join",
+      "label": "Come entrare"
+    },
+    {
+      "id": "progress",
+      "label": "Progress"
+    },
+    {
+      "id": "roster",
+      "label": "Roster"
+    },
+    {
+      "id": "loot",
+      "label": "Loot"
+    },
+    {
+      "id": "calendar",
+      "label": "Calendario"
+    },
+    {
+      "id": "gallery",
+      "label": "Galleria"
+    }
+  ],
+  "_tabs": "Ordine ed etichette delle tab. Togli una voce per nasconderla. id validi: info pact faq ranks recruitment join progress roster loot calendar gallery.",
+  "copy": {
+    "info": {
+      "title": "I numeri prima delle promesse.",
+      "lead": "Così capisci subito se ti torna. Sull’orario siamo seri: a mezzanotte si smette davvero. Si tira fino all’una solo quando il boss è al tre per cento — e succede due volte l’anno.",
+      "firstDayTitle": "Il primo giorno, se vuoi un ordine",
+      "firstDayOutro": "Il resto — wiki, novelle, i consigli del Finland — lo trovi quando ti serve. Questo non è un elenco di compiti: è una casa, e una casa si esplora col tempo."
+    },
+    "pact": {
+      "title": "Poche cose, e ognuna ha il suo motivo.",
+      "notForYouTitle": "Non fa per te se…",
+      "notForYouNote": "Nessuno di questi è un difetto: sono modi diversi di giocare, tutti legittimi."
+    },
+    "faq": {
+      "title": "Quelle che ci fanno davvero.",
+      "lead": "Con la risposta che daremmo a voce — anche quando non è quella che conviene a noi.",
+      "outro": "La tua domanda non è qui? Scrivila lo stesso: si risponde a tutti, e quelle che tornano più di una volta finiscono in questo elenco."
+    },
+    "ranks": {
+      "title": "Ranghi e ruoli.",
+      "lead": "Su Discord il ruolo dice cosa puoi vedere e fare. In gioco il rango dice come partecipi."
+    },
+    "recruitment": {
+      "specsTitle": "Tutte le combinazioni.",
+      "specsLead": "Classe per classe, spec per spec. Se la tua non è in priorità, candidati lo stesso: si parla con le persone, non con le caselle."
+    },
+    "join": {
+      "title": "Tre passi, e il primo l’hai già fatto.",
+      "steps": [
+        {
+          "title": "Sblocca la sezione",
+          "text": "Sei qui a leggere, quindi è fatta."
+        },
+        {
+          "title": "Apri candidatura",
+          "text": "Dentro c’è il modulo da copiare. Si compila in dieci minuti, anche dal telefono."
+        },
+        {
+          "title": "Scrivi e aspetta",
+          "text": "Ti rispondiamo entro tre giorni. Poi due chiacchiere in vocale: nessun esame."
+        }
+      ],
+      "next": "→ Il prossimo passo è uno solo: apri candidatura e scrivi il tuo nome nel Registro della Locanda."
+    },
+    "progress": {
+      "title": "Il progress di gilda.",
+      "lead": "Boss per boss. I boss si provano sul serio, il gioco resta un gioco."
+    },
+    "roster": {
+      "title": "Il roster dei raid.",
+      "lead": "Chi è segnato come main per la season. Social e alt non compaiono qui."
+    },
+    "loot": {
+      "title": "Come si assegnano i pezzi.",
+      "lead": "Deciso prima che cada il primo boss. Funziona a crediti: ogni pezzo che vinci te ne costa qualcuno, e ha la precedenza chi ne ha meno.",
+      "tableNote": "Meno crediti vuol dire più precedenza: una riga alta non è un premio, è il conto di quello che hai già portato a casa. Apri una season: ogni colonna è una run con i crediti presi quella sera, il totale dà l’ordine di precedenza. Clicca un’intestazione per riordinare."
+    },
+    "calendar": {
+      "title": "Un post per ogni raid.",
+      "lead": "Le serate le apre Raid-Helper su Discord: qui vedi le stesse, con chi si è già segnato. Le iscrizioni chiudono tra le 6 e le 24 ore prima, così chi organizza chiude il roster con calma, non alle 19:55."
+    },
+    "gallery": {
+      "title": "Galleria.",
+      "lead": "Serate, first kill e momenti della gilda."
+    }
+  }
+}

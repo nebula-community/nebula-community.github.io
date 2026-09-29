@@ -1,0 +1,229 @@
+{
+  "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). Ogni spec ha la sua priorità: cambia solo quella riga.",
+  "open": true,
+  "headline": "Chiunque è ben accetto.",
+  "text": "Non serve essere al passo, non serve avere il personaggio pronto. Accettiamo tutte le classi; in questo momento cerchiamo soprattutto DPS per completare i raid.",
+  "highlight": "Priorità DPS",
+  "roles": [
+    {
+      "role": "tank",
+      "label": "Tank",
+      "priority": "open",
+      "wanted": null
+    },
+    {
+      "role": "healer",
+      "label": "Healer",
+      "priority": "open",
+      "wanted": null
+    },
+    {
+      "role": "dps",
+      "label": "DPS",
+      "priority": "high",
+      "wanted": null
+    }
+  ],
+  "targets": {
+    "tank": 3,
+    "healer": 5,
+    "dps": 12
+  },
+  "classes": [
+    {
+      "class": "warrior",
+      "note": null,
+      "specs": [
+        {
+          "name": "Arms",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Fury",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Protection",
+          "role": "tank",
+          "priority": "open"
+        }
+      ]
+    },
+    {
+      "class": "paladin",
+      "note": null,
+      "specs": [
+        {
+          "name": "Holy",
+          "role": "healer",
+          "priority": "open"
+        },
+        {
+          "name": "Protection",
+          "role": "tank",
+          "priority": "open"
+        },
+        {
+          "name": "Retribution",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "hunter",
+      "note": null,
+      "specs": [
+        {
+          "name": "Beast Mastery",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Marksmanship",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Survival",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "rogue",
+      "note": null,
+      "specs": [
+        {
+          "name": "Assassination",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Combat",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Subtlety",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "mage",
+      "note": null,
+      "specs": [
+        {
+          "name": "Arcane",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Fire",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Frost",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "warlock",
+      "note": null,
+      "specs": [
+        {
+          "name": "Affliction",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Demonology",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Destruction",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "priest",
+      "note": null,
+      "specs": [
+        {
+          "name": "Holy",
+          "role": "healer",
+          "priority": "open"
+        },
+        {
+          "name": "Discipline",
+          "role": "healer",
+          "priority": "open"
+        },
+        {
+          "name": "Shadow",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Smite",
+          "role": "dps",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "class": "druid",
+      "note": null,
+      "specs": [
+        {
+          "name": "Balance",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Feral",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Restoration",
+          "role": "healer",
+          "priority": "open"
+        }
+      ]
+    },
+    {
+      "class": "shaman",
+      "note": null,
+      "specs": [
+        {
+          "name": "Elemental",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Enhancement",
+          "role": "dps",
+          "priority": "high"
+        },
+        {
+          "name": "Restoration",
+          "role": "healer",
+          "priority": "open"
+        }
+      ]
+    }
+  ],
+  "social": "Non raidi? Il rango Social esiste apposta: dungeon, professioni, compagnia."
+}

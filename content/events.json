@@ -1,0 +1,12 @@
+{
+  "_readme": "Eventi di community (non di sezione).",
+  "events": [
+    {
+      "date": "[[AAAA-MM-GG]]",
+      "start": "[[HH:MM]]",
+      "title": "[[EVENTO DI COMMUNITY]]",
+      "place": "Nebula Inn · vocale",
+      "type": "community"
+    }
+  ]
+}

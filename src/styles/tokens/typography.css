@@ -1,0 +1,61 @@
+:root{
+--font-display:"Atomed","Outfit",system-ui,sans-serif;   /* logo lettering, banners, event titles — UPPERCASE, tracked */
+--font-body:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-read:"Literata",Georgia,"Times New Roman",serif;   /* lore reading mode */
+--font-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+/* Scale — 1.25 minor third, fluid at the top */
+--fs-12:.75rem; /* @kind font */
+--fs-14:.875rem; /* @kind font */
+--fs-16:1rem; /* @kind font */
+--fs-18:1.125rem; /* @kind font */
+--fs-20:1.25rem; /* @kind font */
+--fs-24:1.5rem; /* @kind font */
+--fs-30:1.875rem; /* @kind font */
+--fs-38:2.375rem; /* @kind font */
+--fs-48:3rem; /* @kind font */
+
+--fs-display-xl:clamp(2.75rem,7vw,6.5rem); /* @kind font */
+
+--fs-display-l:clamp(2.25rem,5vw,4.25rem); /* @kind font */
+
+--fs-display-m:clamp(1.75rem,3.2vw,2.75rem); /* @kind font */
+
+--lh-tight:1.05; /* @kind font */
+--lh-snug:1.2; /* @kind font */
+--lh-normal:1.5; /* @kind font */
+--lh-read:1.72; /* @kind font */
+
+--tracking-display:.08em; /* @kind font */
+--tracking-eyebrow:.22em; /* @kind font */
+--tracking-body:0; /* @kind font */
+
+--fw-light:300; /* @kind font */
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+
+/* Semantic */
+--type-hero:400 var(--fs-display-xl)/var(--lh-tight) var(--font-display); /* @kind font */
+
+--type-h1:400 var(--fs-display-l)/var(--lh-tight) var(--font-display); /* @kind font */
+
+--type-h2:600 var(--fs-display-m)/var(--lh-snug) var(--font-body); /* @kind font */
+
+--type-h3:600 var(--fs-24)/var(--lh-snug) var(--font-body); /* @kind font */
+
+--type-h4:600 var(--fs-18)/var(--lh-snug) var(--font-body); /* @kind font */
+
+--type-body:400 var(--fs-16)/var(--lh-normal) var(--font-body); /* @kind font */
+
+--type-body-lg:400 var(--fs-18)/var(--lh-normal) var(--font-body); /* @kind font */
+
+--type-small:400 var(--fs-14)/var(--lh-normal) var(--font-body); /* @kind font */
+
+--type-eyebrow:500 var(--fs-12)/1 var(--font-body); /* @kind font */
+
+--type-read:400 1.1875rem/var(--lh-read) var(--font-read); /* @kind font */
+
+--measure-read:66ch; /* @kind spacing */
+
+}

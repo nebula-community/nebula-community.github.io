@@ -1,0 +1,11 @@
+---
+import Page from '../../layouts/Page.astro';
+import { loadContent } from '../../lib/content.mjs';
+export async function getStaticPaths() {
+  const d = await loadContent();
+  return d.NB_DATA.games.filter((g) => !g.placeholder).map((g) => ({ params: { slug: g.slug }, props: { g } }));
+}
+const { slug } = Astro.params;
+const { g } = Astro.props;
+---
+<Page route={'game/' + slug} title={g.title + ' · Nebula Inn'} description={g.description} image={g.heroImage} />

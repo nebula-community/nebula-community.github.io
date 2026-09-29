@@ -1,0 +1,26 @@
+{
+  "_readme": "Le immagini stanno in media/gallery/wow-forever/. Nel sito reale, se \"items\" è vuoto, il build prende in automatico tutte le immagini della cartella in ordine di nome (01-…, 02-…). Compila items solo per aggiungere didascalie o cambiare l’ordine.",
+  "folder": "media/gallery/wow-forever/",
+  "items": [
+    {
+      "src": "media/gallery/wow-forever/01-il-neon-fra-noi.webp",
+      "alt": "[[DESCRIZIONE]]",
+      "caption": null
+    },
+    {
+      "src": "media/gallery/wow-forever/02-la-nebulosa-a-cena.webp",
+      "alt": "[[DESCRIZIONE]]",
+      "caption": null
+    },
+    {
+      "src": "media/gallery/wow-forever/03-la-sala.webp",
+      "alt": "[[DESCRIZIONE]]",
+      "caption": null
+    },
+    {
+      "src": "media/gallery/wow-forever/04-geometria-ospitalita.webp",
+      "alt": "[[DESCRIZIONE]]",
+      "caption": null
+    }
+  ]
+}

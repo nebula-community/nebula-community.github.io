@@ -1,0 +1,22 @@
+name: Sync Raid-Helper
+on:
+  schedule: [{ cron: '*/30 * * * *' }]   # every 30 minutes
+  workflow_dispatch:
+concurrency: { group: sync-raid-helper, cancel-in-progress: true }
+permissions: { contents: write }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/sync-raid-helper.mjs
+        env:
+          RAIDHELPER_API_KEY: ${{ secrets.RAIDHELPER_API_KEY }}   # /apikey in Discord, server admins only
+          DISCORD_SERVER_ID: ${{ secrets.DISCORD_SERVER_ID }}
+      - name: Commit only if changed (the commit triggers deploy.yml)
+        run: |
+          git config user.name "nebula-bot"; git config user.email "bot@users.noreply.github.com"
+          git add content/games/wow-forever/events.json
+          git diff --cached --quiet || (git commit -m "calendario: sync Raid-Helper" && git push)

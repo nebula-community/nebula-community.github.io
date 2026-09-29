@@ -1,0 +1,87 @@
+/* Nebula colour system — values extracted from the logo files (ADR-004 §2.2).
+   Two official colorways, never mixed in one composition:
+   WARM "Nebulosa" = default, dark grounds (dark theme)
+   COOL "Aurora"   = light grounds only (light theme) */
+:root{
+/* Warm colorway — Nebulosa */
+--amber-500:#FC7E46;--amber-400:#FC8C46;--amber-300:#FDA877;--amber-200:#FEC9A8;
+--coral-500:#EE4662;--coral-400:#EE5454;--coral-300:#F47A8B;
+--magenta-500:#9A2A9A;--magenta-400:#8C2A9A;--magenta-300:#C45BC4;--magenta-200:#E09BE0;
+--violet-500:#7E2AA8;--violet-400:#702AA8;--violet-300:#A66BD1;
+/* Cool colorway — Aurora */
+--deepblue-500:#0054B6;--deepblue-700:#003F8A;--deepblue-100:#DCE9F8;
+--blue-500:#0070A8;--blue-400:#007EA8;
+--teal-500:#00A89A;--teal-400:#009A9A;--teal-700:#00766C;--teal-100:#D6F2EF;
+--green-500:#70C446;--green-400:#54C454;
+/* Deep grounds — violet-black, never pure black (neon flattens on #000) */
+--night-950:#0B0612;--night-900:#110A1A;--night-850:#170F22;--night-800:#1E142C;--night-700:#2A1D3B;--night-600:#3A2B4E;
+/* Cool neutrals for text & separators (both themes) */
+--mist-50:#F5F8FA;--mist-100:#EAF0F4;--mist-200:#D5DFE7;--mist-300:#B3C1CD;--mist-500:#5E7082;--mist-700:#3C4E60;--mist-900:#0B1B2B;
+--ink-on-dark-1:#F3EEF7;--ink-on-dark-2:#C3B8D1;--ink-on-dark-3:#9A8FAB;
+/* Status — deliberately off-palette: legible before beautiful */
+--ok-dark:#46C28F;--warn-dark:#F2B33D;--err-dark:#FF6369;
+--ok-light:#1B7A50;--warn-light:#8F5B00;--err-light:#C0262D;
+/* Gradients — the nebula spiral */
+--grad-warm:linear-gradient(120deg,#FC8C46 0%,#EE4662 38%,#9A2A9A 72%,#702AA8 100%); /* @kind color */
+
+--grad-cool:linear-gradient(120deg,#0054B6 0%,#007EA8 35%,#00A89A 65%,#70C446 100%); /* @kind color */
+
+
+/* ---- Semantic aliases: DARK / warm (default) ---- */
+--bg:var(--night-950);
+--surface-1:var(--night-900);
+--surface-2:var(--night-850);
+--surface-3:var(--night-800);
+--surface-raised:var(--night-700);
+--border-subtle:rgba(243,238,247,.08);
+--border-default:rgba(243,238,247,.14);
+--border-strong:rgba(243,238,247,.26);
+--text-1:var(--ink-on-dark-1);
+--text-2:var(--ink-on-dark-2);
+--text-3:var(--ink-on-dark-3);
+--text-on-accent:#1A0710;
+--accent:var(--amber-500);          /* primary action + accent text (7.9:1 on bg) */
+--accent-hover:var(--amber-300);
+--accent-2:var(--coral-500);
+--accent-text:var(--amber-400);
+--neon:var(--magenta-300);          /* the ONE glowing element per composition */
+--neon-core:var(--magenta-500);
+--indicator:#5CE1E6;                /* tiny cyan indicators only */
+--link:var(--amber-300);--link-hover:var(--amber-200);
+--focus-ring:var(--amber-300);
+--grad-brand:var(--grad-warm); /* @kind color */
+
+--ok:var(--ok-dark);--warn:var(--warn-dark);--err:var(--err-dark);
+--scrim:rgba(11,6,18,.72);
+--selection:rgba(252,126,70,.35);
+color-scheme:dark;
+}
+[data-theme="light"]{
+--bg:var(--mist-50);
+--surface-1:#FFFFFF;
+--surface-2:var(--mist-100);
+--surface-3:#E1E9EF;
+--surface-raised:#FFFFFF;
+--border-subtle:rgba(11,27,43,.07);
+--border-default:rgba(11,27,43,.13);
+--border-strong:rgba(11,27,43,.24);
+--text-1:var(--mist-900);
+--text-2:var(--mist-700);
+--text-3:var(--mist-500);
+--text-on-accent:#FFFFFF;
+--accent:var(--deepblue-500);       /* 7.1:1 on white */
+--accent-hover:var(--deepblue-700);
+--accent-2:var(--teal-700);
+--accent-text:var(--deepblue-500);
+--neon:var(--teal-500);
+--neon-core:var(--teal-400);
+--indicator:var(--green-400);
+--link:var(--deepblue-500);--link-hover:var(--deepblue-700);
+--focus-ring:var(--deepblue-500);
+--grad-brand:var(--grad-cool); /* @kind color */
+
+--ok:var(--ok-light);--warn:var(--warn-light);--err:var(--err-light);
+--scrim:rgba(11,27,43,.45);
+--selection:rgba(0,84,182,.18);
+color-scheme:light;
+}

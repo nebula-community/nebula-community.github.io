@@ -1,0 +1,14 @@
+---
+import Page from '../../layouts/Page.astro';
+import { loadContent } from '../../lib/content.mjs';
+export async function getStaticPaths() {
+  const d = await loadContent();
+  return [
+    ...d.NB_DATA.chapters.map((c) => ({ params: { id: c.id }, props: { title: c.title, kind: c.kind, cover: c.cover } })),
+    { params: { id: 'editto' }, props: { title: d.NB_CONTENT.editto.title, kind: 'Editto', cover: 'media/art/009-b-geometria-ospitalita.webp' } },
+  ];
+}
+const { id } = Astro.params;
+const { title, kind, cover } = Astro.props;
+---
+<Page route={'read/' + id} title={title + ' · ' + kind + ' · Nebula Inn'} description={'La Rotta Bassa — ' + kind + ': ' + title} image={cover} />

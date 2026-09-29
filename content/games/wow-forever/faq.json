@@ -1,0 +1,156 @@
+{
+  "groups": [
+    {
+      "title": "Sulla gilda",
+      "items": [
+        {
+          "q": "Quanti siete?",
+          "a": "Siamo 21 e stiamo partendo adesso, con l’obiettivo di riempire un raid per fazione. Te lo diciamo preciso perché il numero lo scopriresti comunque il primo giorno."
+        },
+        {
+          "q": "Che tipo di giocatore cercate?",
+          "a": "Uno che gioca per il gruppo, non accanto al gruppo. Lo chiamiamo guild first: quando serve una mano ci sei, anche quando in quel momento non ci guadagni niente. Non vuol dire stare in vocale tutte le sere — vuol dire che la gilda viene prima del tornaconto della singola serata."
+        },
+        {
+          "q": "Che classe o ruolo vi serve?",
+          "a": "Serve un po’ di tutto, e il ruolo lo scegli tu: non mettiamo le persone dentro le caselle che avanzano. Se ti dicessimo «ci servono due healer» rischieresti di entrare per un posto invece che per una gilda."
+        },
+        {
+          "q": "Siete casual o hardcore?",
+          "a": "I boss li proviamo sul serio, il gioco resta un gioco. Due sere a settimana, niente corse al record, niente parse. Se cerchi il progress spinto, con noi ti annoieresti."
+        },
+        {
+          "q": "Fate PvP?",
+          "a": "Quando ne abbiamo voglia, mai per obbligo. Non è il motivo per cui esistiamo, ma se ti va di organizzare qualcosa trovi gente."
+        }
+      ]
+    },
+    {
+      "title": "I raid",
+      "items": [
+        {
+          "q": "Quando si raida?",
+          "a": "[[GIORNI-RAID]]. Si parte dopo le 20:00 e a mezzanotte si smette davvero — due sere, non due più una se serve. Fuori da quelle c’è gente collegata dal tardo pomeriggio fino a tardi."
+        },
+        {
+          "q": "Mi iscrivo e poi non posso venire?",
+          "a": "Capita, e la prima volta non succede niente: i ricambi esistono per questo. Quello che pesa è farne un’abitudine, perché il roster viene costruito intorno a chi si è segnato. Se diventa un’abitudine te ne parla un officer, e per qualche serata il roster si fa senza di te."
+        },
+        {
+          "q": "Cosa succede se manca gente?",
+          "a": "Il raid salta. Non lo riempiamo con chi capita pur di partire: meglio una serata annullata per tempo che tre ore buttate da venti persone."
+        },
+        {
+          "q": "Finisco in panchina?",
+          "a": "Può capitare, e capita a tutti. Teniamo dei ricambi perché la serata regga, e si ruota: l’obiettivo è far giocare tutti. E chi gioca meno serate accumula meno crediti, quindi quando c’è ha la precedenza sul loot: la panchina non si paga due volte."
+        },
+        {
+          "q": "Devo arrivare preparato?",
+          "a": "Consumabili, equipaggiamento a posto e tattiche lette. Non è rigore: è che il tempo degli altri diciannove vale quanto il tuo. Gli addon che servono te li diciamo prima, con una guida dentro."
+        }
+      ]
+    },
+    {
+      "title": "Roster e loot",
+      "items": [
+        {
+          "q": "Devo scegliere la spec per tutta la season?",
+          "a": "Sì, ed è la cosa che sorprende di più. Dichiari una spec principale e una di riserva, e valgono fino al cambio di season. Il loot segue la spec dichiarata, e cambiarla a metà strada butta via l’equipaggiamento che il raid ti ha assegnato."
+        },
+        {
+          "q": "Come funziona il loot?",
+          "a": "A crediti: ogni pezzo che vinci te ne costa, e ha la precedenza chi ne ha meno. Non premia chi tira alto né chi è arrivato per primo — distribuisce, perché a fine season tutti abbiano portato a casa qualcosa. Si azzera a ogni season, ed è scritto per intero prima che cada il primo boss."
+        },
+        {
+          "q": "E se passo un pezzo per aspettarne uno migliore?",
+          "a": "Su un upgrade marginale, liberissimo. Su un miglioramento evidente no: il loot council te lo assegna e i crediti li paghi lo stesso. Il credito non si paga sull’oggetto che scegli, si paga sull’occasione che il raid ti ha dato."
+        },
+        {
+          "q": "Posso raidare con l’alt?",
+          "a": "Nei raid organizzati no: si porta il personaggio dichiarato, perché la serata si costruisce su quello. Alt run se ne fanno volentieri, semplicemente non le organizziamo noi."
+        },
+        {
+          "q": "Posso stare su tutte e due le fazioni?",
+          "a": "Sì. Le gilde sono due, il Discord è uno: qui non è tradimento, è avere due modi di passare la serata. Dichiari un personaggio per bandiera: sono due main, non un main e un alt.",
+          "onlyIf": "multi"
+        },
+        {
+          "q": "Se non raido, posso stare in gilda lo stesso?",
+          "a": "Sì. Il raid è una parte della settimana, non il biglietto d’ingresso. C’è chi viene per i dungeon, chi per le professioni, chi per stare in vocale mentre fa altro."
+        }
+      ]
+    },
+    {
+      "title": "Se il dubbio riguarda te",
+      "items": [
+        {
+          "q": "Sono tornato adesso, sono indietro di dieci anni.",
+          "a": "Siamo quasi tutti così. Non c’è un livello minimo, non c’è un equipaggiamento minimo, e non c’è nessuno che ti guarda mentre impari. Se vuoi, ti si affianca qualcuno per le prime sere."
+        },
+        {
+          "q": "Non conosco nessuno.",
+          "a": "Nemmeno noi ci conoscevamo tutti. Il modo più rapido per smettere di essere “quello nuovo” non è un raid: è entrare in vocale una sera che non c’è niente in programma e restare lì mentre gli altri fanno altro. Funziona, e non devi nemmeno parlare."
+        },
+        {
+          "q": "Devo parlare in vocale?",
+          "a": "No. Stare in ascolto è già esserci, e in raid è tutto quello che ti chiediamo: serve a sentire le chiamate, non a sentire te."
+        },
+        {
+          "q": "Ho una sera libera sola.",
+          "a": "Va bene. Il posto a tavola non dipende da quante sere fai: chiediamo solo di dirlo, così chi organizza sa su chi contare."
+        },
+        {
+          "q": "Posso sparire per un mese?",
+          "a": "Sì, basta dirlo. Il posto te lo teniamo e non contiamo le serate di nessuno. L’unica cosa che pesa è sparire dopo esserti segnato a una serata."
+        },
+        {
+          "q": "C’è un’età minima?",
+          "a": "Non un numero, ma un’avvertenza onesta: la media qui è alta — trenta, quaranta, lavoro e figli — e si parla di mutui quanto di boss. Se hai vent’anni e la cosa ti diverte sei il benvenuto; se cerchi gente della tua età, altrove la trovi prima."
+        },
+        {
+          "q": "Posso portare un amico?",
+          "a": "Sì, e ci fa piacere. Fa la sua candidatura come tutti, ma partire in due è il modo più semplice per non sentirsi nuovi."
+        },
+        {
+          "q": "Costa qualcosa?",
+          "a": "No. Niente quote e niente obblighi di donazione: la banca di gilda vive di quello che ognuno lascia quando gli avanza."
+        }
+      ]
+    },
+    {
+      "title": "Le regole, e come si entra",
+      "items": [
+        {
+          "q": "Cosa non tollerate?",
+          "a": "Tre cose: il dramma ripetuto in pubblico, l’ostilità verso le persone, e chi bara. Sul resto si discute volentieri. Su quelle tre no, e nel caso ci si saluta — senza processi pubblici e senza spiegazioni davanti a tutti."
+        },
+        {
+          "q": "Litigo con qualcuno, che succede?",
+          "a": "Se ne parla una volta, con un officer e in privato. Portare un problema non è mai un rischio per te: è il dramma ripetuto in pubblico che qui non passa, ed è una cosa diversa."
+        },
+        {
+          "q": "E se una regola non mi torna?",
+          "a": "Dillo a un officer: hanno tutte un perché, e qualcuna è migliorabile. Ma le decidono gli officers e valgono per tutti dal primo giorno. Se non ti tornano è legittimo, e ci sono gilde con regole diverse."
+        },
+        {
+          "q": "Come vi trovo in gioco?",
+          "a": "Regione EU, ruleset Normal: Nebulaa per l’Alleanza, Nebulah per l’Orda. Ma il primo passo non è in gioco — si passa dal Discord, perché l’invito arriva dopo due chiacchiere, non prima.",
+          "onlyIf": "multi"
+        },
+        {
+          "q": "Come vi trovo in gioco?",
+          "a": "Regione EU, ruleset Normal: Nebulah, in Orda. Ma il primo passo non è in gioco — si passa dal Discord, perché l’invito arriva dopo due chiacchiere, non prima.",
+          "onlyIf": "single"
+        },
+        {
+          "q": "Come si entra?",
+          "a": "Entri nel Discord, leggi le informazioni (dieci minuti) e apri una candidatura. Rispondiamo entro tre giorni, poi due chiacchiere in vocale: niente prova pratica, serve solo a sentirci."
+        },
+        {
+          "q": "Un’altra gilda casual, fra due mesi siete spariti.",
+          "a": "Può darsi. Intanto gli orari sono questi e le regole sul loot sono scritte prima della prima serata: se ti interessa la porta è aperta, altrimenti buon gioco."
+        }
+      ]
+    }
+  ]
+}

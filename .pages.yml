@@ -1,0 +1,78 @@
+# Gives officers a form-based editor on GitHub content, even from mobile, without touching JSON.
+media:
+  input: content/media
+  output: /media
+content:
+  - name: recruitment
+    label: WoW Forever · Reclutamento
+    type: file
+    path: content/games/wow-forever/recruitment.json
+    format: json
+    fields:
+      - { name: open, label: Reclutamento aperto, type: boolean }
+      - { name: headline, label: Titolo, type: string }
+      - { name: text, label: Testo, type: text }
+      - { name: highlight, label: Badge in evidenza (es. Priorità DPS), type: string }
+      - name: roles
+        label: Ruoli
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Ruolo, type: select, options: { values: [tank, healer, dps] } }
+          - { name: label, label: Etichetta, type: string }
+          - { name: priority, label: Priorità, type: select, options: { values: [high, open, closed] } }
+          - { name: wanted, label: Quanti cerchiamo (vuoto = automatico), type: number }
+      - name: targets
+        label: Posti nel roster raid
+        type: object
+        fields:
+          - { name: tank, type: number }
+          - { name: healer, type: number }
+          - { name: dps, type: number }
+      - name: classes
+        label: Classi e spec
+        type: object
+        list: true
+        fields:
+          - { name: class, label: Classe, type: select, options: { values: [warrior, paladin, hunter, rogue, priest, shaman, mage, warlock, druid] } }
+          - { name: note, label: Nota, type: string }
+          - name: specs
+            label: Spec
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Spec, type: string }
+              - { name: role, label: Ruolo, type: select, options: { values: [tank, healer, dps] } }
+              - { name: priority, label: Priorità, type: select, options: { values: [high, open, closed] } }
+  - name: roster
+    label: WoW Forever · Roster
+    type: file
+    path: content/games/wow-forever/roster.json
+    format: json
+    fields:
+      - { name: updated, label: Aggiornato il, type: date }
+      - name: players
+        label: Giocatori
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Nome, type: string }
+          - { name: class, label: Classe, type: select, options: { values: [warrior, paladin, hunter, rogue, priest, shaman, mage, warlock, druid] } }
+          - { name: spec, label: Spec, type: string }
+          - { name: role, label: Ruolo, type: select, options: { values: [tank, healer, dps] } }
+          - { name: faction, label: Gilda, type: select, options: { values: [Nebulah, Nebulaa] } }
+          - { name: rank, label: Rango, type: select, options: { values: [Raider, Trial] } }
+  - name: lore
+    label: Lore
+    type: collection
+    path: content/lore
+    filename: '{fields.order}-{primary}.md'
+    fields:
+      - { name: title, label: Titolo, type: string }
+      - { name: order, label: Ordine, type: number }
+      - { name: numeral, label: Numerale (P, I, I·V…), type: string }
+      - { name: kind, label: Tipo, type: select, options: { values: [Prologo, Libro, Veglia] } }
+      - { name: cover, label: Copertina, type: image }
+      - { name: date, label: Data, type: date }
+      - { name: minutes, label: Minuti di lettura, type: number }
+      - { name: body, label: Testo, type: rich-text }

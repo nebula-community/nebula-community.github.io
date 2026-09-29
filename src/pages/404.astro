@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import { BASE } from '../lib/base.mjs';
+---
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<base href={BASE} />
+<title>Pagina non trovata · Nebula Inn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="media/brand/nebula-mark-warm-crop.png" />
+<script is:inline>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
+// Old hash links (#game/…, #read/…) → real pages
+(function(){var h=location.hash.slice(1);if(!h)return;var m={'about':'chi-siamo/','lore':'lore/','games':'giochi/','join':'unisciti/'};var p=h.split('/');var to=p[0]==='read'?'lore/'+p[1]+'/':p[0]==='game'?'giochi/'+p[1]+'/':p[0]==='about'&&p[1]?'chi-siamo/'+p[1]+'/':m[p[0]];if(to)location.replace(document.baseURI+to);})();</script>
+</head>
+<body>
+<main style="min-height:100svh;display:grid;place-items:center;text-align:center;padding:24px">
+  <div style="display:grid;gap:20px;justify-items:center;max-width:520px">
+    <img src="media/brand/nebula-mark-warm-crop.png" alt="" width="96" height="101" />
+    <div class="nb-eyebrow">Errore 404</div>
+    <h1 class="nb-display" style="font-size:clamp(32px,6vw,56px);line-height:1.05">Questa stanza non c’è</h1>
+    <p style="color:var(--text-2)">Forse la porta è stata spostata, o il link è vecchio. La sala comune è sempre aperta.</p>
+    <a class="nb-btn nb-btn--primary nb-btn--lg" href="./">Torna alla locanda</a>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Nebula",
+  "place": "Nebula Inn",
+  "tagline": "La locanda dove i nomadi digitali si fermano",
+  "discord": {
+    "invite": "https://discord.gg/Cyuv7rKmBQ",
+    "code": "Cyuv7rKmBQ"
+  },
+  "hero": {
+    "video": null,
+    "videoMobile": null,
+    "poster": "media/art/concept-nebula-inn.webp"
+  },
+  "social": {
+    "youtube": "[[LINK]]",
+    "instagram": "[[LINK]]",
+    "twitch": "[[LINK]]"
+  },
+  "seo": {
+    "description": "[[DESCRIZIONE SEO]]",
+    "ogImage": "media/og.png"
+  }
+}

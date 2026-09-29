@@ -1,0 +1,18 @@
+---
+import Layout from './Layout.astro';
+import App from '../islands/App.jsx';
+import { loadContent } from '../lib/content.mjs';
+import { BASE } from '../lib/base.mjs';
+const { route, title, description, image, heading, summary } = Astro.props;
+const data = await loadContent();
+---
+<Layout title={title} description={description} image={image}>
+  <App client:only="react" route={route} data={data} base={BASE} />
+  <noscript>
+    <main style="max-width:760px;margin:0 auto;padding:120px 24px;font-family:system-ui,sans-serif">
+      <h1>{heading || title}</h1>
+      <p>{summary || description}</p>
+      <p><a href={data.NB_DATA.site.discord}>Entra nel Discord</a></p>
+    </main>
+  </noscript>
+</Layout>

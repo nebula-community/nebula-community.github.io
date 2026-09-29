@@ -1,0 +1,84 @@
+{
+  "_readme": "Progress di gilda per istanza e per fazione. killed: data del primo kill (AAAA-MM-GG) o null. Gli officers aggiornano dopo ogni first kill.",
+  "example": true,
+  "instances": [
+    {
+      "id": "mc",
+      "name": "Molten Core",
+      "size": 40,
+      "cover": "media/art/concept-nebula-inn.webp",
+      "bosses": [
+        {
+          "name": "Lucifron",
+          "Nebulaa": "[[AAAA-MM-GG]]",
+          "Nebulah": "[[AAAA-MM-GG]]"
+        },
+        {
+          "name": "Magmadar",
+          "Nebulaa": "[[AAAA-MM-GG]]",
+          "Nebulah": "[[AAAA-MM-GG]]"
+        },
+        {
+          "name": "Gehennas",
+          "Nebulaa": "[[AAAA-MM-GG]]",
+          "Nebulah": null
+        },
+        {
+          "name": "Garr",
+          "Nebulaa": "[[AAAA-MM-GG]]",
+          "Nebulah": null
+        },
+        {
+          "name": "Shazzrah",
+          "Nebulaa": null,
+          "Nebulah": null
+        },
+        {
+          "name": "Baron Geddon",
+          "Nebulaa": null,
+          "Nebulah": null
+        },
+        {
+          "name": "Sulfuron Harbinger",
+          "Nebulaa": null,
+          "Nebulah": null
+        },
+        {
+          "name": "Golemagg",
+          "Nebulaa": null,
+          "Nebulah": null
+        },
+        {
+          "name": "Majordomo Executus",
+          "Nebulaa": null,
+          "Nebulah": null
+        },
+        {
+          "name": "Ragnaros",
+          "Nebulaa": null,
+          "Nebulah": null
+        }
+      ]
+    },
+    {
+      "id": "ony",
+      "name": "Onyxia’s Lair",
+      "size": 40,
+      "cover": "media/art/005-la-citta-nel-vetro.webp",
+      "bosses": [
+        {
+          "name": "Onyxia",
+          "Nebulaa": null,
+          "Nebulah": null
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "name": "[[PROSSIMA ISTANZA]]",
+      "size": null,
+      "locked": true,
+      "bosses": []
+    }
+  ]
+}

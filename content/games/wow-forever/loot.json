@@ -1,0 +1,233 @@
+{
+  "_readme": "Tabella crediti loot — WoW Forever. File editabile dagli officers: modificalo da GitHub (anche da mobile) o sincronizzalo da Google Sheets (fogli 'roster' e 'awards'). Una voce in 'seasons' per ogni season, la più recente in cima. Il sito calcola i crediti cumulativi: non scrivere totali a mano. cost: 2 = armi, trinket, oggetti di quest · 1 = tutto il resto · 0 = off-spec.",
+  "example": true,
+  "seasons": [
+    {
+      "season": "[[SEASON]]",
+      "updated": "[[DATA AGGIORNAMENTO]]",
+      "roster": [
+        {
+          "name": "Aurel",
+          "class": "warrior",
+          "spec": "Protection",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Bryn",
+          "class": "priest",
+          "spec": "Holy",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Corin",
+          "class": "mage",
+          "spec": "Frost",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Dessa",
+          "class": "rogue",
+          "spec": "Combat",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Elwin",
+          "class": "shaman",
+          "spec": "Restoration",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Fenn",
+          "class": "hunter",
+          "spec": "Marksmanship",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Gilda",
+          "class": "warlock",
+          "spec": "Destruction",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Hadri",
+          "class": "druid",
+          "spec": "Restoration",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Ivo",
+          "class": "shaman",
+          "spec": "Enhancement",
+          "faction": "Nebulah"
+        }
+      ],
+      "raids": [
+        {
+          "id": "r1",
+          "instance": "Molten Core",
+          "date": "[[GG/MM]]",
+          "bosses": "[[N/10]]",
+          "awards": [
+            {
+              "player": "Bryn",
+              "item": "Anello",
+              "cost": 1
+            },
+            {
+              "player": "Aurel",
+              "item": "Spallina",
+              "cost": 1
+            },
+            {
+              "player": "Corin",
+              "item": "Arma",
+              "cost": 2
+            },
+            {
+              "player": "Fenn",
+              "item": "Mantello (off-spec)",
+              "cost": 0
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "instance": "Molten Core",
+          "date": "[[GG/MM]]",
+          "bosses": "[[N/10]]",
+          "awards": [
+            {
+              "player": "Dessa",
+              "item": "Trinket",
+              "cost": 2
+            },
+            {
+              "player": "Elwin",
+              "item": "Guanti",
+              "cost": 1
+            },
+            {
+              "player": "Gilda",
+              "item": "Stivali",
+              "cost": 1
+            },
+            {
+              "player": "Hadri",
+              "item": "Oggetto di quest",
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "instance": "Molten Core",
+          "date": "[[GG/MM]]",
+          "bosses": "[[N/10]]",
+          "awards": [
+            {
+              "player": "Ivo",
+              "item": "Arma",
+              "cost": 2
+            },
+            {
+              "player": "Bryn",
+              "item": "Mantello",
+              "cost": 1
+            },
+            {
+              "player": "Aurel",
+              "item": "Trinket",
+              "cost": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "season": "[[SEASON PRECEDENTE]]",
+      "updated": "[[DATA CHIUSURA]]",
+      "closed": true,
+      "roster": [
+        {
+          "name": "Aurel",
+          "class": "warrior",
+          "spec": "Protection",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Bryn",
+          "class": "priest",
+          "spec": "Holy",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Corin",
+          "class": "mage",
+          "spec": "Frost",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Dessa",
+          "class": "rogue",
+          "spec": "Combat",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Elwin",
+          "class": "shaman",
+          "spec": "Restoration",
+          "faction": "Nebulah"
+        },
+        {
+          "name": "Fenn",
+          "class": "hunter",
+          "spec": "Marksmanship",
+          "faction": "Nebulah"
+        }
+      ],
+      "raids": [
+        {
+          "id": "p1",
+          "instance": "[[ISTANZA]]",
+          "date": "[[GG/MM]]",
+          "bosses": "[[N]]",
+          "awards": [
+            {
+              "player": "Corin",
+              "item": "Anello",
+              "cost": 1
+            },
+            {
+              "player": "Aurel",
+              "item": "Arma",
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "instance": "[[ISTANZA]]",
+          "date": "[[GG/MM]]",
+          "bosses": "[[N]]",
+          "awards": [
+            {
+              "player": "Bryn",
+              "item": "Trinket",
+              "cost": 2
+            },
+            {
+              "player": "Dessa",
+              "item": "Guanti",
+              "cost": 1
+            },
+            {
+              "player": "Elwin",
+              "item": "Stivali",
+              "cost": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

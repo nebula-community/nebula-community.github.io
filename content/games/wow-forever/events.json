@@ -1,0 +1,59 @@
+{
+  "_readme": "Snapshot del calendario. Generato dalla GitHub Action sync-raid-helper (API Raid-Helper con chiave nei Secrets): NON modificare a mano. Il browser aggiorna le iscrizioni in tempo reale dal singolo evento (endpoint pubblico).",
+  "source": "raid-helper",
+  "serverId": "[[DISCORD SERVER ID]]",
+  "syncedAt": "[[ISO DATETIME]]",
+  "example": true,
+  "events": [
+    {
+      "id": "[[RH-EVENT-ID-1]]",
+      "title": "[Raid] Molten Core",
+      "start": "[[AAAA-MM-GG]]T20:00",
+      "end": "[[AAAA-MM-GG]]T24:00",
+      "channel": "calendario",
+      "faction": "Nebulah",
+      "closesAt": "[[AAAA-MM-GG]]T14:00",
+      "messageUrl": null,
+      "signups": {
+        "present": 14,
+        "tentative": 3,
+        "absent": 2,
+        "bench": 1
+      },
+      "classes": {
+        "warrior": 3,
+        "priest": 3,
+        "mage": 3,
+        "rogue": 2,
+        "hunter": 1,
+        "warlock": 1,
+        "druid": 1,
+        "shaman": 2
+      }
+    },
+    {
+      "id": "[[RH-EVENT-ID-2]]",
+      "title": "[Raid] Molten Core",
+      "start": "[[AAAA-MM-GG]]T20:00",
+      "end": "[[AAAA-MM-GG]]T24:00",
+      "channel": "calendario",
+      "faction": "Nebulah",
+      "closesAt": "[[AAAA-MM-GG]]T14:00",
+      "messageUrl": null,
+      "signups": {
+        "present": 9,
+        "tentative": 4,
+        "absent": 1,
+        "bench": 0
+      },
+      "classes": {
+        "warrior": 2,
+        "shaman": 2,
+        "priest": 2,
+        "mage": 1,
+        "hunter": 1,
+        "warlock": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+// Exposes the site images from content/ as CSS variables, so stylesheets never hardcode a file name.
+import { BASE } from '../lib/base.mjs';
+import { loadContent } from '../lib/content.mjs';
+const { NB_DATA, NB_CONTENT } = await loadContent();
+const url = (p) => `url("${/^(https?:)?\/\//.test(p) ? p : BASE + p}")`;
+const vars = {
+  '--img-logo': NB_DATA.site.images.logo,
+  '--img-logo-light': NB_DATA.site.images.logoLight,
+  '--img-hero': NB_DATA.site.heroPoster,
+  '--img-edict': NB_CONTENT.editto.cover,
+};
+const css = ':root{' + Object.entries(vars).map(([k, v]) => `${k}:${url(v)}`).join(';') + '}';
+---
+<style set:html={css} is:inline></style>

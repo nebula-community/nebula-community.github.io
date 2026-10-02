@@ -5,7 +5,7 @@ export async function getStaticPaths() {
   const d = await loadContent();
   return [
     ...d.NB_DATA.chapters.map((c) => ({ params: { id: c.id }, props: { title: c.title, kind: c.kind, cover: c.cover } })),
-    { params: { id: 'editto' }, props: { title: d.NB_CONTENT.editto.title, kind: 'Editto', cover: 'media/art/009-b-geometria-ospitalita.webp' } },
+    { params: { id: 'editto' }, props: { title: d.NB_CONTENT.editto.title, kind: 'Editto', cover: d.NB_CONTENT.editto.cover } },
   ];
 }
 const { id } = Astro.params;

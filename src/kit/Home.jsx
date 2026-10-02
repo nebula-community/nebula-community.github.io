@@ -48,7 +48,7 @@ function About() {
       </Reveal>
       <Reveal delay={150}>
         <div style={{ display: 'grid', gap: 20 }}>
-          <div style={{ aspectRatio: '4/3', borderRadius: 'var(--radius-xl)', background: 'url(media/art/001-a-la-soglia-fra-due-luci.webp) center/cover', boxShadow: 'var(--shadow-3)' }} />
+          <div style={{ aspectRatio: '4/3', borderRadius: 'var(--radius-xl)', background: `url(${NB_DATA.site.images.homeWelcome}) center/cover`, boxShadow: 'var(--shadow-3)' }} />
           <p className="kit-quote">«Quando scrivi, qualcuno ti risponde. È l’unica promessa che ti facciamo oggi, ed è anche quella a cui teniamo di più.»<br /><span style={{ font: 'var(--type-small)', color: 'var(--text-3)', fontStyle: 'normal' }}>— L’Oste</span></p>
         </div>
       </Reveal>
@@ -73,7 +73,7 @@ function LoreBand({ go }) {
   const { Button } = DS_H;
   return <section className="kit-section" data-screen-label="Lore">
     <div className="kit-container">
-      <Reveal className="kit-band" style={{ backgroundImage: 'url(media/art/005-la-citta-nel-vetro.webp)' }}>
+      <Reveal className="kit-band" style={{ backgroundImage: `url(${NB_DATA.site.images.homeLore})` }}>
         <div className="kit-band__in">
           <div className="nb-eyebrow" style={{ color: '#FDA877' }}>La storia · La Rotta Bassa</div>
           <h2 className="kit-h1" style={{ fontSize: 'var(--fs-display-m)' }}>Una notte di deposito</h2>

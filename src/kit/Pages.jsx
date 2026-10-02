@@ -30,11 +30,11 @@ function WelcomeChannels({ go }) {
   const { Button } = DS_P;
   const C = NB_CONTENT;
   return <>
-    <ChannelSection eyebrow="Chi siamo · La Locanda" title={C.locanda.sub} text={C.locanda.teaser} image="media/art/002-la-nebulosa-a-cena.webp"
+    <ChannelSection eyebrow="Chi siamo · La Locanda" title={C.locanda.sub} text={C.locanda.teaser} image={C.locanda.cover}
       cta={<Button variant="secondary" iconRight="arrow-right" onClick={() => go('about')}>Conosci la Locanda</Button>} />
-    <ChannelSection flip alt eyebrow="L’Editto della Locanda" title="Perché stiamo qui." text={C.editto.teaser} image="media/art/009-b-geometria-ospitalita.webp"
+    <ChannelSection flip alt eyebrow="L’Editto della Locanda" title="Perché stiamo qui." text={C.editto.teaser} image={C.editto.cover}
       cta={<Button variant="secondary" icon="scroll-text" onClick={() => go('read/editto')}>Leggi l’Editto</Button>} />
-    <ChannelSection eyebrow="Il Regolamento" title={C.regolamento.sub} text={C.regolamento.teaser} image="media/art/005-la-citta-nel-vetro.webp"
+    <ChannelSection eyebrow="Il Regolamento" title={C.regolamento.sub} text={C.regolamento.teaser} image={NB_DATA.site.images.regolamento}
       cta={<Button variant="secondary" iconRight="arrow-right" onClick={() => go('about/regolamento')}>Consulta il Regolamento</Button>} />
   </>;
 }

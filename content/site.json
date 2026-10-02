@@ -11,6 +11,15 @@
     "videoMobile": null,
     "poster": "media/art/concept-nebula-inn.webp"
   },
+  "_images": "Immagini fisse del sito. Tutte stanno in public/media/: per cambiarne una sostituisci il file tenendo lo stesso nome, oppure scrivi qui il percorso del nuovo file. La copertina dell'hero è hero.poster; Locanda ed Editto usano il campo cover nei loro .md.",
+  "images": {
+    "logo": "media/brand/nebula-mark-warm-crop.png",
+    "logoLight": "media/brand/nebula-mark-cool-crop.png",
+    "favicon": "media/brand/nebula-mark-warm-crop.png",
+    "homeWelcome": "media/art/001-a-la-soglia-fra-due-luci.webp",
+    "homeLore": "media/art/005-la-citta-nel-vetro.webp",
+    "regolamento": "media/art/005-la-citta-nel-vetro.webp"
+  },
   "social": {
     "youtube": "[[LINK]]",
     "instagram": "[[LINK]]",
@@ -18,6 +27,6 @@
   },
   "seo": {
     "description": "[[DESCRIZIONE SEO]]",
-    "ogImage": "media/og.png"
+    "ogImage": "media/art/concept-nebula-inn.webp"
   }
 }

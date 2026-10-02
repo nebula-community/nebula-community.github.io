@@ -1,7 +1,10 @@
 ---
 import '../styles/global.css';
 import { BASE } from '../lib/base.mjs';
-const { title = 'Nebula Inn', description = 'La locanda dove i nomadi digitali si fermano.', image = 'media/art/concept-nebula-inn.webp' } = Astro.props;
+import { loadContent } from '../lib/content.mjs';
+import ImageVars from '../components/ImageVars.astro';
+const { site } = (await loadContent()).NB_DATA;
+const { title = 'Nebula Inn', description = 'La locanda dove i nomadi digitali si fermano.', image = site.ogImage } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const og = new URL(BASE + image, Astro.site).href;
 ---
@@ -14,7 +17,8 @@ const og = new URL(BASE + image, Astro.site).href;
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
-<link rel="icon" type="image/png" href="media/brand/nebula-mark-warm-crop.png" />
+<link rel="icon" href={site.images.favicon} />
+<ImageVars />
 <link rel="sitemap" href="sitemap-index.xml" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />

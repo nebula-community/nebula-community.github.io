@@ -53,7 +53,7 @@ function Hero({ go }) {
   let k = 0;
   const video = NB_DATA.site.heroVideo;
   return <section className="kit-hero" ref={root} data-screen-label="Hero">
-    {video ? <video className="kit-hero__video" src={video} poster="media/art/concept-nebula-inn.webp" autoPlay muted loop playsInline /> : <>
+    {video ? <video className="kit-hero__video" src={video} poster={NB_DATA.site.heroPoster} autoPlay muted loop playsInline /> : <>
       <div className="kit-hero__layer kit-hero__art" ref={L(0)} />
       <div className="kit-hero__layer kit-hero__rays" ref={L(1)} />
       <div className="kit-hero__layer kit-hero__mesh" ref={L(2)} />

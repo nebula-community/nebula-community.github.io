@@ -133,8 +133,8 @@ textarea.nb-input{min-height:120px;resize:vertical}
 .nb-gradient-text{background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
 /* Logo */
 .nb-logo{display:inline-flex;align-items:center;gap:.45em;color:var(--text-1);text-decoration:none}
-.nb-logo__mark{flex:none;background:url("../assets/logo/nebula-mark-warm-crop.png") center/contain no-repeat}
-[data-theme="light"] .nb-logo__mark,.nb-logo--cool .nb-logo__mark{background-image:url("../assets/logo/nebula-mark-cool-crop.png")}
-.nb-logo--warm .nb-logo__mark{background-image:url("../assets/logo/nebula-mark-warm-crop.png")}
+.nb-logo__mark{flex:none;background:var(--img-logo) center/contain no-repeat}
+[data-theme="light"] .nb-logo__mark,.nb-logo--cool .nb-logo__mark{background-image:var(--img-logo-light)}
+.nb-logo--warm .nb-logo__mark{background-image:var(--img-logo)}
 .nb-logo__word{font-family:var(--font-display);letter-spacing:.08em;line-height:1}
 .nb-logo--stack{flex-direction:column;gap:.35em}

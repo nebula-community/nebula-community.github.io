@@ -24,7 +24,7 @@
 /* Hero */
 .kit-hero{position:relative;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate;background:var(--night-950)}
 .kit-hero__layer{position:absolute;inset:-4%;will-change:transform}
-.kit-hero__art{background:url(../assets/art/concept-nebula-inn.webp) center 40%/cover;animation:kit-dolly 38s var(--ease-in-out) infinite alternate;filter:saturate(1.05) brightness(.8)}
+.kit-hero__art{background:var(--img-hero) center 40%/cover;animation:kit-dolly 38s var(--ease-in-out) infinite alternate;filter:saturate(1.05) brightness(.8)}
 @keyframes kit-dolly{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.16) translate3d(-1.5%,-1%,0)}}
 .kit-hero__mesh{background:radial-gradient(40% 50% at 78% 30%,rgba(154,42,154,.45),transparent 70%),radial-gradient(45% 40% at 15% 75%,rgba(252,126,70,.28),transparent 70%),radial-gradient(60% 50% at 50% 110%,rgba(126,42,168,.5),transparent 70%);mix-blend-mode:screen;animation:kit-mesh 18s var(--ease-in-out) infinite alternate}
 @keyframes kit-mesh{to{transform:translate3d(-3%,2%,0) scale(1.06)}}
@@ -156,7 +156,7 @@
 /* Edict feature on Lore index */
 .kit-edict{display:grid;grid-template-columns:1fr 1.3fr;margin-bottom:48px;border-radius:var(--radius-xl);overflow:hidden;background:var(--surface-1);border:1px solid var(--border-subtle);text-decoration:none;color:var(--text-1);transition:border-color var(--dur-2)}
 .kit-edict:hover{border-color:var(--border-strong)}
-.kit-edict__art{min-height:260px;background:url(../assets/art/009-b-geometria-ospitalita.webp) center/cover}
+.kit-edict__art{min-height:260px;background:var(--img-edict) center/cover}
 .kit-edict__txt{display:grid;gap:14px;align-content:center;padding:clamp(24px,4vw,48px)}
 @media (max-width:760px){.kit-edict{grid-template-columns:1fr}}
 /* WoW loot */

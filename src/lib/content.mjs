@@ -57,15 +57,15 @@ export async function loadContent() {
     const fit = (x) => !x.onlyIf || x.onlyIf === mode;
 
     window.NB_DATA = {
-      site: { name: site.name, place: site.place, tagline: site.tagline, discord: site.discord.invite, discordCode: site.discord.code, heroVideo: site.hero.video, social: site.social },
+      site: { name: site.name, place: site.place, tagline: site.tagline, discord: site.discord.invite, discordCode: site.discord.code, heroVideo: site.hero.video, heroPoster: media(site.hero.poster), ogImage: media(site.seo.ogImage), images: Object.fromEntries(Object.entries(site.images).map(([k, v]) => [k, media(v)])), social: site.social },
       games: games.map((g) => ({ slug: g.slug, placeholder: !!g.placeholder, title: g.title, section: g.section, status: g.status, genre: g.genre, tags: g.tags, image: media(g.card.image), logo: media(g.card.logo), description: g.card.description, heroImage: media((g.hero || g.card).image), lead: g.hero && g.hero.lead })),
       chapters,
       events: [],
       wow: { spec: [...wow.info.server.map((s) => [s.label, s.value]), ['Fazioni', (wow.factions || []).filter((f) => f.active).map((f) => f.name + ' (' + f.faction + ')').join(' · ')]], patto: wow.pact.rules.map((r) => [r.icon, r.title, r.text]), nonFa: wow.pact.notForYou, gallery: gallery.items.map((i) => ({ ...i, src: media(i.src) })) }
     };
     window.NB_CONTENT = {
-      locanda: { title: L.data.title, sub: L.data.subtitle, teaser: L.data.teaser, blocks: blocks(L.body) },
-      editto: { title: E.data.title, sub: E.data.subtitle, teaser: E.data.teaser, blocks: blocks(E.body) },
+      locanda: { title: L.data.title, sub: L.data.subtitle, teaser: L.data.teaser, cover: media(L.data.cover), blocks: blocks(L.body) },
+      editto: { title: E.data.title, sub: E.data.subtitle, teaser: E.data.teaser, cover: media(E.data.cover), blocks: blocks(E.body) },
       regolamento: { title: reg.title, sub: reg.subtitle, teaser: reg.teaser, groups: reg.groups.map((g) => ({ t: g.title, icon: g.icon, items: g.rules.map((r) => [r.rule, r.why]) })), toxic: reg.toxicity, scale: reg.scale.map((s) => [s.step, s.text]), apply: reg.enforcement.map((e) => [e.title, e.text]) }
     };
     window.NB_WOW = {

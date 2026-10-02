@@ -1,6 +1,7 @@
 name: Sync Raid-Helper
 on:
-  schedule: [{ cron: '*/30 * * * *' }]   # every 30 minutes
+  # Paused: uncomment to sync every 30 minutes again (and re-add the "calendar" tab in content/games/wow-forever/game.json).
+  # schedule: [{ cron: '*/30 * * * *' }]
   workflow_dispatch:
 concurrency: { group: sync-raid-helper, cancel-in-progress: true }
 permissions: { contents: write }

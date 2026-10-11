@@ -47,25 +47,23 @@ function Regolamento() {
     <div className="kit-head" style={{ marginBottom: 0 }}><h2 className="kit-h2">{R.sub}</h2>
       <p className="kit-lead">Questo è il testo che si consulta. Il perché sta nell’Editto, e comincia da due verbi: portare e sostenere. Ogni regola ha il suo perché, scritto accanto.</p></div>
     <div className="kit-grid" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(min(100%,340px),1fr))' }}>
-      {R.groups.map((g, i) => <Reveal key={g.t} delay={i * 80}><Card style={{ display: 'grid', gap: 16, height: '100%' }}>
+      {R.groups.map((g, i) => <Reveal key={g.t} delay={i * 80}><Card style={{ display: 'grid', gap: 16, height: '100%', alignContent: 'start' }}>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--accent-text)' }}><Icon name={g.icon} /><span style={{ font: 'var(--type-h4)', color: 'var(--text-1)' }}>{g.t}</span></div>
         <ul className="kit-list">{g.items.map(([t, d]) => <li key={t}><Icon name="minus" /><span><b>{t}</b> — {d}</span></li>)}</ul>
       </Card></Reveal>)}
     </div>
-    <div className="kit-two">
-      <Reveal style={{ display: 'grid', gap: 16 }}>
-        <h3 style={{ font: 'var(--type-h3)' }}>Cosa succede se</h3>
-        <p style={{ color: 'var(--text-2)' }}>Una scala, dichiarata in anticipo perché nessuno debba indovinare.</p>
-        <ol className="kit-scale">{R.scale.map(([t, d], i) => <li key={t}><span className="kit-step__n">{i + 1}</span><div><b>{t}</b><p>{d}</p></div></li>)}</ol>
-        <div className="kit-note"><Icon name="triangle-alert" size={18} /><span>Senza scala, subito, in quattro casi: molestia, discriminazione, minacce, contenuti illegali.</span></div>
-      </Reveal>
-      <Reveal delay={120} style={{ display: 'grid', gap: 20 }}>
-        <Card style={{ display: 'grid', gap: 14 }}><div style={{ font: 'var(--type-h4)' }}>Cosa intendiamo per tossicità</div>
-          <p style={{ color: 'var(--text-2)', font: 'var(--type-small)' }}>Su questi interveniamo anche senza che sia stato infranto un articolo.</p>
-          <ul className="kit-list">{R.toxic.map(t => <li key={t}><Icon name="minus" /><span>{t}</span></li>)}</ul></Card>
-        <Card style={{ display: 'grid', gap: 14 }}><div style={{ font: 'var(--type-h4)' }}>Come la applichiamo</div>
-          <ul className="kit-list">{R.apply.map(([t, d]) => <li key={t}><Icon name="check" /><span><b>{t}</b> — {d}</span></li>)}</ul></Card>
-      </Reveal>
+    <Reveal className="kit-ladder-wrap">
+      <div className="kit-head" style={{ marginBottom: 0 }}><h3 className="kit-h3">Cosa succede se</h3>
+        <p className="kit-lead">Una scala, dichiarata in anticipo perché nessuno debba indovinare.</p></div>
+      <ol className="kit-ladder">{R.scale.map(([t, d], i) => <li key={t}><span className="kit-step__n">{i + 1}</span><b>{t}</b><p>{d}</p></li>)}</ol>
+      <div className="kit-note"><Icon name="triangle-alert" size={18} /><span>Senza scala, subito, in quattro casi: molestia, discriminazione, minacce, contenuti illegali.</span></div>
+    </Reveal>
+    <div className="kit-pair">
+      <Reveal><Card className="kit-pair__card"><h3 className="kit-pair__h">Cosa intendiamo per tossicità</h3>
+        <p className="kit-pair__lead">Su questi interveniamo anche senza che sia stato infranto un articolo.</p>
+        <ul className="kit-list">{R.toxic.map(t => <li key={t}><Icon name="minus" /><span>{t}</span></li>)}</ul></Card></Reveal>
+      <Reveal delay={120}><Card className="kit-pair__card"><h3 className="kit-pair__h">Come la applichiamo</h3>
+        <ul className="kit-list">{R.apply.map(([t, d]) => <li key={t}><Icon name="check" /><span><b>{t}</b> — {d}</span></li>)}</ul></Card></Reveal>
     </div>
     <p className="kit-sign" style={{ textAlign: 'left' }}>— Il Presidente</p>
   </div>;

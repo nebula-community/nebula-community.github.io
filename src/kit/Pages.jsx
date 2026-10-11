@@ -80,7 +80,7 @@ function Tok({ text }) {
 function Founders({ head = true }) {
   const F = NB_CONTENT.founders;
   if (!F) return null;
-  return <section className="kit-founders" aria-labelledby={head ? 'fondatori' : undefined}>
+  return <section className={'kit-founders' + (head ? '' : ' kit-founders--page')} aria-labelledby={head ? 'fondatori' : undefined}>
     {head && <Reveal className="kit-head" style={{ marginBottom: 0 }}>
       <div className="nb-eyebrow">Chi siamo · Fondatori e co-fondatori</div>
       <h2 className="kit-h2" id="fondatori">{F.title}</h2>
@@ -102,6 +102,10 @@ function Founders({ head = true }) {
         </Reveal>)}
       </div>
     </div>)}
+    {F.thanks && <Reveal className="kit-thanks">
+      <h3>{F.thanks.title}</h3>
+      {F.thanks.text.map((t) => <p key={t}>{t}</p>)}
+    </Reveal>}
     {F.photo && F.photo.src && <Reveal as="figure" className="kit-groupphoto">
       <img src={F.photo.src} alt={F.photo.alt || ''} loading="lazy" />
       {F.photo.caption && <figcaption>{F.photo.caption}</figcaption>}

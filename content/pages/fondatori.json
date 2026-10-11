@@ -1,5 +1,5 @@
 {
-  "_readme": "Fondatori e co-fondatori mostrati in «Chi siamo», sotto il testo della Locanda, chiusi dalla foto di gruppo. Immagini: vista frontale delle schede rev4 della lore e foto di gruppo, convertite con npm run art (TEAM-…). line e text descrivono il personaggio della storia (un omaggio, non un verbale); contribution è quello che la persona ha fatto davvero per Nebula: finché è [[…]] il sito lo mostra come dato mancante. Ognuno può chiedere di cambiare la propria scheda o di toglierla.",
+  "_readme": "Fondatori e co-fondatori mostrati in «Chi siamo», sotto il testo della Locanda, chiusi dalla foto di gruppo. Immagini: vista frontale delle schede rev4 della lore e foto di gruppo, convertite con npm run art (TEAM-…). line e text descrivono il personaggio della storia (un omaggio, non un verbale); contribution è quello che la persona ha fatto davvero per Nebula: finché è [[…]] il sito lo mostra come dato mancante. Ognuno può chiedere di cambiare la propria scheda o di toglierla. thanks: due righe di ringraziamento, prima della foto di gruppo (bozza da rivedere).",
   "title": "Chi ha acceso la locanda",
   "lead": "Ognuno di noi presta il nome, e un po’ di sé, a un personaggio della storia della Locanda. Quello che i personaggi fanno nel racconto è inventato; quello che abbiamo fatto per Nebula è scritto sotto.",
   "groups": [
@@ -97,6 +97,15 @@
       ]
     }
   ],
+  "thanks": {
+    "title": "Grazie",
+    "text": [
+      "Vent’anni sono tanti. Sono serate che non ricordi più una per una e altre che ricordi tutte, nick che si sono fatti volti, e volti che a un certo punto sono diventati famiglia. Chi ha vissuto una community per tutto quel tempo sa che non finisce mai davvero: resta addosso, come l’odore di una casa in cui sei cresciuto.",
+      "Questo posto è nato da lì. Non dalla rabbia e non da una porta sbattuta, ma da una malinconia lenta, di quelle che non chiedono colpevoli. Alcune strade a un certo punto si dividono, e va bene così: era una buona casa, e lo resta per chi ci è rimasto. Noi ne avevamo semplicemente bisogno di un’altra, più piccola, dove ci si salutasse ancora per nome.",
+      "Grazie a chi ha creduto in un’idea ancora senza forma e le ha prestato il nome, il tempo e la pazienza; a chi ha scritto, disegnato, provato e corretto; a chi è rimasto sveglio a rimettere a posto le cose quando era più comodo lasciar perdere. Nessuno di loro doveva farlo, e l’hanno fatto lo stesso.",
+      "E grazie a chi si siede ai nostri tavoli. Una locanda non è fatta dalle mura ma da chi ci passa, e la nostra continua a prendere forma grazie a voi. Se anche una sola sera, qui, vi ha ricordato com’era una volta, allora ne è valsa la pena."
+    ]
+  },
   "photo": {
     "src": "media/team/foto-di-gruppo.webp",
     "alt": "Illustrazione: i fondatori e i co-fondatori di Nebula in posa davanti alla navetta Nebula, in un hangar; Finland accarezza la testa di Nuuk, un grande orso robot bianco.",

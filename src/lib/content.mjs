@@ -70,7 +70,7 @@ export async function loadContent() {
     window.NB_CONTENT = {
       locanda: { title: L.data.title, sub: L.data.subtitle, teaser: L.data.teaser, cover: media(L.data.cover), blocks: blocks(L.body) },
       editto: { title: E.data.title, sub: E.data.subtitle, teaser: E.data.teaser, cover: media(E.data.cover), blocks: blocks(E.body) },
-      founders: { title: team.title, lead: team.lead, groups: team.groups.map((g) => ({ title: g.title, text: g.text, people: g.people.map((p) => ({ ...p, image: mediaIf(p.image) })) })), photo: team.photo && { ...team.photo, src: mediaIf(team.photo.src) } },
+      founders: { title: team.title, lead: team.lead, thanks: team.thanks || null, groups: team.groups.map((g) => ({ title: g.title, text: g.text, people: g.people.map((p) => ({ ...p, image: mediaIf(p.image) })) })), photo: team.photo && { ...team.photo, src: mediaIf(team.photo.src) } },
       regolamento: { title: reg.title, sub: reg.subtitle, teaser: reg.teaser, groups: reg.groups.map((g) => ({ t: g.title, icon: g.icon, items: g.rules.map((r) => [r.rule, r.why]) })), toxic: reg.toxicity, scale: reg.scale.map((s) => [s.step, s.text]), apply: reg.enforcement.map((e) => [e.title, e.text]) }
     };
     window.NB_WOW = {

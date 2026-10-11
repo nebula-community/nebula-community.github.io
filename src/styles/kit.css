@@ -357,3 +357,8 @@ html:has(.kit-tabsbar){scroll-padding-top:calc(var(--header-h) + 76px)}
 }
 /* Light theme, areas that stay dark (illustration under a dark veil): badges, small text and focus use their on-dark tones */
 [data-theme="light"] :is(.kit-ghero__in,.kit-band__in,.kit-prog__cover,.kit-hero__content,.nb-chapter__cover){--surface-3:var(--night-800);--surface-raised:var(--night-700);--border-subtle:rgba(243,238,247,.08);--border-default:rgba(243,238,247,.14);--text-1:var(--ink-on-dark-1);--ok:var(--ok-dark);--warn:var(--warn-dark);--err:var(--err-dark);--accent-text:var(--deepblue-100);--focus-ring:var(--deepblue-100);--text-2:var(--ink-on-dark-2);--text-3:var(--ink-on-dark-3)}
+/* Founders tab: the list opens right under the tabs, no divider and no extra gap */
+.kit-founders--page{margin-top:0;padding-top:0;border-top:0}
+.kit-thanks{display:grid;gap:12px;max-width:62ch;padding:28px 0 4px;border-top:1px solid var(--border-subtle)}
+.kit-thanks h3{margin:0;font:var(--type-h3)}
+.kit-thanks p{margin:0;font:var(--type-body-lg);color:var(--text-2)}

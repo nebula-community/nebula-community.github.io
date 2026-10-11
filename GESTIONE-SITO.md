@@ -98,7 +98,7 @@ Nome, slogan, invito Discord (`discord.invite`, `discord.code`), modulo di conta
 | `editto.md` | Chi siamo → L'Editto (`/chi-siamo/editto/`) | Markdown |
 | `regolamento.json` | Chi siamo → Regolamento | JSON strutturato |
 
-**Fondatori (`fondatori.json`):** per ognuno `name`, `role`, `line` e `text` (il suo personaggio nella storia), `contribution` (quello che ha fatto davvero per Nebula), `image` e `alt`. Finché `contribution` è `[[CONTRIBUTO]]`, il sito lo mostra come dato mancante. I ritratti si generano con i prompt `TEAM-…` di `docs/artwork/rev4/prompts/team/`, partendo dalla scheda rev4 di ciascuno. Finché un ritratto non c’è, il sito mostra la vista frontale della sua scheda. La foto di gruppo è quella di `scene/discord`. Li prepara tutti `npm run art`. Ognuno può chiedere di cambiare la propria scheda, il proprio ritratto o di toglierli.
+**Fondatori (`fondatori.json`):** per ognuno `name`, `role`, `line` e `text` (il suo personaggio nella storia), `contribution` (quello che ha fatto davvero per Nebula), `image` e `alt`. Se `contribution` manca, la riga «Per Nebula» non compare (oggi solo i quattro fondatori e Donut ce l’hanno). I ritratti si generano con i prompt `TEAM-…` di `docs/artwork/rev4/prompts/team/`, partendo dalla scheda rev4 di ciascuno. Finché un ritratto non c’è, il sito mostra la vista frontale della sua scheda. La foto di gruppo è quella di `scene/discord`. Li prepara tutti `npm run art`. Ognuno può chiedere di cambiare la propria scheda, il proprio ritratto o di toglierli.
 
 Sintassi Markdown ammessa:
 ```md

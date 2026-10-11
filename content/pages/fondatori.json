@@ -1,5 +1,5 @@
 {
-  "_readme": "Fondatori e co-fondatori mostrati in «Chi siamo», sotto il testo della Locanda, chiusi dalla foto di gruppo. Immagini: vista frontale delle schede rev4 della lore e foto di gruppo, convertite con npm run art (TEAM-…). line e text descrivono il personaggio della storia (un omaggio, non un verbale); contribution è quello che la persona ha fatto davvero per Nebula: finché è [[…]] il sito lo mostra come dato mancante. Ognuno può chiedere di cambiare la propria scheda o di toglierla. thanks: due righe di ringraziamento, prima della foto di gruppo (bozza da rivedere).",
+  "_readme": "Fondatori e co-fondatori mostrati in «Chi siamo», sotto il testo della Locanda, chiusi dalla foto di gruppo. Immagini: vista frontale delle schede rev4 della lore e foto di gruppo, convertite con npm run art (TEAM-…). line e text descrivono il personaggio della storia (un omaggio, non un verbale); contribution è quello che la persona ha fatto davvero per Nebula: se manca il campo, la riga «Per Nebula» non compare. Ognuno può chiedere di cambiare la propria scheda o di toglierla. thanks: due righe di ringraziamento, prima della foto di gruppo (bozza da rivedere).",
   "title": "Chi ha acceso la locanda",
   "lead": "Ognuno di noi presta il nome, e un po’ di sé, a un personaggio della storia della Locanda. Quello che i personaggi fanno nel racconto è inventato; quello che abbiamo fatto per Nebula è scritto sotto.",
   "groups": [
@@ -12,7 +12,7 @@
           "role": "Fondatore",
           "line": "L’idea, e il registro.",
           "text": "Nella Locanda tiene il registro: chi arriva, chi riparte, chi prende il banco. Prima di lasciare il suo turno chiede sempre chi viene dopo di lui.",
-          "contribution": "[[CONTRIBUTO]]",
+          "contribution": "Ideatore: ha avviato il progetto e proposto l’idea e la filosofia su cui si regge la Locanda.",
           "image": "media/team/finland.webp",
           "alt": "Finland: uomo minuto con occhiali al cordino, cappotto antracite e camicia chiara"
         },
@@ -21,7 +21,7 @@
           "role": "Fondatore",
           "line": "Che si arrivi.",
           "text": "Nella Locanda è quello che fa arrivare le cose: carichi, materiali, persone, anche quando la salita è lunga.",
-          "contribution": "[[CONTRIBUTO]]",
+          "contribution": "Ha plasmato l’idea di Finland raffinandola, fino a darle la forma che ha oggi.",
           "image": "media/team/egarim.webp",
           "alt": "Egarim: uomo di bassa statura in tuta da lavoro blu ardesia, con guanti di cuoio grigi"
         },
@@ -30,7 +30,7 @@
           "role": "Fondatore",
           "line": "Che si resti insieme.",
           "text": "Nella Locanda è il cuoco: conta le porzioni prima che arrivino gli ospiti e, quando la pentola è vuota, si siede a mangiare con gli altri.",
-          "contribution": "[[CONTRIBUTO]]",
+          "contribution": "Ha portato lo sguardo del giocatore nomade: come si vive un posto quando lo si attraversa da giocatore.",
           "image": "media/team/sanchio.webp",
           "alt": "Sanchio: uomo robusto con camicia ocra, grembiule chiaro e un cucchiaio di legno in tasca"
         },
@@ -39,7 +39,7 @@
           "role": "Fondatore",
           "line": "Che la casa stia in piedi.",
           "text": "Nella Locanda controlla supporti e pressione, e ripete i controlli anche dopo il via. Quando finisce un lavoro, insegna a usare quello che ha sistemato.",
-          "contribution": "[[CONTRIBUTO]]",
+          "contribution": "Sostiene i grandi progetti: quando vede qualcosa di unico si accende e lo appoggia, senza farsi domande.",
           "image": "media/team/scudi.webp",
           "alt": "Scudi: uomo alto con tuta grafite e blu e grembiule da lavoro di tela"
         }
@@ -54,7 +54,6 @@
           "role": "Co-fondatrice",
           "line": "Contratti e conti.",
           "text": "Nella Locanda tiene le carte e i conti, e li mette sul tavolo dove tutti possono leggerli prima di chiedere una firma.",
-          "contribution": "[[CONTRIBUTO]]",
           "image": "media/team/ada-vey.webp",
           "alt": "Ada Vey: donna minuta con gilet prugna, grembiule corto e un fermaglio con due fogli"
         },
@@ -63,7 +62,6 @@
           "role": "Co-fondatore",
           "line": "Le persone.",
           "text": "Nella Locanda tiene le liste e gli inviti: scende in città a chiamare gente, e vuole continuare a invitare anche chi non conosce ancora.",
-          "contribution": "[[CONTRIBUTO]]",
           "image": "media/team/oris.webp",
           "alt": "Oris: giovane uomo con giacca verde petrolio e maglia color ruggine"
         },
@@ -72,7 +70,6 @@
           "role": "Co-fondatore",
           "line": "Il luogo.",
           "text": "Nella Locanda legge percorsi, passaggi e luce. Le stanze le prova con le persone sedute, non vuote.",
-          "contribution": "[[CONTRIBUTO]]",
           "image": "media/team/calco.webp",
           "alt": "Calco: figura molto alta e sottile, giacca grigio-prugna e una fascia scura sulla fronte"
         },
@@ -81,7 +78,6 @@
           "role": "Co-fondatore",
           "line": "La casa.",
           "text": "Nella Locanda accoglie chi entra, serve e sceglie da sé le proprie pause. È la voce che firma i benvenuti.",
-          "contribution": "[[CONTRIBUTO]]",
           "image": "media/team/oste.webp",
           "alt": "L’Oste: androide con veste avorio, cintura scura e volto di metallo senza bocca, con due ottiche ambra"
         },
@@ -90,7 +86,7 @@
           "role": "Co-fondatore",
           "line": "Fuori, e chi c’è adesso.",
           "text": "Recuperatore con una navetta sua: viene e va. Nella Locanda il suo posto è l’angolo quieto, con la custodia dei ferri appoggiata dove non intralcia nessuno.",
-          "contribution": "[[CONTRIBUTO]]",
+          "contribution": "Designer del concept della lore e dello stile degli artwork: ha dato alla Locanda il suo aspetto e il suo mondo.",
           "image": "media/team/donut.webp",
           "alt": "D. Donut: uomo con capelli lunghi legati, poncho grezzo bucato e la gamba destra meccanica"
         }

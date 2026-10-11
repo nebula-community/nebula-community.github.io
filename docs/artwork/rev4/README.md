@@ -126,6 +126,6 @@ Dove le schede rev4 e i testi della lore non coincidono, i prompt seguono le sch
 
 ## Da decidere
 
-1. **Contributi dei fondatori.** In `content/pages/fondatori.json` ogni scheda ha `contribution: "[[CONTRIBUTO]]"`, che il sito mostra come dato mancante. Va scritto cosa ha fatto davvero ognuno per Nebula.
+1. **Contributi.** In `content/pages/fondatori.json` hanno la riga «Per Nebula» i quattro fondatori e D. Donut; per Ada Vey, Oris, Calco e L’Oste il campo `contribution` non c’è, e la riga non compare. Si aggiunge quando c’è qualcosa da dire.
 2. **Approvazione delle persone ritratte.** Prima di pubblicare, ognuno dei nove vede il proprio ritratto e le scene in cui compare. Se qualcuno preferisce non comparire, la scena si rifà mostrando solo mani, oggetti o una figura di spalle.
 3. **Immagini vecchie.** Quando i `SITO-…` sono tutti nel sito, i vecchi file di `public/media/art/` non servono più e si possono archiviare. La galleria WoW contiene copie di quelle immagini: lì vanno screenshot veri della gilda, non illustrazioni.

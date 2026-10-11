@@ -197,6 +197,11 @@
           "priority": "high"
         },
         {
+          "name": "Guardian",
+          "role": "tank",
+          "priority": "open"
+        },
+        {
           "name": "Restoration",
           "role": "healer",
           "priority": "open"

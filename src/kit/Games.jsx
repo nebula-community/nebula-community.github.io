@@ -55,7 +55,7 @@ function GamePage() {
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}><Button size="lg" icon="scroll-text" onClick={apply}>{H.ctaApply}</Button><Button size="lg" variant="secondary" icon="message-circle" href={NB_DATA.site.discord} target="_blank" rel="noopener">{H.ctaDiscord}</Button></div>
       </div>
     </section>
-    <div className="kit-tabsbar"><div className="kit-container"><Tabs variant="underline" id="wow" panelId="wow-panel" tabs={TABS.map(t => ({ value: t.id, label: t.label }))} value={tab} onChange={setTab} label="Sezioni del gioco" /></div></div>
+    <div className="kit-tabsbar"><div className="kit-container"><Tabs collapse variant="underline" id="wow" panelId="wow-panel" tabs={TABS.map(t => ({ value: t.id, label: t.label }))} value={tab} onChange={setTab} label="Sezioni del gioco" /></div></div>
     <section className="kit-container" style={{ padding: '48px var(--gutter) var(--section-y)' }}>
       <div key={tab} className="kit-page kit-tabpanel" id="wow-panel" role="tabpanel" aria-labelledby={'wow-tab-' + tab} tabIndex={0}>
         {tab === 'info' && <WowInfo />}

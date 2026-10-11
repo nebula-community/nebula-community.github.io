@@ -134,7 +134,7 @@ function AboutPage({ sub }) {
       <h1 className="kit-h1">{title}</h1>
       <p className="kit-lead" style={{ maxWidth: '58ch' }}>{lead}</p>
     </div></section>
-    <div className="kit-tabsbar"><div className="kit-container"><TabNav label="Chi siamo" current={tab}
+    <div className="kit-tabsbar"><div className="kit-container"><TabNav collapse label="Chi siamo" current={tab}
       items={ABOUT_TABS.map(({ value, label, route }) => ({ value, label, href: NB_HREF(route) }))} /></div></div>
     <section className="kit-container" style={{ padding: '56px var(--gutter) var(--section-y)' }}>
       <div key={tab} className="kit-page">

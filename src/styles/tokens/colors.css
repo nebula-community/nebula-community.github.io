@@ -67,7 +67,7 @@ color-scheme:dark;
 --border-strong:rgba(11,27,43,.24);
 --text-1:var(--mist-900);
 --text-2:var(--mist-700);
---text-3:var(--mist-500);
+--text-3:#526476;               /* a step darker than mist-500: 4.5:1 also on surface-2 and surface-3 */
 --text-on-accent:#FFFFFF;
 --accent:var(--deepblue-500);       /* 7.1:1 on white */
 --accent-hover:var(--deepblue-700);

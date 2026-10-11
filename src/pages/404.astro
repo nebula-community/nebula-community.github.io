@@ -4,6 +4,9 @@ import { BASE } from '../lib/base.mjs';
 import { loadContent } from '../lib/content.mjs';
 import ImageVars from '../components/ImageVars.astro';
 const { site } = (await loadContent()).NB_DATA;
+// Optional illustration (site.json → images.notFound), darkened so the centred text stays readable in both themes.
+const bg = site.images.notFound;
+const art = bg ? `--text-1:#F3EEF7;--text-2:#C3B8D1;--accent-text:#FDA877;color:#F3EEF7;background:linear-gradient(180deg,rgba(11,6,18,.62),rgba(11,6,18,.86)),url("${BASE}${bg}") center/cover;` : '';
 ---
 <!doctype html>
 <html lang="it">
@@ -19,11 +22,11 @@ const { site } = (await loadContent()).NB_DATA;
 <link rel="icon" href={site.images.favicon} />
 <ImageVars />
 <script is:inline>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
-// Old hash links (#game/…, #read/…) → real pages
-(function(){var h=location.hash.slice(1);if(!h)return;var m={'about':'chi-siamo/','lore':'lore/','games':'giochi/','join':'unisciti/'};var p=h.split('/');var to=p[0]==='read'?'lore/'+p[1]+'/':p[0]==='game'?'giochi/'+p[1]+'/':p[0]==='about'&&p[1]?'chi-siamo/'+p[1]+'/':m[p[0]];if(to)location.replace(document.baseURI+to);})();</script>
+// Old links → real pages: the Editto moved from Lore to Chi siamo; hash links (#game/…, #read/…)
+(function(){if(location.pathname.indexOf('/lore/editto')>-1){location.replace(document.baseURI+'chi-siamo/editto/');return;}var h=location.hash.slice(1);if(!h)return;if(h==='read/editto'){location.replace(document.baseURI+'chi-siamo/editto/');return;}var m={'about':'chi-siamo/','lore':'lore/','games':'giochi/','join':'unisciti/'};var p=h.split('/');var to=p[0]==='read'?'lore/'+p[1]+'/':p[0]==='game'?'giochi/'+p[1]+'/':p[0]==='about'&&p[1]?'chi-siamo/'+p[1]+'/':m[p[0]];if(to)location.replace(document.baseURI+to);})();</script>
 </head>
 <body>
-<main style="min-height:100svh;display:grid;place-items:center;text-align:center;padding:24px">
+<main style={`min-height:100svh;display:grid;place-items:center;text-align:center;padding:24px;${art}`}>
   <div style="display:grid;gap:20px;justify-items:center;max-width:520px">
     <img src={site.images.logo} alt="" width="96" height="101" />
     <div class="nb-eyebrow">Errore 404</div>

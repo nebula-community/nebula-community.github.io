@@ -1,0 +1,42 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A medium shot at bag height, inside the closing workshop, with the doorway to the waiting room behind. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 01, late morning, on the asteroid Dorso: a modest pressurised workshop department being closed down, not a derelict hangar. Air and power are still on: powder-blue riveted wall panels in grey steel frames, pale rectangles where lockers were removed, half-dismantled shelving, a blue bucket of loose screws, a high sealed window onto dark rock and a few site lamps.
+Through the doorway behind, in the plain waiting room, exactly six workers, one personal bag each with a blank tag: a stocky grey-moustached older man in a slate jacket and ochre shirt with an olive duffel; an olive-green reptilian woman in a sage shirt and slate trousers with a plum shoulder bag; a compact young man in a rust overshirt with a small brown satchel; a broad woman in an ochre jacket and sage trousers with a charcoal tote; a small grey-bunned older woman in a plum cardigan with a tan handbag; a bearded man in a long charcoal coat with a soft brown holdall, each sitting on a mismatched chair with the bag at their feet.
+In the foreground: Egarim: an adult man of about fifty with dwarfism — short arms and legs with a full-size adult head, torso and hands, a compact wiry build, never childlike; the top of his head reaches about Finland's shoulder. Weathered olive face, sharp cheekbones, lined forehead, prominent ears, pale grey-blue eyes, a dry half-smile, clean-shaven; very short cropped brown hair with receding temples. Tailored slate-blue work suit — a brass-zipped jacket belted at the waist over matching trousers — with charcoal panels on the shoulder yokes, sides, elbows and knees, a sand-coloured collar lining and a pocket on the left upper sleeve; worn taupe-grey leather work gloves; black chunky lace-up work boots. Dignified and capable; no bruise, no bandage, no fantasy-dwarf traits. He holds one worker's bag in mid-lift.
+Beside him: Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots. Calm, not scolding, she unhooks the blank tag from the bag's handle, holding a black clip with two blank sheets and a pencil in her other hand.
+Just behind them: L'Oste: a humanoid android of ordinary adult height, upright and calm, hands relaxed. A smooth egg-shaped dark-graphite faceplate with only two round amber optics glowing softly — NO mouth, NO nose, NO eyebrows, no facial lines or creases; round brass ear housings (not headphones); a slim segmented dark-metal neck with brass struts; a soft slouchy ivory cloth cap. Ankle-length warm-ivory kimono-style robe, left panel over right, wide hanging sleeves, clean worn hems; wide near-black brown obi with a flat knot at the back. Dark gunmetal articulated hands with brass knuckle joints and wide brass wrist cuffs, the RIGHT cuff dull and tarnished, the left brighter; ivory cloth slip-on shoes. Intention shows only through head tilt, hands and pauses. He never eats or drinks. No armour, weapons, monk or samurai styling. He bends to set another bag beside its owner's chair, the handle turned toward him.
+Light: cool service light with small warm task points near the people. Head-count: Egarim, Ada, L'Oste and the six workers.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: D. Donut, a counter on a trolley, the company foreman, any fight or damage, the rented passenger shuttle, readable writing on tags or sheets, numbers, anything of the house on the shoulder.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Egarim: face, build, slate-blue work suit, gloves.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-egarim-before-incident-seven-views.png
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+L'Oste: faceplate, optics, cap, ivory robe, obi, articulated hands.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oste-android-seven-views.png
+The workshop department being closed. Its window shows dark rock, not mountains under stars.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-repartooffcinachiusura-pressurised-workshop-seven-views.png
+The workshop waiting room with its mismatched chairs.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-salaattesaofficina-pressurised-workshop-waiting-room-seven-views-v4.png
+The six workers and their bags (rev2).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-seilavoratori-seven_view-rev2.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-01_Capitolo 01 - Il lavoro prima della partenza.png

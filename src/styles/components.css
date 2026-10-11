@@ -75,6 +75,7 @@ textarea.nb-input{min-height:120px;resize:vertical}
 .nb-chapter{display:grid;gap:14px;text-decoration:none;color:var(--text-1)}
 .nb-chapter__cover{position:relative;aspect-ratio:3/4;border-radius:var(--radius-md);background:var(--surface-3) center/cover;overflow:hidden;box-shadow:var(--shadow-2);transition:transform var(--dur-4) var(--ease-out),box-shadow var(--dur-3)}
 .nb-chapter__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(11,6,18,.85))}
+.nb-chapter__cover--empty{background:radial-gradient(90% 55% at 85% 0%,rgba(154,42,154,.5),transparent 70%),radial-gradient(80% 50% at 0% 100%,rgba(252,126,70,.32),transparent 70%),var(--night-850)}
 .nb-chapter:hover .nb-chapter__cover{transform:translateY(-4px);box-shadow:var(--shadow-3)}
 .nb-chapter__num{position:absolute;left:16px;bottom:14px;z-index:1;font:400 40px/1 var(--font-display);letter-spacing:.06em;color:#F3EEF7}
 .nb-chapter__title{font:600 18px/1.25 var(--font-body)}
@@ -120,8 +121,10 @@ textarea.nb-input{min-height:120px;resize:vertical}
 .nb-toast__text{font:400 14px/1.4 var(--font-body);color:var(--text-2)}
 /* Tooltip */
 .nb-tooltip{position:relative;display:inline-flex}
-.nb-tooltip__bubble{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translate(-50%,4px);padding:7px 10px;border-radius:var(--radius-xs);background:var(--text-1);color:var(--bg);font:500 13px/1.2 var(--font-body);white-space:nowrap;pointer-events:none;opacity:0;transition:opacity var(--dur-2),transform var(--dur-2) var(--ease-out);z-index:50}
-.nb-tooltip:hover .nb-tooltip__bubble,.nb-tooltip:focus-within .nb-tooltip__bubble,.nb-tooltip--open .nb-tooltip__bubble{opacity:1;transform:translate(-50%,0)}
+.nb-tooltip__trigger{display:inline;padding:0;margin:0;border:0;background:none;font:inherit;color:inherit;cursor:help;border-radius:2px}
+.nb-tooltip__trigger:focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
+.nb-tooltip__bubble{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translate(calc(-50% + var(--nb-tip-shift,0px)),4px);width:max-content;max-width:min(280px,calc(100vw - 16px));padding:7px 10px;border-radius:var(--radius-xs);background:var(--text-1);color:var(--bg);font:500 13px/1.3 var(--font-body);text-align:center;pointer-events:none;opacity:0;transition:opacity var(--dur-2),transform var(--dur-2) var(--ease-out);z-index:50}
+.nb-tooltip:hover .nb-tooltip__bubble,.nb-tooltip:focus-within .nb-tooltip__bubble,.nb-tooltip--open .nb-tooltip__bubble{opacity:1;transform:translate(calc(-50% + var(--nb-tip-shift,0px)),0)}
 /* Skeleton / progress */
 .nb-skeleton{display:block;border-radius:var(--radius-sm);background:linear-gradient(90deg,var(--surface-2) 0%,var(--surface-3) 50%,var(--surface-2) 100%);background-size:200% 100%;animation:nb-shimmer 1.8s linear infinite}
 .nb-progress{height:3px;width:100%;background:var(--border-subtle);overflow:hidden;border-radius:2px}
@@ -138,3 +141,8 @@ textarea.nb-input{min-height:120px;resize:vertical}
 .nb-logo--warm .nb-logo__mark{background-image:var(--img-logo)}
 .nb-logo__word{font-family:var(--font-display);letter-spacing:.08em;line-height:1}
 .nb-logo--stack{flex-direction:column;gap:.35em}
+/* Tabs as page links (TabNav): same look as the tabs, the current page marked by aria-current */
+a.nb-tab{display:inline-flex;align-items:center;text-decoration:none}
+.nb-tab[aria-current="page"]{background:var(--surface-raised);color:var(--text-1);box-shadow:var(--shadow-1)}
+.nb-tabs--underline .nb-tab[aria-current="page"]{background:transparent;box-shadow:inset 0 -2px 0 var(--accent)}
+.nb-tab:focus-visible{outline-offset:-2px}

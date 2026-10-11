@@ -1,0 +1,30 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: the first is the approved rev4 concept sheet of this character, so match the design exactly. Compose one single finished portrait illustration.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 2:3, for a card on the website's "Chi siamo" page, shown about 210 to 300 pixels wide in a grid of nine portraits. Three-quarter-length figure (from the knees up) of ONE person, camera at his own eye level, head in the upper third, body slightly turned, a natural pose that belongs to the place. It is part of a series of nine: the same lens, distance, light and background treatment for everyone. Keep 6% margins around the figure. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+PORTRAIT:
+Sanchio: a big, broad-shouldered man of about fifty, the broadest and heaviest of the group — wide chest, soft belly, thick neck, strong forearms and large practical hands — warm and grounded, never menacing. Wide face, copper-brown skin, brown eyes, a kind tired smile, short trimmed salt-and-pepper beard and moustache, short curly black hair greying at the sides. Muted ochre-mustard collared shirt with sleeves rolled above the elbows, faint pale healed steam marks on the forearms (old, never fresh burns or tattoos); greyed off-white bib apron to the knees with faded stains, a short wooden spoon in its right-side pocket, a red-striped white kitchen cloth tucked at his left hip; wide dark-brown trousers, black closed non-slip shoes. No chef's hat.
+Setting: after service, sitting on a stool at the kitchen pass with his own bowl in his hands, the wooden spoon in the apron pocket, the empty pot behind him with its lid off. Warm, tired, kind: when the pot is empty, he sits down to eat too.
+Background: the restored Nebula Inn of today, softly out of focus — dark timber, cream plaster, warm amber box lanterns and a hint of thin coral-violet neon frames with blank faces — lit by the same warm practical light from the upper left as the rest of the series.
+Avoid: a chef's hat, knives held up, burns, a cut lip. No lettering anywhere: papers, sheets and screens stay blank.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Sanchio: face, beard, build, ochre shirt, bib apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-sanchio-house-cook-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\team\
+Use the filename: TEAM-sanchio_Ritratto - Sanchio.png

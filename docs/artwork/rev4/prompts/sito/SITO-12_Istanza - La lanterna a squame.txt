@@ -1,0 +1,27 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE landscape illustration in 2:1, for a wide card whose instance name sits in the LOWER-LEFT over a dark gradient: keep the lower-left corner calm. It belongs to a series of three with the same wall, the same framing and the same light: the lantern hangs right of centre. If the generator only offers 3:2, compose for 2:1 anyway and keep every essential element inside the central 2:1 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: on the dark timber wall of the restored inn's gallery, the guild hangs one electric lantern for each place it has come back from. A close view: maintained dark timber wall, a plain bracket, the lantern right of centre, a strip of the gallery railing along the bottom edge, warm ambient light rising from the hall below.
+The lantern: a black lacquer lantern with an overlapping-triangle scale lattice (the traditional uroko pattern), smoky violet glass and one faint gold glint.
+Avoid: dragons, lava, caverns, monsters, chains or padlocks, faction colours, game symbols, lettering.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-12_Istanza - La lanterna a squame.png

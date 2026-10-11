@@ -1,0 +1,34 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE landscape illustration in 16:9. The site takes two crops from it: a game card (16:10) with the game's logo laid over the CENTRE on a darkening layer, so keep the centre at medium contrast; and a page header with title and buttons in the LOWER-LEFT over a dark gradient, so keep the lower-left corner calm and dark. Put the table and the players' faces in the UPPER-RIGHT two thirds. If the generator only offers 3:2, compose for 16:9 anyway and keep every essential element inside the central 16:9 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: raid night for the inn's online-gaming table, on the open gallery of the restored inn, late evening.
+A long timber table along the gallery railing. Six adult players between thirty and fifty-five, of different species, skin tones and bodies, in ordinary after-work clothes, sit with laptops and compact terminals whose screens show only soft abstract colour, simple headsets, cups of tea and small bowls of snacks. A latecomer, coat still on one shoulder, slips into the spare chair kept free for him, and nobody stops. One player raises a hand in greeting without looking away from the screen; one with headphones listens in silence; an older player wears reading glasses; two laugh together.
+Coming along the gallery as a host, with a tray of snacks: Sanchio: a big, broad-shouldered man of about fifty, the broadest and heaviest of the group — wide chest, soft belly, thick neck, strong forearms and large practical hands — warm and grounded, never menacing. Wide face, copper-brown skin, brown eyes, a kind tired smile, short trimmed salt-and-pepper beard and moustache, short curly black hair greying at the sides. Muted ochre-mustard collared shirt with sleeves rolled above the elbows, faint pale healed steam marks on the forearms (old, never fresh burns or tattoos); greyed off-white bib apron to the knees with faded stains, a short wooden spoon in its right-side pocket, a red-striped white kitchen cloth tucked at his left hip; wide dark-brown trousers, black closed non-slip shoes. No chef's hat.
+Beyond the railing: the hall below with warm lanterns and, across the open void, the great window: one wide clipped-corner rectangle in a thick near-black graphite frame of riveted segments, continuous seals and short inset amber light bars; beyond real glass, the Velo — deep blue-violet cloud masses, dark indigo dust, a pale peach-cream band of light crossing diagonally, a few restrained coral glows and sparse precise stars — with faint reflections of the room on the glass. Never a screen, an aquarium or a spiral.
+Head-count: six players, the latecomer and Sanchio.
+Avoid: game interfaces, screenshots, logos, crests or emblems, red-versus-blue colour coding, fantasy races or costumes, weapons, an esports-arena look, clocks or numbers, literal fire.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+Sanchio: face, beard, build, ochre shirt, bib apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-sanchio-house-cook-seven-views.png
+The great clipped-corner window and the Velo beyond it.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-nebulavelo-seven-views.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-08_WoW Forever - La serata di gioco.png

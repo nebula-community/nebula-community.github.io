@@ -13,6 +13,18 @@ Questa è la Nebula Inn, ed è il modo in cui pensiamo il nostro Discord. Non è
 
 > [!nota] Il progetto si chiama Nebula. La Nebula Inn è il posto in cui lo abitiamo.
 
+## Da dove veniamo
+
+Non siamo nati ieri, e non siamo nati qui. Per vent’anni molti di noi hanno fatto parte di un’altra community, grande e strutturata: lì abbiamo imparato quasi tutto quello che sappiamo su come si tiene insieme un gruppo.
+
+Poi le strade si sono divise. Ci sono stati dissidi e incomprensioni, modi diversi di pensare e di scegliere, giochi e modi di giocare che non coincidevano più. Non c’è un colpevole da indicare: era una buona casa, e lo resta per chi ci è rimasto. Per noi era arrivato il momento di costruirne una nuova.
+
+## Cosa vogliamo ricreare
+
+Chi ha qualche anno in più si ricorda delle ludoteche: un posto dove si andava per giocare, ma soprattutto per ritrovarsi. Si conoscevano le facce, ci si salutava per nome, e se qualcuno esagerava se ne accorgevano tutti.
+
+È questo che vogliamo ricreare: un ambiente socievole e maturo, dove si gioca e si chiacchiera fra adulti. Niente troll, niente provocazioni per il gusto di farle, niente gente che passa solo per rovinare la serata agli altri.
+
 ## Chi ci sta
 
 Chiamiamo Nomade chi arriva, e non è un vezzo: descrive quasi tutti. Gente che ha attraversato altri server, altri gruppi, altre community, senza fermarsi in nessuno. I fatti, così capisci subito se ti torna:

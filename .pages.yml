@@ -62,17 +62,64 @@ content:
           - { name: role, label: Ruolo, type: select, options: { values: [tank, healer, dps] } }
           - { name: faction, label: Gilda, type: select, options: { values: [Nebulah, Nebulaa] } }
           - { name: rank, label: Rango, type: select, options: { values: [Raider, Trial] } }
-  - name: lore
-    label: Lore
-    type: collection
-    path: content/lore
-    filename: '{fields.order}-{primary}.md'
+  - name: libro
+    label: Lore · Il libro
+    type: file
+    path: content/lore/libro.json
+    format: json
     fields:
       - { name: title, label: Titolo, type: string }
-      - { name: order, label: Ordine, type: number }
-      - { name: numeral, label: Numerale (P, I, I·V…), type: string }
-      - { name: kind, label: Tipo, type: select, options: { values: [Prologo, Libro, Veglia] } }
+      - { name: author, label: Autore (vuoto = non mostrato), type: string }
+      - { name: kind, label: Forma (es. Light novel), type: string }
+      - { name: genre, label: Genere, type: string }
+      - { name: teaser, label: Frase per la home, type: text }
+      - { name: presentation, label: Presentazione (si aggiorna con npm run lore:import), type: text }
       - { name: cover, label: Copertina, type: image }
-      - { name: date, label: Data, type: date }
+  - name: lore
+    label: Lore · Capitoli
+    type: collection
+    path: content/lore
+    filename: '{fields.numeral}-{primary}.md'
+    fields:
+      - { name: id, label: ID nell’indirizzo (01, 02…), type: string }
+      - { name: title, label: Titolo, type: string }
+      - { name: order, label: Ordine, type: number }
+      - { name: numeral, label: Numero (01, 02…), type: string }
+      - { name: kind, label: Tipo, type: select, options: { values: [Capitolo] } }
+      - { name: cover, label: Copertina, type: image }
       - { name: minutes, label: Minuti di lettura, type: number }
-      - { name: body, label: Testo, type: rich-text }
+      - { name: body, label: Testo (si aggiorna con npm run lore:import, le modifiche fatte qui vengono sovrascritte), type: rich-text }
+  - name: fondatori
+    label: Chi siamo · Fondatori e co-fondatori
+    type: file
+    path: content/pages/fondatori.json
+    format: json
+    fields:
+      - { name: title, label: Titolo della sezione, type: string }
+      - { name: lead, label: Introduzione, type: text }
+      - name: groups
+        label: Gruppi
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Gruppo (es. Fondatori), type: string }
+          - { name: text, label: Chi sono, type: string }
+          - name: people
+            label: Persone
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nome, type: string }
+              - { name: role, label: Ruolo, type: string }
+              - { name: line, label: Il personaggio in una riga, type: string }
+              - { name: text, label: Il personaggio nella storia, type: text }
+              - { name: contribution, label: Cosa ha fatto per Nebula, type: text }
+              - { name: image, label: Ritratto, type: image }
+              - { name: alt, label: Descrizione del ritratto, type: string }
+      - name: photo
+        label: Foto di gruppo
+        type: object
+        fields:
+          - { name: src, label: Immagine, type: image }
+          - { name: alt, label: Descrizione, type: string }
+          - { name: caption, label: Didascalia, type: string }

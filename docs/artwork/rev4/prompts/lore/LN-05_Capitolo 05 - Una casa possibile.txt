@@ -1,0 +1,39 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A view up the curve of the ramp with the camera at Egarim's eye level. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 05, daytime, inside the enclosed, pressurised technical ramp that climbs from the upper tram station toward an old house on the asteroid's shoulder: a curved, gently sloping gallery of pale grey panels on graphite ribs, a smooth grey deck with one cream guide line following the curve and wear along the inner margin, small amber lamps set low in the walls, no steps, no view outside.
+At the bend: Egarim: an adult man of about fifty with dwarfism — short arms and legs with a full-size adult head, torso and hands, a compact wiry build, never childlike; the top of his head reaches about Finland's shoulder. Weathered olive face, sharp cheekbones, lined forehead, prominent ears, pale grey-blue eyes, a dry half-smile, clean-shaven; very short cropped brown hair with receding temples. Tailored slate-blue work suit — a brass-zipped jacket belted at the waist over matching trousers — with charcoal panels on the shoulder yokes, sides, elbows and knees, a sand-coloured collar lining and a pocket on the left upper sleeve; worn taupe-grey leather work gloves; black chunky lace-up work boots. Dignified and capable; no bruise, no bandage, no fantasy-dwarf traits. He pauses with both gloved hands on the handle of a grey hand-pushed rental cart (a shallow steel bed, a tubular handle at his hip height, two big wheels at the back and two small casters at the front, a blank plate), carrying a single strapped case; its front wheels drift toward the inner edge. No grimace.
+A step aside: Finland: a small, narrow-shouldered man of about fifty-eight, slightly stooped, head tilted forward as if listening. Oval hollow-cheeked face, fair beige skin with a rosy undertone, fine lines at the eyes, brown eyes, clean-shaven, a gentle smile; short tousled ash-brown hair grey at the temples. Thin round dark-metal glasses on a plain dark cord that runs behind his neck. Open knee-length charcoal heathered-wool coat with notched lapels, brown buttons and big patch pockets bulging with folded cream papers, its back half-belt still buttoned on; écru open-collar shirt with a reddish-brown pen in the inner pocket, brown belt, dark tobacco-brown trousers, worn brown lace-up shoes. Authority through attention, never rank: no insignia. He offers an open hand without taking the cart.
+On the outer side of the curve: Nuuk: a large autonomous robotic bear with natural, heavy polar-bear proportions, longer than the tallest person is tall, his shoulder at about an adult's lower chest. Thick, soft, shaggy cream-white synthetic fur, short broad muzzle, black nose, small rounded ears, small glossy black eyes that never glow, a calm closed mouth; a graphite segmented collar half-hidden in the fur at the neck-shoulder joint, graphite wrist bands and round graphite joint discs at the elbows and hind knees, so he never reads as a live animal; a large rectangular old repair patch, flatter and chalkier grey-white, on his LEFT flank; broad paws with black pads and dark claws, a small stub tail. Autonomous: no leash, harness or handler, never on a human chair. He walks past on all four paws.
+Ahead, the guide line bends away where the others are small in the distance.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: the city or any window, signs, numbers, steps, a person pulling or carrying Nuuk, the house itself.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The enclosed technical ramp with its floor guide line.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\pressurised-technical-ramp-seven-views.png
+Egarim: face, build, slate-blue work suit, gloves.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-egarim-before-incident-seven-views.png
+The grey hand-pushed rental cart. Its plate stays blank.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\vehicles\nona-rental-cart-seven-views.png
+Finland: face, glasses on their cord, charcoal coat, écru shirt, tobacco trousers.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-finland-record-keeper-seven-views.png
+Nuuk standing (the chosen rev2 model).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-nuuk-autonomous-white-robotic-bear-seven-views-rev2.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-05_Capitolo 05 - Una casa possibile.png

@@ -38,8 +38,8 @@ nebula-site/
 ├── content/                  ← I CONTENUTI (è l'unica cartella che tocchi)
 │   ├── site.json
 │   ├── events.json · team.json
-│   ├── pages/                  locanda.md · editto.md · regolamento.json
-│   ├── lore/                   00-….md, 01-….md …
+│   ├── pages/                  locanda.md · fondatori.json · editto.md · regolamento.json
+│   ├── lore/                   libro.json · 01-….md … 09-….md (la light novel, importata)
 │   ├── games/<slug>/           game.json + un file per tab
 │   └── media/                  immagini originali (PNG/JPG, anche pesanti)
 ├── src/                      ← il codice del sito (Astro) — non toccare
@@ -47,7 +47,9 @@ nebula-site/
 │   ├── sync-drive.mjs          Google → content/
 │   ├── sync-raid-helper.mjs    Raid-Helper → events.json
 │   ├── validate.mjs            controlla i file con gli schemi Zod
-│   └── images.mjs              sharp: WebP/AVIF in 3 misure
+│   ├── import-lore.mjs         light novel (cartella lore, sola lettura) → content/lore/
+│   └── art.mjs                 illustrazioni generate (PNG) → WebP in public/media/
+├── docs/artwork/             ← prompt delle illustrazioni (rev4/ è il set in uso)
 ├── .github/workflows/
 │   ├── deploy.yml              build + pubblicazione
 │   └── sync-raid-helper.yml    calendario ogni 30'
@@ -83,15 +85,20 @@ Modifichi il foglio o il documento condiviso. Entro 6 ore il sito si aggiorna; p
 ## 4. Tutti i file, uno per uno
 
 ### 4.1 Sito — `content/site.json`
-Nome, slogan, invito Discord (`discord.invite`, `discord.code`), video della hero, social, SEO.
+Nome, slogan, invito Discord (`discord.invite`, `discord.code`), modulo di contatto, video della hero, social, SEO.
+**Modulo «Preferisci scriverci?» (Home e Unisciti):** compare solo quando `contact.formEndpoint` contiene l’indirizzo di un servizio che riceve davvero i messaggi. Con Formspree crei un modulo su formspree.io e incolli l’indirizzo `https://formspree.io/f/…`. Con Web3Forms scrivi `https://api.web3forms.com/submit` e metti la chiave in `contact.accessKey`. Finché il campo è `null` resta solo il pulsante Discord: un modulo che non invia niente farebbe credere di aver scritto a qualcuno.
+**Social (`social.youtube`, `social.instagram`, `social.twitch`):** l’icona compare nel piè di pagina solo quando il campo contiene un indirizzo vero (`https://…`). Finché c’è `[[LINK]]` l’icona non si vede, così nessuno tocca un pulsante che non porta da nessuna parte.
 **Video hero:** carica `hero.webm` (sotto 8 MB) e `hero-mobile.webm` in `content/media/`, poi scrivi i percorsi in `hero.video` e `hero.videoMobile`. Se il campo è `null`, il sito usa la hero generata.
 
 ### 4.2 Pagine di benvenuto — `content/pages/`
 | File | Pagina | Formato |
 |---|---|---|
-| `locanda.md` | Chi siamo → La Locanda | Markdown |
-| `editto.md` | Lore → L'Editto | Markdown |
+| `locanda.md` | Chi siamo → La Locanda (chi siamo, da dove veniamo, cosa vogliamo ricreare) | Markdown |
+| `fondatori.json` | Chi siamo → La Locanda, in fondo: fondatori e co-fondatori, poi la foto di gruppo | JSON |
+| `editto.md` | Chi siamo → L'Editto (`/chi-siamo/editto/`) | Markdown |
 | `regolamento.json` | Chi siamo → Regolamento | JSON strutturato |
+
+**Fondatori (`fondatori.json`):** per ognuno `name`, `role`, `line` e `text` (il suo personaggio nella storia), `contribution` (quello che ha fatto davvero per Nebula), `image` e `alt`. Finché `contribution` è `[[CONTRIBUTO]]`, il sito lo mostra come dato mancante. I ritratti si generano con i prompt `TEAM-…` di `docs/artwork/rev4/prompts/team/`, partendo dalla scheda rev4 di ciascuno. Finché un ritratto non c’è, il sito mostra la vista frontale della sua scheda. La foto di gruppo è quella di `scene/discord`. Li prepara tutti `npm run art`. Ognuno può chiedere di cambiare la propria scheda, il proprio ritratto o di toglierli.
 
 Sintassi Markdown ammessa:
 ```md
@@ -111,23 +118,33 @@ Paragrafo normale.
 ```
 
 ### 4.3 Lore — `content/lore/`
-Un file per capitolo, nominato `NN-titolo.md`: `00` è il prologo, e il numero decide l'ordine.
+Per ora la Lore mostra **solo la light novel *La nascita della Nebula Inn*** (lore rev4, nove capitoli), non il romanzo *La Rotta Bassa* né il suo prologo. Il testo non si scrive qui: si importa dalla cartella della lore, che lo script **legge soltanto**.
+
+```bash
+npm run lore:import                       # copia di lettura NI4-24-C10 (predefinita)
+npm run lore:import -- --from <copia.md>  # una copia di lettura più recente
+```
+
+Lo script riscrive i nove file `NN-titolo.md` (testo, titolo, parole, minuti) e in `libro.json` titolo e presentazione. Conserva le copertine e le tavole già impostate e cancella i capitoli che non esistono più. Un capitolo:
 ```md
 ---
-id: "1"
-order: 1
-numeral: "I"          # P, I, I·V, II…
-kind: "Libro"         # Prologo · Libro · Veglia
-title: "La sala che non chiude mai"
-cover: "media/lore/libro-1.png"
-date: "2026-10-01"
-minutes: 18
+id: "03"                  # indirizzo: /lore/03/
+order: 3
+numeral: "03"
+kind: "Capitolo"
+title: "Tornare tutti"
+cover: "media/lore/capitolo-03-tornare-tutti.webp"
+minutes: 10
+words: 2275
+plates: [{"src":"media/lore/tavola-a01-la-mano-lontana-dal-tasto.webp","alt":"…"}]
+source: "la-nascita-della-nebula-inn-NI4-24-C10"
 ---
-Primo paragrafo del capitolo.
-
-Secondo paragrafo…
+Paragrafi separati da una riga vuota. *corsivo*. Una riga con *** è uno stacco di scena.
 ```
-Appare da solo nell'indice e nella navigazione precedente/successivo. **Non modificare** `lore/index.json`: si rigenera al build.
+- **`libro.json`**: titolo, autore, forma, genere, frase per la home (`teaser`), presentazione e copertina del libro. Se togli `author`, la firma non compare.
+- **Copertine e tavole** sono già collegate: compaiono da sole quando il file esiste in `public/media/lore/`. Fino ad allora il sito mostra un riempimento colorato e una copertina tipografica. Le tavole stanno in fondo al capitolo, come nel libro: A01 dopo il 03, A02 e A03 dopo il 07.
+- L'**Editto** non è un capitolo e non sta nella Lore: è in «Chi siamo» (`pages/editto.md`, pagina `/chi-siamo/editto/`).
+- **Non modificare** `lore/index.json`: si rigenera al build. Le modifiche fatte a mano al testo dei capitoli vengono sovrascritte dal prossimo import: le correzioni si fanno nella lore.
 
 ### 4.4 Giochi — `content/games/<slug>/`
 Ogni cartella genera una pagina, ad esempio `/giochi/wow-forever`. **Un file mancante nasconde la sua tab.**
@@ -229,12 +246,14 @@ Le icone vengono da [lucide.dev/icons](https://lucide.dev/icons): scrivi il nome
 ---
 
 ## 5. Immagini
-- **Dove:** in `content/media/`, divise per cartella: `art/`, `lore/`, `sections/<slug>/`, `gallery/<slug>/`.
+- **Illustrazioni del sito (set rev4):** un prompt per immagine in `docs/artwork/rev4/`: immagini del sito, copertine dei capitoli e ritratti di «Chi siamo». Ogni prompt ha lo stile e le regole dei concept rev4 ed elenca le schede rev4 da allegare come riferimento. Si genera il PNG (ChatGPT/DALL·E o simili) allegando quelle schede, lo si salva col nome indicato nel prompt, poi `npm run art` lo converte in WebP della misura giusta e aggiorna da solo il file di contenuto. Guida completa: `docs/artwork/rev4/README.md`.
+- **Dove:** in `public/media/`, divise per cartella: `art/`, `lore/`, `sections/<slug>/`, `gallery/<slug>/`.
 - **Formato:** carica l'originale in PNG o JPG. Lo script `images.mjs` crea le versioni WebP/AVIF in 480, 960 e 1920 px.
 - **Nei file:** scrivi sempre `media/…`, ad esempio `"cover": "media/lore/libro-1.png"`.
 - **Nomi:** minuscolo, trattini, niente spazi né accenti, ad esempio `molten-core-first-kill.png`.
 - **Limiti:** nessun file sopra 100 MB, sito intero sotto 1 GB, video hero sotto 8 MB.
 - **Brand:** il logo si usa solo dai file originali in `media/brand/` (ADR-004).
+- **Immagini generate con IA:** le illustrazioni del sito sono generate con intelligenza artificiale e il piè di pagina lo dichiara (decisione del Presidente, 02/10/2026). I prompt stanno in `docs/artwork/`. Se carichi un’immagine che non è generata (uno screenshot, una fan art), scrivilo nella didascalia.
 
 ---
 
@@ -311,7 +330,7 @@ function notify() {
 - **`[[TOKEN]]`** = dato mancante. Il sito lo mostra come badge tratteggiato. Non inventare dati di gioco o di lore: meglio un `[[TOKEN]]` onesto.
 - **Firme:** `— L'Oste` (lore e benvenuto), `— Il Presidente` (istituzionale), `— Gli Officers` (sezione). Nessun nome proprio nei testi istituzionali.
 - **Voce e lessico:** ADR-005. Massimo due termini di lessico per testo, e ogni testo finisce con il prossimo passo.
-- **Commit:** usa messaggi parlanti, ad esempio `roster: +2 trial`, `loot: serata 14/10`, `lore: capitolo II`.
+- **Commit:** usa messaggi parlanti, ad esempio `roster: +2 trial`, `loot: serata 14/10`, `lore: copertina capitolo 03`.
 - **File con `_readme`:** leggi la prima riga: spiega il file.
 - **File marcati ⚙ generati:** `lore/index.json`, `games/index.json`, `events.json`. Non si modificano a mano.
 
@@ -320,4 +339,5 @@ function notify() {
 - **Cambia chi cerchiamo:** in `recruitment.json` cambia la `priority` delle spec (e `wanted` o `targets` se serve) → fai il commit.
 - **Nuovo membro nel roster:** aggiungi una riga in `roster.json` → aggiungilo anche nel `roster` della season corrente in `loot.json`.
 - **Nuova season:** in `loot.json` aggiungi la season in cima con `roster` e `raids: []`, e metti `"closed": true` alla season precedente.
-- **Nuovo capitolo di lore:** crea `lore/NN-titolo.md` e la copertina in `media/lore/` → fai il commit.
+- **Nuova copia della light novel:** `npm run lore:import` (o `-- --from <copia.md>`) → `npm run validate` → fai il commit.
+- **Nuova illustrazione:** salva il PNG in `docs/artwork/rev4/png/…` col nome del prompt → `npm run art` → controlla con `npm run dev` → fai il commit.

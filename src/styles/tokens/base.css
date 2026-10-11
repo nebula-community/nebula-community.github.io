@@ -4,7 +4,7 @@ body{margin:0;background:var(--bg);color:var(--text-1);font:var(--type-body);-we
 ::selection{background:var(--selection)}
 a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px;transition:color var(--dur-2) var(--ease-out)}
 a:hover{color:var(--link-hover)}
-:focus-visible{outline:none;box-shadow:var(--ring-focus);border-radius:var(--radius-xs)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 h1,h2,h3,h4{margin:0;text-wrap:balance}
 p{margin:0;text-wrap:pretty}
 img{max-width:100%;display:block}

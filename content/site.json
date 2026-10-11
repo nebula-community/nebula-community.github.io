@@ -6,6 +6,11 @@
     "invite": "https://discord.gg/Cyuv7rKmBQ",
     "code": "Cyuv7rKmBQ"
   },
+  "_contact": "Modulo «Preferisci scriverci?» di Home e Unisciti. formEndpoint: l’indirizzo del servizio che riceve i messaggi (Formspree: https://formspree.io/f/…; Web3Forms: https://api.web3forms.com/submit, con la chiave in accessKey). Finché formEndpoint è null il modulo non compare: meglio nessun modulo che uno che non invia.",
+  "contact": {
+    "formEndpoint": null,
+    "accessKey": null
+  },
   "hero": {
     "video": null,
     "videoMobile": null,

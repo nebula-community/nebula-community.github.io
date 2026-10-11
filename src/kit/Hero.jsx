@@ -10,7 +10,10 @@ function useEmbers(ref) {
     const resize = () => { const d = Math.min(devicePixelRatio, 2); w = c.clientWidth; h = c.clientHeight; c.width = w * d; c.height = h * d; ctx.setTransform(d, 0, 0, d, 0, 0); };
     resize(); addEventListener('resize', resize);
     const P = Array.from({ length: count }, () => ({ x: Math.random(), y: Math.random(), r: Math.random() * 1.8 + .4, s: Math.random() * .00035 + .0001, a: Math.random() * .6 + .2, c: cols[Math.random() * cols.length | 0], p: Math.random() * 6.28 }));
+    // the embers only move while the hero is on screen: no work (and no battery) spent once the page is scrolled
+    let seen = true;
     const draw = (t) => {
+      raf = 0;
       ctx.clearRect(0, 0, w, h);
       for (const p of P) {
         if (!reduce) { p.y -= p.s; p.x += Math.sin(t / 2400 + p.p) * .00012; if (p.y < -.02) { p.y = 1.02; p.x = Math.random(); } }
@@ -18,10 +21,12 @@ function useEmbers(ref) {
         ctx.beginPath(); ctx.fillStyle = `rgba(${p.c},${p.a * tw})`; ctx.shadowColor = `rgba(${p.c},.9)`; ctx.shadowBlur = 8;
         ctx.arc(p.x * w, p.y * h, p.r, 0, 6.28); ctx.fill();
       }
-      if (!reduce) raf = requestAnimationFrame(draw);
+      if (!reduce && seen) raf = requestAnimationFrame(draw);
     };
+    const io = new IntersectionObserver(([e]) => { seen = e.isIntersecting; if (seen && !raf && !reduce) raf = requestAnimationFrame(draw); });
+    io.observe(c);
     raf = requestAnimationFrame(draw);
-    return () => { cancelAnimationFrame(raf); removeEventListener('resize', resize); };
+    return () => { cancelAnimationFrame(raf); io.disconnect(); removeEventListener('resize', resize); };
   }, []);
 }
 
@@ -33,7 +38,7 @@ function useGrain() {
   }, []);
 }
 
-function Hero({ go }) {
+function Hero() {
   const root = React.useRef(null), canvas = React.useRef(null);
   const layers = React.useRef([]);
   useEmbers(canvas);
@@ -69,8 +74,8 @@ function Hero({ go }) {
       </h1>
       <p className="kit-hero__sub">Se hai già attraversato altri server senza fermarti da nessuna parte, sei in buona compagnia.</p>
       <div className="kit-hero__ctas">
-        <HeroButton size="lg" icon="message-circle" onClick={() => go('join')}>Entra nella Locanda</HeroButton>
-        <HeroButton size="lg" variant="secondary" iconRight="arrow-right" onClick={() => go('lore')}>Leggi la storia</HeroButton>
+        <HeroButton size="lg" icon="message-circle" href={NB_HREF('join')}>Entra nella Locanda</HeroButton>
+        <HeroButton size="lg" variant="secondary" iconRight="arrow-right" href={NB_HREF('lore')}>Leggi la storia</HeroButton>
       </div>
     </div>
     <button className="kit-scroll" onClick={() => scrollTo({ top: innerHeight - 40, behavior: 'smooth' })}><i />Scorri</button>

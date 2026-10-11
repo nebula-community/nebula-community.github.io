@@ -1,0 +1,507 @@
+{
+  "_readme": "Elenco usato da `npm run art`: per ogni immagine, il PNG generato (png), il file servito dal sito (out, misura width, formato ratio) e i campi dei contenuti da collegare (set). Finché il PNG non c’è, `fallback` indica una sorgente provvisoria con il suo ritaglio (crop, in frazioni dell’originale, completato con background): i ritratti usano la vista frontale della scheda rev4. I PNG della lore (libro, schede, foto di gruppo) si leggono soltanto. Prompt e istruzioni: docs/artwork/rev4/README.md.",
+  "items": [
+    {
+      "id": "SITO-02",
+      "png": "docs/artwork/rev4/png/sito/SITO-02_Anteprima social - La locanda sulla spalla.png",
+      "out": "public/media/art/og-la-locanda-sulla-spalla.jpg",
+      "ratio": "1200:630",
+      "width": 1200,
+      "set": [
+        {
+          "file": "content/site.json",
+          "path": "seo.ogImage"
+        }
+      ]
+    },
+    {
+      "id": "SITO-03",
+      "png": "docs/artwork/rev4/png/sito/SITO-03_Benvenuto - Il genkan.png",
+      "out": "public/media/art/benvenuto-il-genkan.webp",
+      "ratio": "4:3",
+      "width": 1280,
+      "set": [
+        {
+          "file": "content/site.json",
+          "path": "images.homeWelcome"
+        }
+      ]
+    },
+    {
+      "id": "SITO-04",
+      "png": "docs/artwork/rev4/png/sito/SITO-04_La Locanda - Molti tavoli.png",
+      "out": "public/media/art/locanda-molti-tavoli.webp",
+      "ratio": "4:3",
+      "width": 1280,
+      "set": [
+        {
+          "file": "content/pages/locanda.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "SITO-05",
+      "png": "docs/artwork/rev4/png/sito/SITO-05_Editto - La salita delle lanterne.png",
+      "out": "public/media/art/editto-la-salita-delle-lanterne.webp",
+      "ratio": "4:3",
+      "width": 1280,
+      "set": [
+        {
+          "file": "content/pages/editto.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "SITO-06",
+      "png": "docs/artwork/rev4/png/sito/SITO-06_Regolamento - Il ripiano asciutto.png",
+      "out": "public/media/art/regolamento-il-ripiano-asciutto.webp",
+      "ratio": "4:3",
+      "width": 1280,
+      "set": [
+        {
+          "file": "content/site.json",
+          "path": "images.regolamento"
+        }
+      ]
+    },
+    {
+      "id": "SITO-07",
+      "png": "docs/artwork/rev4/png/sito/SITO-07_La storia - Un lettore davanti al Velo.png",
+      "out": "public/media/art/storia-un-lettore-davanti-al-velo.webp",
+      "ratio": "16:9",
+      "width": 1920,
+      "set": [
+        {
+          "file": "content/site.json",
+          "path": "images.homeLore"
+        }
+      ]
+    },
+    {
+      "id": "SITO-08",
+      "png": "docs/artwork/rev4/png/sito/SITO-08_WoW Forever - La serata di gioco.png",
+      "out": "public/media/art/wow-forever-la-serata-di-gioco.webp",
+      "ratio": "16:9",
+      "width": 1920,
+      "set": [
+        {
+          "file": "content/games/wow-forever/game.json",
+          "path": "hero.image"
+        }
+      ]
+    },
+    {
+      "id": "SITO-08c",
+      "png": "docs/artwork/rev4/png/sito/SITO-08_WoW Forever - La serata di gioco.png",
+      "out": "public/media/art/wow-forever-la-serata-di-gioco-card.webp",
+      "ratio": "16:10",
+      "width": 960,
+      "set": [
+        {
+          "file": "content/games/wow-forever/game.json",
+          "path": "card.image"
+        }
+      ]
+    },
+    {
+      "id": "SITO-09",
+      "png": "docs/artwork/rev4/png/sito/SITO-09_Prossimo tavolo - Il tavolo che si apre.png",
+      "out": "public/media/art/prossimo-tavolo-il-tavolo-che-si-apre.webp",
+      "ratio": "16:10",
+      "width": 960,
+      "set": [
+        {
+          "file": "content/games/_coming-soon/game.json",
+          "path": "card.image"
+        }
+      ]
+    },
+    {
+      "id": "SITO-10",
+      "png": "docs/artwork/rev4/png/sito/SITO-10_Pagina 404 - La porta spostata.png",
+      "out": "public/media/art/404-la-porta-spostata.webp",
+      "ratio": "16:9",
+      "width": 1600,
+      "set": [
+        {
+          "file": "content/site.json",
+          "path": "images.notFound"
+        }
+      ]
+    },
+    {
+      "id": "SITO-11",
+      "png": "docs/artwork/rev4/png/sito/SITO-11_Istanza - La lanterna di brace.png",
+      "out": "public/media/art/progress-la-lanterna-di-brace.webp",
+      "ratio": "2:1",
+      "width": 1200,
+      "set": [
+        {
+          "file": "content/games/wow-forever/progress.json",
+          "path": "instances[id=mc].cover"
+        }
+      ]
+    },
+    {
+      "id": "SITO-12",
+      "png": "docs/artwork/rev4/png/sito/SITO-12_Istanza - La lanterna a squame.png",
+      "out": "public/media/art/progress-la-lanterna-a-squame.webp",
+      "ratio": "2:1",
+      "width": 1200,
+      "set": [
+        {
+          "file": "content/games/wow-forever/progress.json",
+          "path": "instances[id=ony].cover"
+        }
+      ]
+    },
+    {
+      "id": "SITO-13",
+      "png": "docs/artwork/rev4/png/sito/SITO-13_Istanza - La lanterna spenta.png",
+      "out": "public/media/art/progress-la-lanterna-spenta.webp",
+      "ratio": "2:1",
+      "width": 1200,
+      "set": [
+        {
+          "file": "content/games/wow-forever/progress.json",
+          "path": "instances[id=next].cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-01",
+      "png": "docs/artwork/rev4/png/lore/LN-01_Capitolo 01 - Il lavoro prima della partenza.png",
+      "out": "public/media/lore/capitolo-01-il-lavoro-prima-della-partenza.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/01-il-lavoro-prima-della-partenza.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-02",
+      "png": "docs/artwork/rev4/png/lore/LN-02_Capitolo 02 - La partenza contesa.png",
+      "out": "public/media/lore/capitolo-02-la-partenza-contesa.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/02-la-partenza-contesa.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-03",
+      "png": "docs/artwork/rev4/png/lore/LN-03_Capitolo 03 - Tornare tutti.png",
+      "out": "public/media/lore/capitolo-03-tornare-tutti.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/03-tornare-tutti.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-04",
+      "png": "docs/artwork/rev4/png/lore/LN-04_Capitolo 04 - La notte senza progetto comune.png",
+      "out": "public/media/lore/capitolo-04-la-notte-senza-progetto-comune.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/04-la-notte-senza-progetto-comune.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-05",
+      "png": "docs/artwork/rev4/png/lore/LN-05_Capitolo 05 - Una casa possibile.png",
+      "out": "public/media/lore/capitolo-05-una-casa-possibile.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/05-una-casa-possibile.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-06",
+      "png": "docs/artwork/rev4/png/lore/LN-06_Capitolo 06 - Le condizioni per restare.png",
+      "out": "public/media/lore/capitolo-06-le-condizioni-per-restare.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/06-le-condizioni-per-restare.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-07",
+      "png": "docs/artwork/rev4/png/lore/LN-07_Capitolo 07 - Il posto dopo il lavoro.png",
+      "out": "public/media/lore/capitolo-07-il-posto-dopo-il-lavoro.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/07-il-posto-dopo-il-lavoro.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-08",
+      "png": "docs/artwork/rev4/png/lore/LN-08_Capitolo 08 - La porta aperta.png",
+      "out": "public/media/lore/capitolo-08-la-porta-aperta.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/08-la-porta-aperta.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "LN-09",
+      "png": "docs/artwork/rev4/png/lore/LN-09_Capitolo 09 - Il posto per chi riparte.png",
+      "out": "public/media/lore/capitolo-09-il-posto-per-chi-riparte.webp",
+      "ratio": "3:4",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/09-il-posto-per-chi-riparte.md",
+          "key": "cover"
+        }
+      ]
+    },
+    {
+      "id": "TEAM-finland",
+      "png": "docs/artwork/rev4/png/team/TEAM-finland_Ritratto - Finland.png",
+      "out": "public/media/team/finland.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/founder-finland-record-keeper-seven-views.png",
+        "crop": [
+          0.0143,
+          0,
+          0.1921,
+          0.627
+        ],
+        "fit": "contain",
+        "background": "#c3c6c9"
+      }
+    },
+    {
+      "id": "TEAM-egarim",
+      "png": "docs/artwork/rev4/png/team/TEAM-egarim_Ritratto - Egarim.png",
+      "out": "public/media/team/egarim.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/founder-egarim-before-incident-seven-views.png",
+        "crop": [
+          0.0098,
+          0.0068,
+          0.2181,
+          0.6406
+        ],
+        "fit": "contain",
+        "background": "#b4b5b3"
+      }
+    },
+    {
+      "id": "TEAM-sanchio",
+      "png": "docs/artwork/rev4/png/team/TEAM-sanchio_Ritratto - Sanchio.png",
+      "out": "public/media/team/sanchio.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/founder-sanchio-house-cook-seven-views.png",
+        "crop": [
+          0,
+          0,
+          0.2201,
+          0.6563
+        ],
+        "fit": "contain",
+        "background": "#b3b3b3"
+      }
+    },
+    {
+      "id": "TEAM-scudi",
+      "png": "docs/artwork/rev4/png/team/TEAM-scudi_Ritratto - Scudi.png",
+      "out": "public/media/team/scudi.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/founder-scudi-supports-pressure-systems-seven-views.png",
+        "crop": [
+          0.0046,
+          0,
+          0.2246,
+          0.6787
+        ],
+        "fit": "contain",
+        "background": "#d1d1d2"
+      }
+    },
+    {
+      "id": "TEAM-ada-vey",
+      "png": "docs/artwork/rev4/png/team/TEAM-ada-vey_Ritratto - Ada Vey.png",
+      "out": "public/media/team/ada-vey.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/cofounder-adavey-contracts-accounts-service-seven-views.png",
+        "crop": [
+          0.0169,
+          0,
+          0.1797,
+          0.6465
+        ],
+        "fit": "contain",
+        "background": "#b5b8bb"
+      }
+    },
+    {
+      "id": "TEAM-oris",
+      "png": "docs/artwork/rev4/png/team/TEAM-oris_Ritratto - Oris.png",
+      "out": "public/media/team/oris.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/cofounder-oris-hall-lists-invitations-seven-views.png",
+        "crop": [
+          0.0241,
+          0,
+          0.1784,
+          0.6738
+        ],
+        "fit": "contain",
+        "background": "#b9bbbe"
+      }
+    },
+    {
+      "id": "TEAM-calco",
+      "png": "docs/artwork/rev4/png/team/TEAM-calco_Ritratto - Calco.png",
+      "out": "public/media/team/calco.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/cofounder-calco-route-reader-seven-views.png",
+        "crop": [
+          0.0527,
+          0,
+          0.1667,
+          0.6787
+        ],
+        "fit": "contain",
+        "background": "#b7babc"
+      }
+    },
+    {
+      "id": "TEAM-oste",
+      "png": "docs/artwork/rev4/png/team/TEAM-oste_Ritratto - L'Oste.png",
+      "out": "public/media/team/oste.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/cofounder-oste-android-seven-views.png",
+        "crop": [
+          0,
+          0,
+          0.2227,
+          0.6758
+        ],
+        "fit": "contain",
+        "background": "#b1b4b6"
+      }
+    },
+    {
+      "id": "TEAM-donut",
+      "png": "docs/artwork/rev4/png/team/TEAM-donut_Ritratto - D. Donut.png",
+      "out": "public/media/team/donut.webp",
+      "ratio": "2:3",
+      "width": 600,
+      "set": [],
+      "fallback": {
+        "png": "../discord/community/lore/artworks/png/rev4/characters/cofounder-donut-designer-independent-salvager-seven-views.png",
+        "crop": [
+          0.0267,
+          0,
+          0.2064,
+          0.6084
+        ],
+        "fit": "contain",
+        "background": "#c1c3c5"
+      }
+    },
+    {
+      "id": "NI26-CF",
+      "png": "../discord/community/lore/artworks/png/rev4/scene/novel-1/01_NI26-CF_Una luce sopra la citta.png",
+      "out": "public/media/lore/copertina-la-nascita-della-nebula-inn.webp",
+      "ratio": "148:210",
+      "width": 900,
+      "set": [
+        {
+          "file": "content/lore/libro.json",
+          "path": "cover"
+        }
+      ]
+    },
+    {
+      "id": "NI26-A01",
+      "png": "../discord/community/lore/artworks/png/rev4/scene/novel-1/03_NI26-A01_La mano lontana dal tasto.png",
+      "out": "public/media/lore/tavola-a01-la-mano-lontana-dal-tasto.webp",
+      "ratio": "148:210",
+      "width": 1200,
+      "set": []
+    },
+    {
+      "id": "NI26-A02",
+      "png": "../discord/community/lore/artworks/png/rev4/scene/novel-1/04_NI26-A02_Il vassoio non passa.png",
+      "out": "public/media/lore/tavola-a02-il-vassoio-non-passa.webp",
+      "ratio": "148:210",
+      "width": 1200,
+      "set": []
+    },
+    {
+      "id": "NI26-A03",
+      "png": "../discord/community/lore/artworks/png/rev4/scene/novel-1/05_NI26-A03_La tazza che si raffredda.png",
+      "out": "public/media/lore/tavola-a03-la-tazza-che-si-raffredda.webp",
+      "ratio": "148:210",
+      "width": 1200,
+      "set": []
+    },
+    {
+      "id": "TEAM-foto",
+      "png": "../discord/community/lore/artworks/png/rev4/scene/discord/01_Foto di gruppo - founders cofounders Nuuk e Nebula-v2.png",
+      "out": "public/media/team/foto-di-gruppo.webp",
+      "ratio": "16:9",
+      "width": 1672,
+      "set": []
+    }
+  ]
+}

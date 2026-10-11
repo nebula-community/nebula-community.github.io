@@ -1,0 +1,30 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: the first is the approved rev4 concept sheet of this character, so match the design exactly. Compose one single finished portrait illustration.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 2:3, for a card on the website's "Chi siamo" page, shown about 210 to 300 pixels wide in a grid of nine portraits. Three-quarter-length figure (from the knees up) of ONE person, camera at her own eye level, head in the upper third, body slightly turned, a natural pose that belongs to the place. It is part of a series of nine: the same lens, distance, light and background treatment for everyone. Keep 6% margins around the figure. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+PORTRAIT:
+Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots.
+Setting: standing at a hall table, she turns one of the two blank sheets on her black clip toward the viewer, a short pencil in the other hand, as if to say: read it before you sign. Compact, calm, a small smile.
+Background: the restored Nebula Inn of today, softly out of focus — dark timber, cream plaster, warm amber box lanterns and a hint of thin coral-violet neon frames with blank faces — lit by the same warm practical light from the upper left as the rest of the series.
+Avoid: a business suit, coins, keys, a torn paper, severity. No lettering anywhere: papers, sheets and screens stay blank.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\team\
+Use the filename: TEAM-ada-vey_Ritratto - Ada Vey.png

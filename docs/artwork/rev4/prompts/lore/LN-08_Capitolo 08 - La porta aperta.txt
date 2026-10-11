@@ -1,0 +1,42 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A view toward the window from inside the common room, Finland and Nuuk in the middle band. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 08, about six in the evening on the opening day, inside Casa Nona's modest common room as it is in the story: one single-height room inside a sealed steel shell; from the entrance, the compact waist-high counter of brown vertical planks with a pale washable top and a dry inner shelf on the LEFT, and a broad sealed window with clipped corners on the RIGHT; mismatched repaired chairs and a few tables, sound dark timber where hands and bodies touch, matte metal fittings, one existing lamp. No gallery, no neon, no clusters of lanterns, no signs. Neutral light with modest amber task pools and violet shadow.
+At the window on the RIGHT: Finland: a small, narrow-shouldered man of about fifty-eight, slightly stooped, head tilted forward as if listening. Oval hollow-cheeked face, fair beige skin with a rosy undertone, fine lines at the eyes, brown eyes, clean-shaven, a gentle smile; short tousled ash-brown hair grey at the temples. Thin round dark-metal glasses on a plain dark cord that runs behind his neck. His open knee-length charcoal wool coat is off, folded over a nearby chair back; he wears an écru open-collar shirt, a brown belt, dark tobacco-brown trousers and worn brown lace-up shoes. Authority through attention, never rank: no insignia. Glasses in one hand and a cloth in the other, he squints at a smudge on the inside of the glass.
+At his feet: Nuuk, lying prone in a place he chose himself: an autonomous robotic bear as long as a small sofa and as bulky as a real adult bear, front legs stretched forward with paws flat, hind legs folded under the heavy body, head raised above the paws. Short, dense, plush cream-white covering with faint stitched panel seams; a graphite segmented collar from neck to shoulders, graphite wrist bands, round graphite joint discs at the elbows and hind knees; a rectangular flatter, greyer repair patch on his LEFT flank; small glossy black eyes that never glow, black nose, small rounded ears, dark claws. Never a mascot, a footrest or a pet on a leash. He raises his head, the joint at his neck and shoulder visible.
+Far below through the glass, Concordia lights its trams: Concordia, a vertical city inside its own transparent dome sunk into a bowl of violet-grey rock: terraces of timber-and-stone houses with steep roofs, countless small amber windows, a central spired tower and a band of lit tram windows; a ring of lit tram windows around the dome's base. Inside the dome only a dusky violet sky, never clouds, sunsets or mountains. The sky above is dark, with no bright nebula filling the window yet.
+Behind, smaller, at the counter on the LEFT: L'Oste: a humanoid android of ordinary adult height, upright and calm, hands relaxed. A smooth egg-shaped dark-graphite faceplate with only two round amber optics glowing softly — NO mouth, NO nose, NO eyebrows, no facial lines or creases; round brass ear housings (not headphones); a slim segmented dark-metal neck with brass struts; a soft slouchy ivory cloth cap. Ankle-length warm-ivory kimono-style robe, left panel over right, wide hanging sleeves, clean worn hems; wide near-black brown obi with a flat knot at the back. Dark gunmetal articulated hands with brass knuckle joints and wide brass wrist cuffs, the RIGHT cuff dull and tarnished, the left brighter; ivory cloth slip-on shoes. Intention shows only through head tilt, hands and pauses. He never eats or drinks. No armour, weapons, monk or samurai styling. He sets bowls out one by one. Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots. She stands at the counter with two papers.
+Head-count: Finland, Nuuk, L'Oste and Ada.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: the nebula filling the window, other guests, a tin box, a banner, an open door to a closed room, lettering.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Finland: face, glasses on their cord, charcoal coat, écru shirt, tobacco trousers.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-finland-record-keeper-seven-views.png
+Nuuk lying down (the chosen rev2 model).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-nuukdisteso-autonomous-white-robotic-bear-seven-views-rev2.png
+L'Oste: faceplate, optics, cap, ivory robe, obi, articulated hands.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oste-android-seven-views.png
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+Casa Nona's common room, for its layout only: counter LEFT, broad window RIGHT. Not its bare steel, fluorescent tubes or daylight skyline.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-casanonasala-house-common-room-pre-restoration-hangar-seven-views.png
+Concordia's dome seen from above. Never copy the sunset, clouds or mountains painted inside the dome.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-concordia-seven-views-from-dorso-rev3.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-08_Capitolo 08 - La porta aperta.png

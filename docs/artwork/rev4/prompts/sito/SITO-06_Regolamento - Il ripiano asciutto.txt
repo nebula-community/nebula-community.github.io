@@ -1,0 +1,41 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE illustration in 4:3, shown in a card with strongly rounded corners beside a text on the website. A calm, close view along the reception end of the bar at seated adult eye height; the sheet, Finland and Ada in the centre. If the generator only offers 3:2, compose for 4:3 anyway and keep every essential element inside the central 4:3 area; the site crops the left and right edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: morning before opening in the restored inn; in the soft background, chairs still upturned on a few tables.
+The restored Nebula Inn of today (the old Casa Nona, refurbished): a two-level Japanese inn of dark timber posts and beams, cream plaster infill and a graphite steel plinth under charcoal tile roofs with lifted eaves, sitting on the rock shoulder of the asteroid Dorso ABOVE Concordia's dome, inside its own sealed pressure shell. From the guest entrance looking in: the long timber bar and reception on the LEFT, the great clipped-corner window onto the Velo on the RIGHT, a double-height hall with honey-toned plank floors in between, an open L-shaped timber gallery along the LEFT and REAR walls (never in front of the window), the stair at the REAR-LEFT, the kitchen behind the bar. Many warm amber box lanterns at different heights; a restrained number of signs and boards whose faces stay BLANK, framed by thin coral-pink and violet neon tubes; cyan only on tiny indicators.
+On the bar's DRY shelf, kept apart from the washable serving top, lies one long sheet ruled in two blank columns — a rule, and its reason beside it — next to a short pencil and a squared stack of blank papers under a clip. The reception segment looks like the old house counter: brown vertical planks, a pale washable top, a dry inner shelf.
+Finland: a small, narrow-shouldered man of about fifty-eight, slightly stooped, head tilted forward as if listening. Oval hollow-cheeked face, fair beige skin with a rosy undertone, fine lines at the eyes, brown eyes, clean-shaven, a gentle smile; short tousled ash-brown hair grey at the temples. Thin round dark-metal glasses on a plain dark cord that runs behind his neck. Open knee-length charcoal heathered-wool coat with notched lapels, brown buttons and big patch pockets bulging with folded cream papers (the back half-belt is gone: only its two brown buttons remain); écru open-collar shirt with a reddish-brown pen in the inner pocket, brown belt, dark tobacco-brown trousers, worn brown lace-up shoes. Authority through attention, never rank: no insignia. Glasses on, he reads the sheet slowly, one finger following a line.
+Beside him: Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots. She holds her pencil over the right-hand column, a small smile.
+At the far wet end of the bar, only the articulated dark-metal hand and ivory sleeve of L'Oste, moving a cup further away from the paper.
+Light: soft morning lamps; the great window far right with a little of the Velo.
+Head-count: two people and one hand.
+Avoid: readable writing on any paper, gavels or anything punitive, lists of names, a crowd.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Finland: face, glasses on their cord, charcoal coat, écru shirt, tobacco trousers.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-finland-record-keeper-seven-views.png
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+The old house counter with its dry shelf (its end cubby stays closed).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nona-repaired-service-counter-seven-views.png
+L'Oste: faceplate, optics, cap, ivory robe, obi, articulated hands.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oste-android-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-06_Regolamento - Il ripiano asciutto.png

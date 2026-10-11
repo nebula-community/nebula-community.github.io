@@ -29,7 +29,7 @@ function useLoot() {
   const [state, setState] = React.useState('loading');
   React.useEffect(() => {
     if (cached && Date.now() - cached.t < LOOT_TTL) { setState('ok'); return; }
-    fetchLoot().then(d => { localStorage.setItem(LOOT_KEY, JSON.stringify({ d, t: Date.now() })); setData(d); setState('ok'); })
+    fetchLoot().then(d => { try { localStorage.setItem(LOOT_KEY, JSON.stringify({ d, t: Date.now() })); } catch (e) {} setData(d); setState('ok'); })
       .catch(() => setState(navigator.onLine ? 'error' : 'offline'));
   }, []);
   return { data, state };
@@ -336,9 +336,15 @@ function WowRoster() {
   </div>;
 }
 
+// First-kill date, written under the boss name: a hover-only tooltip does not exist on a phone.
+const killDate = (v) => /^\d{4}-\d{2}-\d{2}$/.test(v || '') ? new Date(v + 'T12:00:00').toLocaleDateString('it-IT', { day: 'numeric', month: 'short', year: 'numeric' }) : null;
+
 function WowProgress() {
   const { Badge, Icon } = DS_W;
   const P = NB_WOW.progress;
+  const facs = NB_WOW.factions.map(x => x.name);
+  const short = (fac) => facs.length > 1 ? (fac.slice(-1) === 'a' ? 'A' : 'O') + ' ' : '';
+  const anyDate = P.instances.some(ins => (ins.bosses || []).some(b => facs.some(fac => killDate(b[fac]))));
   return <div style={{ display: 'grid', gap: 28 }}>
     <div className="kit-head" style={{ marginBottom: 0 }}><h2 className="kit-h2">{NB_WOW.copy.progress.title}</h2><p className="kit-lead">{NB_WOW.copy.progress.lead}</p>{P.example && <div><Badge tone="placeholder">Dati d’esempio</Badge></div>}</div>
     {P.instances.map(ins => { const tot = ins.bosses.length; const k = (fac) => ins.bosses.filter(b => b[fac]).length;
@@ -347,11 +353,13 @@ function WowProgress() {
         {ins.locked ? <div className="kit-prog__body" style={{ color: 'var(--text-3)' }}>Si apre con la prossima fase.</div> :
         <div className="kit-prog__body">
           <div className="kit-prog__sum">{NB_WOW.factions.map(x => x.name).map(fac => <div key={fac}><div style={{ display: 'flex', justifyContent: 'space-between', font: '500 14px/1 var(--font-body)' }}><span>{fac}</span><span style={{ fontFamily: 'var(--font-mono)' }}>{k(fac)}/{tot}</span></div><div className="kit-roster__bar"><i style={{ width: (k(fac) / tot * 100) + '%' }} /></div></div>)}</div>
-          <ol className="kit-prog__bosses">{ins.bosses.map((b, i) => <li key={b.name}><span className="kit-table__dim" style={{ fontFamily: 'var(--font-mono)', fontSize: 13 }}>{String(i + 1).padStart(2, '0')}</span><span>{b.name}</span>
-            {NB_WOW.factions.map(x => x.name).map(fac => <span key={fac} className={'kit-prog__k' + (b[fac] ? ' is-dead' : '')} title={fac + (b[fac] ? ' · ' + b[fac] : ' · da fare')}>{b[fac] ? <Icon name="skull" size={14} /> : <Icon name="circle-dashed" size={14} />}{NB_WOW.factions.length > 1 && <small>{fac.slice(-1) === 'a' ? 'A' : 'O'}</small>}</span>)}</li>)}</ol>
+          <ol className="kit-prog__bosses">{ins.bosses.map((b, i) => { const dates = facs.filter(fac => killDate(b[fac])).map(fac => short(fac) + killDate(b[fac]));
+            return <li key={b.name}><span className="kit-table__dim" style={{ fontFamily: 'var(--font-mono)', fontSize: 13 }}>{String(i + 1).padStart(2, '0')}</span>
+              <span className="kit-prog__boss">{b.name}{dates.length > 0 && <small className="kit-prog__d">{dates.join(' · ')}</small>}</span>
+              {facs.map(fac => <span key={fac} className={'kit-prog__k' + (b[fac] ? ' is-dead' : '')} role="img" aria-label={fac + (b[fac] ? ': abbattuto' : ': da fare')}>{b[fac] ? <Icon name="skull" size={14} /> : <Icon name="circle-dashed" size={14} />}{facs.length > 1 && <small aria-hidden="true">{fac.slice(-1) === 'a' ? 'A' : 'O'}</small>}</span>)}</li>; })}</ol>
         </div>}
       </div>; })}
-    <p style={{ color: 'var(--text-3)', font: 'var(--type-small)' }}>{NB_WOW.factions.length > 1 ? 'A = Nebulaa (Alleanza) · O = Nebulah (Orda). ' : ''}Passa sopra un teschio per la data del primo kill.</p>
+    <p style={{ color: 'var(--text-3)', font: 'var(--type-small)' }}>{facs.length > 1 ? 'A = Nebulaa (Alleanza) · O = Nebulah (Orda). ' : ''}{anyDate ? 'Teschio: boss abbattuto, con la data del primo kill sotto il nome.' : 'Teschio: boss abbattuto.'}</p>
   </div>;
 }
 

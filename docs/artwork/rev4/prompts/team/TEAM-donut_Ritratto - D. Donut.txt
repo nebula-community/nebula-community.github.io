@@ -1,0 +1,30 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: the first is the approved rev4 concept sheet of this character, so match the design exactly. Compose one single finished portrait illustration.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 2:3, for a card on the website's "Chi siamo" page, shown about 210 to 300 pixels wide in a grid of nine portraits. Three-quarter-length figure (from the knees up) of ONE person, camera at his own eye level as he sits, head in the upper third, body slightly turned, a natural pose that belongs to the place. It is part of a series of nine: the same lens, distance, light and background treatment for everyone. Keep 6% margins around the figure. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+PORTRAIT:
+D. Donut: a lean, wiry salvager of about forty-five, self-possessed, balanced, no limp. Long face, dark olive-bronze skin, hazel-green eyes, a watchful sideways glance, a faint smile, short salt-and-pepper stubble; long black hair streaked with silver, swept back into a low ponytail with a grey band. Rough tobacco-grey canvas poncho with a draped cowl collar, a ragged asymmetric hem and old worn-through holes (never burns or bullet holes); smoky dark-green shirt with rolled sleeves, graphite trousers, brown belt. His RIGHT leg is mechanical from mid-thigh — gunmetal plates edged in brushed brass, a bolted round knee hub, a piston ankle, an armoured metal foot — and his LEFT leg is human, in a worn dark-brown lace-up boot (seen from the front, the prosthesis is on the viewer's left). His tool case is a rolled tobacco-grey canvas case with a short handle and two graphite straps, never a holster. No weapon, no glow.
+Setting: the quiet corner along a solid wall, away from the window. He sits sideways on a repaired chair, poncho on, his canvas tool case crosswise on the low shallow shelf beside him, a cup on the table, the mechanical right leg stretched out at ease. A self-possessed working man, a faint smile, a watchful sideways glance.
+Background: the restored Nebula Inn of today, softly out of focus — dark timber, cream plaster, warm amber box lanterns and a hint of thin coral-violet neon frames with blank faces — lit by the same warm practical light from the upper left as the rest of the series.
+Avoid: villain styling, blades or weapons, a glowing leg, the prosthesis on the wrong leg, a limp, a cat, a reserved plaque. No lettering anywhere: papers, sheets and screens stay blank.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+D. Donut: face, hair, poncho, right mechanical leg.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-donut-designer-independent-salvager-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\team\
+Use the filename: TEAM-donut_Ritratto - D. Donut.png

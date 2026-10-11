@@ -1,0 +1,11 @@
+{
+  "_readme": "Il libro mostrato nella sezione Lore. title, presentation e source si aggiornano con npm run lore:import (dalla cartella della lore, in sola lettura); gli altri campi si modificano qui. La copertina compare quando il file indicato in cover esiste in public/.",
+  "title": "La nascita della Nebula Inn",
+  "author": "Daniel Polo",
+  "kind": "Light novel",
+  "genre": "Fantascienza · space western",
+  "teaser": "Sopra le luci di Concordia, una vecchia casa di sosta offre una possibilità: aprire una locanda insieme. Ma ciascuno ha condizioni per restare.",
+  "presentation": "Sull’asteroide Dorso, otto compagni lavorano insieme senza aver deciso dove andare dopo. Quando l’ultimo trasferimento di un’officina in chiusura si blocca, devono affidarsi anche a Donut, il recuperatore con cui hanno appena litigato. Il rientro lascia perdite e conti da discutere. Sopra le luci di Concordia, una vecchia casa di sosta offre una possibilità: aprire una locanda insieme. Ma ciascuno ha condizioni per restare. Una novella autonoma di fantascienza fra lavoro, amicizia e il rischio di scegliere una casa.",
+  "cover": "media/lore/copertina-la-nascita-della-nebula-inn.webp",
+  "source": "la-nascita-della-nebula-inn-NI4-24-C10"
+}

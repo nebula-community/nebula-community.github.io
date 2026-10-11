@@ -1,0 +1,37 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE illustration in 4:3, shown in a card with strongly rounded corners beside a text on the website. One view from a landing, looking up the last flight of the enclosed stair toward the open door, the camera low, close to Egarim's eye level. Keep the traveller, Egarim and the doorway inside the central 80% of the frame. If the generator only offers 3:2, compose for 4:3 anyway and keep every essential element inside the central 4:3 area; the site crops the left and right edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: night, inside the enclosed, pressurised lantern stair that climbs from the upper tram station to the Nebula Inn: pale stone treads and slab landings, smooth pale grey-beige wall panels between heavy clipped-corner portal frames of bolted graphite steel, copper-bronze tube handrails on both sides, caged glass lamps glowing amber on the walls; the corners stay in violet shadow.
+On the last flight below the door, a traveller climbs: an adult in travel-worn clothes, a heavy pack on one shoulder and a wrapped cloth bundle under the arm, something to share.
+Egarim: an adult man of about fifty with dwarfism — short arms and legs with a full-size adult head, torso and hands, a compact wiry build, never childlike; the top of his head reaches about Finland's shoulder. Weathered olive face, sharp cheekbones, lined forehead, prominent ears, pale grey-blue eyes, a dry half-smile, clean-shaven; very short cropped brown hair with receding temples. Tailored slate-blue work suit — a brass-zipped jacket belted at the waist over matching trousers — with charcoal panels on the shoulder yokes, sides, elbows and knees, a sand-coloured collar lining and a pocket on the left upper sleeve; worn taupe-grey leather work gloves; black chunky lace-up work boots. Dignified and capable; no bruise, no bandage, no fantasy-dwarf traits. He has come down a few steps from the top and takes the pack's other strap without being asked.
+At the top, in the open inner door of the inn: L'Oste: a humanoid android of ordinary adult height, upright and calm, hands relaxed. A smooth egg-shaped dark-graphite faceplate with only two round amber optics glowing softly — NO mouth, NO nose, NO eyebrows, no facial lines or creases; round brass ear housings (not headphones); a slim segmented dark-metal neck with brass struts; a soft slouchy ivory cloth cap. Ankle-length warm-ivory kimono-style robe, left panel over right, wide hanging sleeves, clean worn hems; wide near-black brown obi with a flat knot at the back. Dark gunmetal articulated hands with brass knuckle joints and wide brass wrist cuffs, the RIGHT cuff dull and tarnished, the left brighter; ivory cloth slip-on shoes. Intention shows only through head tilt, hands and pauses. He never eats or drinks. No armour, weapons, monk or samurai styling. He holds the dark indigo noren aside; behind him, warm lantern light and a little steam rising from a pot.
+Below, the stair turns at a landing and disappears into shadow.
+Head-count: exactly three figures.
+Avoid: a bard or lute player, flames or torches, open-air steps, windows onto vacuum, a tin box, lettering anywhere.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The enclosed lantern stair gallery that climbs to the inn.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\lantern-station-shoulder-house-pedestrian-stair-seven-views.png
+Egarim: face, build, slate-blue work suit, gloves.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-egarim-before-incident-seven-views.png
+L'Oste: faceplate, optics, cap, ivory robe, obi, articulated hands.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oste-android-seven-views.png
+The restored Nebula Inn of today from outside: roofs, glazed front, entrance doors, box lanterns, blank neon sign frames, the great window on the right flank.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\01_Nebula Inn - esterno complessivo.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-05_Editto - La salita delle lanterne.png

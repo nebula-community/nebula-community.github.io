@@ -1,0 +1,6 @@
+---
+import Page from '../../layouts/Page.astro';
+import { loadContent } from '../../lib/content.mjs';
+const { editto } = (await loadContent()).NB_CONTENT;
+---
+<Page route="about/editto" title={editto.title + ' · Nebula Inn'} description={editto.teaser} image={editto.cover} />

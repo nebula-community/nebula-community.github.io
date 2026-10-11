@@ -13,18 +13,38 @@ function GamesIndex({ go }) {
     </div></section>
     <section className="kit-container" style={{ paddingBottom: 'var(--section-y)' }}>
       <div className="kit-filters">{genres.map(g => <Tag key={g} selected={f === g} onClick={() => setF(g)}>{g}</Tag>)}</div>
-      <div className="kit-grid">{list.map((g, i) => <Reveal key={g.slug} delay={i * 100}><GameCard {...g} href={'#game/' + g.slug} onClick={(e) => { e.preventDefault(); !g.placeholder && go('game/' + g.slug); }} /></Reveal>)}</div>
+      <div className="kit-grid">{list.map((g, i) => <Reveal key={g.slug} delay={i * 100}><GameCard {...g} href={g.placeholder ? undefined : NB_HREF('game/' + g.slug)} /></Reveal>)}</div>
     </section>
   </main>;
 }
 
-function GamePage({ go }) {
+// The open tab lives in the address (#join, #faq…): it survives a reload and can be shared as a link.
+// The address is written from location.pathname because <base href> would resolve a bare "#join" to the home page.
+function useHashTab(ids, panelId) {
+  const fromHash = () => { const h = decodeURIComponent(location.hash.slice(1)); return ids.includes(h) ? h : null; };
+  const [tab, setTab] = React.useState(() => fromHash() || ids[0] || 'info');
+  React.useEffect(() => {
+    // arriving from a shared link (…/#faq): the tab is shown, not left below the hero
+    if (fromHash()) requestAnimationFrame(() => { const p = document.getElementById(panelId); p && p.scrollIntoView({ block: 'start' }); });
+    const f = () => { const h = fromHash(); if (h) setTab(h); };
+    addEventListener('hashchange', f); return () => removeEventListener('hashchange', f);
+  }, []);
+  const choose = (id) => { setTab(id); history.replaceState(history.state, '', location.pathname + location.search + '#' + id); };
+  return [tab, choose];
+}
+
+function GamePage() {
   const { Tabs, Badge, Button, Card, Icon, EventItem, Dialog } = DS_G;
   const g = NB_DATA.games[0], w = NB_DATA.wow;
   const TABS = NB_WOW.tabs || [];
-  const [tab, setTab] = React.useState(TABS[0] ? TABS[0].id : 'info');
+  const [tab, setTab] = useHashTab(TABS.map((t) => t.id), 'wow-panel');
   const C = NB_WOW.copy, H = NB_WOW.hero || {};
   const [img, setImg] = React.useState(null);
+  // "Candidati" in the hero: opens the tab and brings it on screen, otherwise the change happens out of sight
+  const apply = () => {
+    setTab('join');
+    requestAnimationFrame(() => { const p = document.getElementById('wow-panel'); if (!p) return; p.focus({ preventScroll: true }); p.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); });
+  };
   const gallery = w.gallery;
   return <main className="kit-page">
     <section className="kit-ghero" style={{ backgroundImage: `url(${g.heroImage || g.image})` }} data-screen-label="Game page">
@@ -32,12 +52,12 @@ function GamePage({ go }) {
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}><Badge tone="ok" dot>Sezione attiva</Badge>{NB_WOW.recruitment.open && <Badge tone="accent">Reclutamento aperto{NB_WOW.recruitment.highlight ? ' · ' + NB_WOW.recruitment.highlight.charAt(0).toLowerCase() + NB_WOW.recruitment.highlight.slice(1) : ''}</Badge>}{(H.badges || []).map(b => <Badge key={b}>{b}</Badge>)}</div>
         <h1 className="kit-h1" style={{ fontSize: 'var(--fs-display-m)', maxWidth: '18ch' }}>{g.title}</h1>
         <p className="kit-lead">{g.description} {g.lead}</p>
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}><Button size="lg" icon="scroll-text" onClick={() => setTab('join')}>{H.ctaApply}</Button><Button size="lg" variant="secondary" icon="message-circle" href={NB_DATA.site.discord} target="_blank" rel="noopener">{H.ctaDiscord}</Button></div>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}><Button size="lg" icon="scroll-text" onClick={apply}>{H.ctaApply}</Button><Button size="lg" variant="secondary" icon="message-circle" href={NB_DATA.site.discord} target="_blank" rel="noopener">{H.ctaDiscord}</Button></div>
       </div>
     </section>
-    <div className="kit-tabsbar"><div className="kit-container"><Tabs variant="underline" tabs={TABS.map(t => ({ value: t.id, label: t.label }))} value={tab} onChange={setTab} label="Sezioni del gioco" /></div></div>
+    <div className="kit-tabsbar"><div className="kit-container"><Tabs variant="underline" id="wow" panelId="wow-panel" tabs={TABS.map(t => ({ value: t.id, label: t.label }))} value={tab} onChange={setTab} label="Sezioni del gioco" /></div></div>
     <section className="kit-container" style={{ padding: '48px var(--gutter) var(--section-y)' }}>
-      <div key={tab} className="kit-page">
+      <div key={tab} className="kit-page kit-tabpanel" id="wow-panel" role="tabpanel" aria-labelledby={'wow-tab-' + tab} tabIndex={0}>
         {tab === 'info' && <WowInfo />}
         {tab === 'recruitment' && <WowRecruitment />}
         {tab === 'loot' && <WowLoot />}
@@ -58,11 +78,11 @@ function GamePage({ go }) {
         </div>}
         {tab === 'ranks' && <WowRanks />}
         {tab === 'calendar' && <WowCalendar />}
-        {tab === 'gallery' && <div style={{ display: 'grid', gap: 24 }}><div className="kit-head" style={{ marginBottom: 0 }}><h2 className="kit-h2">{C.gallery.title}</h2><p className="kit-lead">{C.gallery.lead}</p></div><div className="kit-gallery">{gallery.map(s => <div key={s.src} role="button" aria-label={s.alt} style={{ backgroundImage: `url(${s.src})` }} onClick={() => setImg(s.src)} />)}</div></div>}
+        {tab === 'gallery' && <div style={{ display: 'grid', gap: 24 }}><div className="kit-head" style={{ marginBottom: 0 }}><h2 className="kit-h2">{C.gallery.title}</h2><p className="kit-lead">{C.gallery.lead}</p></div><div className="kit-gallery">{gallery.map(s => <button type="button" key={s.src} className="kit-gallery__item" aria-label={"Apri l’immagine: " + s.alt} style={{ backgroundImage: `url(${s.src})` }} onClick={() => setImg(s)} />)}</div></div>}
         {tab === 'faq' && <WowFaq />}
       </div>
     </section>
-    <Dialog open={!!img} title="Galleria" onClose={() => setImg(null)}>{img && <img src={img} alt="" style={{ borderRadius: 12 }} />}</Dialog>
+    <Dialog open={!!img} title="Galleria" onClose={() => setImg(null)}>{img && <figure style={{ margin: 0, display: 'grid', gap: 10 }}><img src={img.src} alt={img.alt || ''} style={{ borderRadius: 12 }} />{img.alt && !img.alt.startsWith('[[') && <figcaption style={{ font: 'var(--type-small)', color: 'var(--text-2)' }}>{img.alt}</figcaption>}</figure>}</Dialog>
   </main>;
 }
 

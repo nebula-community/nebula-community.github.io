@@ -1,4 +1,6 @@
 ---
 import Page from '../../layouts/Page.astro';
+import { loadContent } from '../../lib/content.mjs';
+const { book, site } = (await loadContent()).NB_DATA;
 ---
-<Page route="lore" title="La Rotta Bassa · Lore · Nebula Inn" description="La storia della Nebula Inn: un prologo, quattro libri, quattro veglie." />
+<Page route="lore" title={book.title + ' · Lore · Nebula Inn'} description={book.presentation || book.teaser} image={site.images.homeLore} />

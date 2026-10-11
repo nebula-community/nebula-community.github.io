@@ -9,13 +9,14 @@ content/
 ├── team.json                    staff — roles, not people (ADR-005 §2.7)
 ├── pages/                       welcome channels
 │   ├── locanda.md               "Chi siamo" (frontmatter + Markdown)
-│   ├── editto.md                the Edict — shown in Lore too
+│   ├── editto.md                the Edict — its own tab in Chi siamo (/chi-siamo/editto/)
+│   ├── fondatori.json           founders and co-founders + group photo, at the end of La Locanda
 │   └── regolamento.json         the Rules — structured: groups, scale, enforcement
-├── lore/
+├── lore/                        the light novel "La nascita della Nebula Inn" (imported, see below)
 │   ├── index.json               ⚙ generated at build from the .md frontmatter
-│   ├── 00-una-notte-di-deposito.md
-│   ├── 01-la-sala-che-non-chiude-mai.md
-│   └── …                        one file per chapter / vigil
+│   ├── libro.json               the book: title, author, form, genre, home teaser, presentation, cover
+│   ├── 01-il-lavoro-prima-della-partenza.md
+│   └── …                        one file per chapter, 01 → 09
 ├── games/
 │   ├── index.json               ⚙ generated at build from the folders
 │   ├── wow-forever/             one folder = one page /giochi/wow-forever
@@ -59,7 +60,9 @@ Normal paragraph.
 ```
 
 ## Lore chapters (`lore/NN-*.md`)
-Frontmatter: `id`, `order`, `numeral` (P, I, I·V…), `kind` (Prologo / Libro / Veglia), `title`, `cover`, `date`, `minutes`. Body = paragraphs of prose separated by a blank line.
+Imported with `npm run lore:import` from the lore folder (`discord/community/lore`, read only): the site shows only the light novel for now, not the long novel or its prologue.
+Frontmatter: `id` (URL `/lore/<id>/`), `order`, `numeral` (01, 02…), `kind` (Capitolo), `title`, `cover`, `minutes`, `words`, `plates` (illustrations shown after the chapter), `source`. Body = paragraphs separated by a blank line; `*italic*`; a line with `***` is a scene break.
+Covers and plates may point to files that do not exist yet: the site shows a fallback until they appear in `public/media/lore/` (`npm run art`, see `docs/artwork/rev4/README.md`).
 
 ## Loot (`games/<slug>/loot.json`)
 ```json
@@ -76,5 +79,5 @@ Alternative: a Google Sheet published as CSV with `roster` and `awards` sheets (
 3. Put the images in `media/sections/<new-slug>/`
 4. Commit on `main` → the Action regenerates and publishes the page
 
-## Adding a chapter
-Create `lore/NN-title.md` with the frontmatter above → commit. It appears in the index and in the previous/next navigation.
+## Updating the story
+Run `npm run lore:import` (or `-- --from <reading copy.md>`) → `npm run validate` → commit. Chapters appear in the index and in the previous/next navigation; hand edits to chapter text are overwritten by the next import.

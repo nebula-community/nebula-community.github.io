@@ -1,0 +1,37 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE illustration in 16:10, for a game card whose lower 40% fades into the card's dark surface: keep the table, the people and the window in the UPPER 60%. If the generator only offers 3:2, compose for 16:10 anyway and keep every essential element inside the central 16:10 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: an empty table along the glazed engawa of the restored inn, still half in shadow, about to become a new table.
+The member who proposed it, an unnamed adult, unwraps a plain box with an unlabelled lid and spreads a cloth on the table.
+Calco: a very tall, very thin adult of no fixed age, clearly the tallest of the group and strongly vertical — long neck, narrow shoulders, thin wrists, long fingers, a slow deliberate bearing. Narrow hollow-cheeked face, low-saturation grey-brown skin, dark heavy-lidded eyes that never glow, a calm serious mouth, ordinary rounded ears; fine short silver-grey hair with a faint lilac tint, swept back. A matte black fabric band across the forehead above the brows: a shield against glare, never a blindfold or a ninja headband. Fitted greyish-plum wrap-front jacket to mid-thigh closed by a thin dark cord sash, black lower sleeves, black high collar, folded cream sheets in the left breast pocket; slim charcoal trousers, soft black flat shoes. He tilts an old lamp on its adjustable bracket so the light falls on the table and not into anyone's eyes.
+Scudi: a tall, solid, long-limbed man of about fifty-five with square shoulders and very large, healthy, relaxed hands, both equally capable, the right grip firm. Dark-brown skin, rectangular lined face, heavy brow, brown eyes, a dry ironic half-smile; very short salt-and-pepper hair. Graphite button-collar coverall over a black tee, sleeves rolled below the elbow, muted denim-blue panels on the shoulder yokes, elbows and knees; heavy sand-beige canvas bib apron with brass rivets and grey-brown work stains; brown leather belt with a coiled brown strap clipped at his left hip; matte black chunky work boots. He hears less on the right, so he turns his LEFT ear toward whoever speaks; no hearing device, no brace, no scar. He carries over a second chair, his left ear turned toward the member who is talking.
+The young ginkgo in its plain pot nearby is the only plant. Beyond: the great window: one wide clipped-corner rectangle in a thick near-black graphite frame of riveted segments, continuous seals and short inset amber light bars; beyond real glass, the Velo — deep blue-violet cloud masses, dark indigo dust, a pale peach-cream band of light crossing diagonally, a few restrained coral glows and sparse precise stars — with faint reflections of the room on the glass. Never a screen, an aquarium or a spiral.
+Head-count: exactly three people.
+Avoid: a plant on the table, any recognisable game, "reserved" signs, lettering on the box.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Calco: face, forehead band, plum wrap jacket, very tall build.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-calco-route-reader-seven-views.png
+Scudi: face, hands, graphite coverall, sand-beige apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-scudi-supports-pressure-systems-seven-views.png
+The great clipped-corner window and the Velo beyond it.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-nebulavelo-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-09_Prossimo tavolo - Il tavolo che si apre.png

@@ -1,0 +1,39 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A close view over a table under one lamp, the calendar between Ada and Egarim. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 06, evening, at a meeting table in a plain rented room in Concordia — not the old house. One warm lamp, violet shadow all around.
+Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, straight charcoal trousers, scuffed dark-brown lace-up work boots. With a pen in her hand and a calendar sheet of empty boxes in front of her, she looks at the same boxes as Egarim.
+Egarim: an adult man of about fifty with dwarfism — short arms and legs with a full-size adult head, torso and hands, a compact wiry build, never childlike; the top of his head reaches about Finland's shoulder. Weathered olive face, sharp cheekbones, lined forehead, prominent ears, pale grey-blue eyes, a dry half-smile, clean-shaven; very short cropped brown hair with receding temples. Tailored slate-blue work suit — a brass-zipped jacket belted at the waist over matching trousers — with charcoal panels on the shoulder yokes, sides, elbows and knees, a sand-coloured collar lining and a pocket on the left upper sleeve; worn taupe-grey leather work gloves; black chunky lace-up work boots. Dignified and capable; no bruise, no bandage, no fantasy-dwarf traits. Two folded job offers lie beside the calendar, not on it.
+In the soft background: Calco: a very tall, very thin adult of no fixed age, clearly the tallest of the group and strongly vertical — long neck, narrow shoulders, thin wrists, long fingers, a slow deliberate bearing. Narrow hollow-cheeked face, low-saturation grey-brown skin, dark heavy-lidded eyes that never glow, a calm serious mouth, ordinary rounded ears; fine short silver-grey hair with a faint lilac tint, swept back. A matte black fabric band across the forehead above the brows: a shield against glare, never a blindfold or a ninja headband. Fitted greyish-plum wrap-front jacket to mid-thigh closed by a thin dark cord sash, black lower sleeves, black high collar, folded cream sheets in the left breast pocket; slim charcoal trousers, soft black flat shoes. He sits on the less-lit side of the table. Finland: a small, narrow-shouldered man of about fifty-eight, slightly stooped, head tilted forward as if listening. Oval hollow-cheeked face, fair beige skin with a rosy undertone, fine lines at the eyes, brown eyes, clean-shaven, a gentle smile; short tousled ash-brown hair grey at the temples. Thin round dark-metal glasses on a plain dark cord that runs behind his neck. Open knee-length charcoal heathered-wool coat with notched lapels, brown buttons and big patch pockets bulging with folded cream papers, its back half-belt still buttoned on; écru open-collar shirt with a reddish-brown pen in the inner pocket, brown belt, dark tobacco-brown trousers, worn brown lace-up shoes. Authority through attention, never rank: no insignia. He has his coat across his legs. Oris: a slim, long-limbed young man of about twenty-seven, light and quick, always ready to turn toward someone. Light-brown skin, narrow face, slightly convex nose, thick dark brows, hazel-amber eyes, an open, slightly hesitant smile; wavy dark-brown hair, unruly at the front, short at the nape. Waist-length muted bottle-green canvas work jacket worn open, flap pockets, cuffs rolled once; rust-red crew-neck knit beneath; a black compact communicator clipped on the left chest, a folded white list in the left hip pocket, a cream bar cloth hanging from the right back pocket; slim charcoal-brown trousers, scuffed dark-brown lace-up work boots. No headphones, no microphone. He holds his folded invitation list.
+Head-count: exactly five people.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: a key, signatures or signed papers, coins, numbers, readable writing, the old house's hall.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+Egarim: face, build, slate-blue work suit, gloves.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-egarim-before-incident-seven-views.png
+Calco: face, forehead band, plum wrap jacket, very tall build.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-calco-route-reader-seven-views.png
+Finland: face, glasses on their cord, charcoal coat, écru shirt, tobacco trousers.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-finland-record-keeper-seven-views.png
+Oris: face, hair, bottle-green jacket, rust knit.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oris-hall-lists-invitations-seven-views.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-06_Capitolo 06 - Le condizioni per restare.png

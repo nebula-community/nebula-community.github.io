@@ -3,12 +3,12 @@ import Page from '../../layouts/Page.astro';
 import { loadContent } from '../../lib/content.mjs';
 export async function getStaticPaths() {
   const d = await loadContent();
+  const book = d.NB_DATA.book.title;
   return [
-    ...d.NB_DATA.chapters.map((c) => ({ params: { id: c.id }, props: { title: c.title, kind: c.kind, cover: c.cover } })),
-    { params: { id: 'editto' }, props: { title: d.NB_CONTENT.editto.title, kind: 'Editto', cover: d.NB_CONTENT.editto.cover } },
+    ...d.NB_DATA.chapters.map((c) => ({ params: { id: c.id }, props: { title: `${c.title} · ${c.kind} ${c.n} · Nebula Inn`, description: `${book} — ${c.kind} ${c.n}: ${c.title}`, cover: c.cover } })),
   ];
 }
 const { id } = Astro.params;
-const { title, kind, cover } = Astro.props;
+const { title, description, cover } = Astro.props;
 ---
-<Page route={'read/' + id} title={title + ' · ' + kind + ' · Nebula Inn'} description={'La Rotta Bassa — ' + kind + ': ' + title} image={cover} />
+<Page route={'read/' + id} title={title} description={description} image={cover || undefined} />

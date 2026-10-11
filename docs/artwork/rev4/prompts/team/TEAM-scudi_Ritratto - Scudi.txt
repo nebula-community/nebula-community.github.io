@@ -1,0 +1,32 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: the first is the approved rev4 concept sheet of this character, so match the design exactly. Compose one single finished portrait illustration.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 2:3, for a card on the website's "Chi siamo" page, shown about 210 to 300 pixels wide in a grid of nine portraits. Three-quarter-length figure (from the knees up) of ONE person, camera at his own eye level as he kneels, head in the upper third, body slightly turned, a natural pose that belongs to the place. It is part of a series of nine: the same lens, distance, light and background treatment for everyone. Keep 6% margins around the figure. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+PORTRAIT:
+Scudi: a tall, solid, long-limbed man of about fifty-five with square shoulders and very large, healthy, relaxed hands, both equally capable, the right grip firm. Dark-brown skin, rectangular lined face, heavy brow, brown eyes, a dry ironic half-smile; very short salt-and-pepper hair. Graphite button-collar coverall over a black tee, sleeves rolled below the elbow, muted denim-blue panels on the shoulder yokes, elbows and knees; heavy sand-beige canvas bib apron with brass rivets and grey-brown work stains; brown leather belt with a coiled brown strap clipped at his left hip; matte black chunky work boots. He hears less on the right, so he turns his LEFT ear toward whoever speaks; no hearing device, no brace, no scar.
+Setting: kneeling at the seal panel of the great clipped-corner window, a small pressure gauge in his healthy right hand, his left ear turned toward someone off-frame; beyond the glass, the deep blue-violet clouds and pale coral folds of the Velo. Dry, ironic, competent.
+Background: the restored Nebula Inn of today, softly out of focus — dark timber, cream plaster, warm amber box lanterns and a hint of thin coral-violet neon frames with blank faces — lit by the same warm practical light from the upper left as the rest of the series.
+Avoid: an injured or stiff hand, a hearing device, armour, sparks. No lettering anywhere: papers, sheets and screens stay blank.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Scudi: face, hands, graphite coverall, sand-beige apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-scudi-supports-pressure-systems-seven-views.png
+The great clipped-corner window and the Velo beyond it.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-nebulavelo-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\team\
+Use the filename: TEAM-scudi_Ritratto - Scudi.png

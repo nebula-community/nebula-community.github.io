@@ -5,6 +5,7 @@ import path from 'node:path';
 const ROOT = 'content';
 const CLASSES = ['warrior', 'paladin', 'hunter', 'rogue', 'priest', 'shaman', 'mage', 'warlock', 'druid'];
 const errors = [];
+const warnings = [];
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
 
 for (const f of walk(ROOT)) {
@@ -29,10 +30,19 @@ for (const f of walk(ROOT)) {
     }));
   }
   if (f.endsWith('.md') && f.includes(path.sep + 'lore' + path.sep) && /\d\d-/.test(path.basename(f))) {
-    if (!src.startsWith('---\n')) errors.push(`${f}: manca il frontmatter (--- … ---) in cima`);
+    if (!src.replace(/\r\n/g, '\n').startsWith('---\n')) errors.push(`${f}: manca il frontmatter (--- … ---) in cima`);
     for (const k of ['id', 'title', 'kind']) if (!new RegExp('^' + k + ':', 'm').test(src)) errors.push(`${f}: manca il campo "${k}" nel frontmatter`);
+  }
+  if (f.endsWith(path.join('lore', 'libro.json'))) {
+    const b = JSON.parse(src);
+    if (!b.title) errors.push(`${f}: manca "title"`);
+  }
+  // Images not generated yet do not stop the deploy: the page shows its fallback. Listed so nothing is forgotten.
+  for (const m of src.matchAll(/["\s(]((?:media)\/[^"\s)]+\.(?:webp|avif|png|jpe?g|svg))/g)) {
+    if (!fs.existsSync(path.join('public', m[1]))) warnings.push(`${f}: ${m[1]} non c’è ancora in public/`);
   }
 }
 
+if (warnings.length) console.warn('⚠ Immagini mancanti (il sito mostra un riempimento):\n  ' + [...new Set(warnings)].join('\n  '));
 if (errors.length) { console.error('✖ Contenuti non validi:\n  ' + errors.join('\n  ')); process.exit(1); }
 console.log('✓ Contenuti validi');

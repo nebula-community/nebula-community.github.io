@@ -1,0 +1,37 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A wide view in black space beside the dark flank of the asteroid, the three craft stacked in depth inside the middle band. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 03, the opening of the manoeuvre outside the closing workshop, in vacuum. Under an overhanging cliff of dark charcoal rock, a flat pale grey-beige steel platform with bolted anchor pads and low ochre-trimmed railings juts out on triangulated braces; set into the rock behind it, a large clipped-octagon sealed airlock door with amber work lamps.
+Holding position in black space near the platform: the hired transfer shuttle — a boxy, bus-like craft with a warm grey hull patched in cream, ochre lamps and trim, a four-pane wraparound windscreen — carrying a heavy industrial machine strapped on its RIGHT-side external support. Its cabin is empty.
+To one side, drifting out toward the lateral sector: D. Donut's squat single-seat salvage shuttle — a boxy faceted cream hull with muted olive-green and grey replacement panels, a narrow faceted windscreen high on the blunt nose, two large round rear thrusters with orange-red rims — its ventral arm folded in its belly bay.
+Approaching with its two short, heavy pincer arms open, not yet gripping: the company's compact armoured tow, warm mineral-grey plating over dark graphite, burnt-orange contact pads, a single-seat cab.
+All three craft have their landing legs folded and stand on nothing. Hard light, black space with restrained dust, a strip of site lights along the rock. No one is outside yet.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: people outside, sparks or explosions, a fourth craft, the rented passenger shuttle, the cradle with the machine in it, numbers or markings on any hull, weapons, a ground plane under the craft.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The hired transfer shuttle, with the machine on its RIGHT-side support. Closed hull.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\vehicles\hired-mixed-transfer-shuttle-seven-views.png
+D. Donut's squat salvage shuttle (v1), ventral arm folded. Closed hull: never show its cutaway.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\vehicles\donuts_personal_salvage_shuttle_loaded_seven_views.png
+The company's heavy tow. Its small orange tag stays blank.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\vehicles\heavy-local-tow-seven-views.png
+The exposed working platform under the cliff, outside the workshop, in vacuum.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-zonamanovra-exposed-vacuum-working-area-seven-views.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-03_Capitolo 03 - Tornare tutti.png

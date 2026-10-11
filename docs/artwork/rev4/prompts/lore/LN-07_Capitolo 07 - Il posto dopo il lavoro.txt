@@ -1,0 +1,39 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A view across the small vestibule at standing eye height, the inner doorway to the common room behind. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 07, afternoon, the day before the old house opens, in Casa Nona's small pressure vestibule: grey steel panels and pipes, a heavy dark graphite pressure door with a clipped-corner frame, a caged amber lamp, timber-topped benches, a worn grey stone floor crossed by a faded ochre painted line and a clearer teal one curving around a steel upright.
+D. Donut: a lean, wiry salvager of about forty-five, self-possessed, balanced, no limp. Long face, dark olive-bronze skin, hazel-green eyes, a watchful sideways glance, a faint smile, short salt-and-pepper stubble; long black hair streaked with silver, swept back into a low ponytail with a grey band. Rough tobacco-grey canvas poncho with a draped cowl collar, a ragged asymmetric hem and old worn-through holes (never burns or bullet holes); smoky dark-green shirt with rolled sleeves, graphite trousers, brown belt. His RIGHT leg is mechanical from mid-thigh — gunmetal plates edged in brushed brass, a bolted round knee hub, a piston ankle, an armoured metal foot — and his LEFT leg is human, in a worn dark-brown lace-up boot (seen from the front, the prosthesis is on the viewer's left). His tool case is a rolled tobacco-grey canvas case with a short handle and two graphite straps, never a holster. No weapon, no glow. He has just come in from the ramp, poncho on, the canvas tool case slung, a small cloth-wrapped bundle held against his side; he stops past the curve of the floor line, half-turned toward Scudi, before setting anything down.
+Scudi: a tall, solid, long-limbed man of about fifty-five with square shoulders and very large, healthy, relaxed hands, both equally capable, the right grip firm. Dark-brown skin, rectangular lined face, heavy brow, brown eyes, a dry ironic half-smile; very short salt-and-pepper hair. Graphite button-collar coverall over a black tee, sleeves rolled below the elbow, muted denim-blue panels on the shoulder yokes, elbows and knees; heavy sand-beige canvas bib apron with brass rivets and grey-brown work stains; brown leather belt with a coiled brown strap clipped at his left hip; matte black chunky work boots. He hears less on the right, so he turns his LEFT ear toward whoever speaks; no hearing device, no brace, no scar. One large, healthy hand raised, he points at fixing points on a timber furniture frame.
+Through the inner doorway behind them, small: Casa Nona's modest common room as it is in the story: one single-height room inside a sealed steel shell; from the entrance, the compact waist-high counter of brown vertical planks with a pale washable top and a dry inner shelf on the LEFT, and a broad sealed window with clipped corners on the RIGHT; mismatched repaired chairs and a few tables, sound dark timber where hands and bodies touch, matte metal fittings, one existing lamp. No gallery, no neon, no clusters of lanterns, no signs; at the counter, Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots.
+Head-count: exactly three people.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: shelves, templates or trays, a cup, a banner or plaque, lettering, other guests.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Casa Nona's vestibule: the faded ochre floor line and the clearer teal one crossing it.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-casanonavestibolo-shoulder-house-entrance-vestibule-seven-views.png
+D. Donut: face, hair, poncho, right mechanical leg.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-donut-designer-independent-salvager-seven-views.png
+Scudi: face, hands, graphite coverall, sand-beige apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-scudi-supports-pressure-systems-seven-views.png
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+Casa Nona's common room, for its layout only: counter LEFT, broad window RIGHT. Not its bare steel, fluorescent tubes or daylight skyline.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-casanonasala-house-common-room-pre-restoration-hangar-seven-views.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-07_Capitolo 07 - Il posto dopo il lavoro.png

@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "validate": "node scripts/validate.mjs",
-    "sync:raid-helper": "node scripts/sync-raid-helper.mjs"
+    "sync:raid-helper": "node scripts/sync-raid-helper.mjs",
+    "lore:import": "node scripts/import-lore.mjs",
+    "art": "node scripts/art.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
@@ -16,5 +18,8 @@
     "astro": "^5.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

@@ -4,7 +4,10 @@ import App from '../islands/App.jsx';
 import { loadContent } from '../lib/content.mjs';
 import { BASE } from '../lib/base.mjs';
 const { route, title, description, image, heading, summary } = Astro.props;
-const data = await loadContent();
+const full = await loadContent();
+// The island receives all content as props, serialised into every page: keep only the chapter text this page reads.
+const reading = route.startsWith('read/') ? route.slice(5) : null;
+const data = { ...full, NB_DATA: { ...full.NB_DATA, chapters: full.NB_DATA.chapters.map((c) => (c.id === reading ? c : { ...c, body: null })) } };
 ---
 <Layout title={title} description={description} image={image}>
   <App client:only="react" route={route} data={data} base={BASE} />

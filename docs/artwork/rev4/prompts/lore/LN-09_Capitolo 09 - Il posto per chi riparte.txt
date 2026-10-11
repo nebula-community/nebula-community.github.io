@@ -1,0 +1,40 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A close view at the counter at standing eye height, the hands and the closed register at the centre. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 09, the evening before the first dinner, at Casa Nona's compact counter: brown vertical planks, a pale washable top, a dry inner shelf, matte metal fittings, lamp light.
+L'Oste's articulated dark-metal hands, ivory sleeves and dull RIGHT brass cuff set an old, thick house register — CLOSED, a plain muted brown cover, its spine mended with two cloth patches of different weave — on the dry shelf beside Ada's fresh blank sheets; a bowl has just been moved aside. L'Oste: a humanoid android of ordinary adult height, upright and calm, hands relaxed. A smooth egg-shaped dark-graphite faceplate with only two round amber optics glowing softly — NO mouth, NO nose, NO eyebrows, no facial lines or creases; round brass ear housings (not headphones); a slim segmented dark-metal neck with brass struts; a soft slouchy ivory cloth cap. Ankle-length warm-ivory kimono-style robe, left panel over right, wide hanging sleeves, clean worn hems; wide near-black brown obi with a flat knot at the back. Dark gunmetal articulated hands with brass knuckle joints and wide brass wrist cuffs, the RIGHT cuff dull and tarnished, the left brighter; ivory cloth slip-on shoes. Intention shows only through head tilt, hands and pauses. He never eats or drinks. No armour, weapons, monk or samurai styling.
+Finland: a small, narrow-shouldered man of about fifty-eight, slightly stooped, head tilted forward as if listening. Oval hollow-cheeked face, fair beige skin with a rosy undertone, fine lines at the eyes, brown eyes, clean-shaven, a gentle smile; short tousled ash-brown hair grey at the temples. Thin round dark-metal glasses on a plain dark cord that runs behind his neck. Open knee-length charcoal heathered-wool coat with notched lapels, brown buttons and big patch pockets bulging with folded cream papers (the back half-belt is gone: only its two brown buttons remain); écru open-collar shirt with a reddish-brown pen in the inner pocket, brown belt, dark tobacco-brown trousers, worn brown lace-up shoes. Authority through attention, never rank: no insignia. Glasses on their cord, he lets one fingertip hover just above the dusty cover without touching it.
+Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots. She watches.
+Behind them, the broad window on the RIGHT is still dark, with Concordia's glow far below.
+Head-count: L'Oste, Finland and Ada.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: any letters on the register, the register open, a bright nebula filling the window, a banner, spoons by an empty chair, a bowl in front of L'Oste, other guests, lettering.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+L'Oste: faceplate, optics, cap, ivory robe, obi, articulated hands.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oste-android-seven-views.png
+Finland: face, glasses on their cord, charcoal coat, écru shirt, tobacco trousers.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\founder-finland-record-keeper-seven-views.png
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+The old house counter with its dry shelf (its end cubby stays closed).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nona-repaired-service-counter-seven-views.png
+Casa Nona's common room, for its layout only: counter LEFT, broad window RIGHT. Not its bare steel, fluorescent tubes or daylight skyline.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-casanonasala-house-common-room-pre-restoration-hangar-seven-views.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-09_Capitolo 09 - Il posto per chi riparte.png

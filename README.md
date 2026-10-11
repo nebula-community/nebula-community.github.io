@@ -8,6 +8,8 @@ npm install
 npm run dev          # http://localhost:4321
 npm run validate     # controlla i file in content/
 npm run build        # genera dist/
+npm run lore:import  # importa la light novel dalla cartella della lore (sola lettura)
+npm run art          # converte le illustrazioni generate e le collega ai contenuti
 ```
 Serve Node 20 o superiore.
 
@@ -30,12 +32,13 @@ src/kit/            schermate (React)
 src/ds/             componenti del design system Nebula
 src/styles/         token, componenti, layout
 src/lib/content.mjs lettura di content/ al build
-scripts/            validazione e sync Raid-Helper
+scripts/            validazione, sync Raid-Helper, import della lore, illustrazioni
+docs/artwork/       prompt delle illustrazioni (rev4/ è il set in uso) e manifest.json
 .github/workflows/  deploy + sync calendario
 ```
 
 ## Limiti noti di questa versione
 - **Pagine renderizzate nel browser:** ogni pagina è statica, con titolo, meta, Open Graph e sitemap, ma il contenuto visibile lo disegna React nel browser. I motori di ricerca vedono i meta e il testo di fallback. Il prossimo passo è il rendering lato server delle sezioni testuali.
 - **Una sola pagina gioco:** il layout dei giochi è pensato per WoW Forever. Un secondo gioco con tab diverse richiede di generalizzare `src/kit/Games.jsx`.
-- **Immagini non ottimizzate:** vengono servite così come sono. Lo script `sharp` per WebP/AVIF non è ancora incluso.
+- **Immagini:** le illustrazioni generate passano da `npm run art`, che le converte in WebP della misura giusta. Le altre immagini vengono servite così come sono, senza `srcset`.
 - **Niente Tailwind:** lo stile usa i token CSS del design system (`src/styles/tokens/`) invece di Tailwind.

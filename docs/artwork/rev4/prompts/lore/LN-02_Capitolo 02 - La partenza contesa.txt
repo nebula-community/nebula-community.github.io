@@ -1,0 +1,38 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 3:4, for a chapter card on the website shown about 200 to 300 pixels wide. A view across the corner table of the waiting room at seated eye height, the doorway in the background. Keep the subject in the middle band: the bottom third stays darker and calm, because the site lays a dark gradient there with the chapter number in the LOWER-LEFT corner, and a small badge may sit in the TOP-LEFT corner. One clear focal point that reads at thumbnail size. If the generator only offers 2:3, compose for 3:4 anyway and keep every essential element inside the central 3:4 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: chapter 02, just past noon, in the plain pressurised waiting room of the closing workshop: grey riveted steel panels, exposed pipes along the ceiling edges, two long fluorescent lights, a pale grey plate floor, mismatched sage-green and terracotta chairs along the walls with a bag at each owner's feet, a big rounded pressure hatch in the rear wall.
+At the warm wooden table in the corner: Ada Vey: a petite, compact woman of about forty-two, shorter than everyone except Egarim, with lean wiry forearms and small quick hands. Warm brown skin, triangular face with a short chin, straight dark brows, dark brown eyes, a small calm smile; wavy black hair pinned in a bun at the back, curly strands escaping at the temples and nape. Cream linen shirt with sleeves rolled to the elbows, fitted muted-plum waistcoat with dark buttons and a yellow pencil in its left breast pocket, short grey-brown canvas waist apron with two pockets, straight charcoal trousers, scuffed dark-brown lace-up work boots. Sleeves pushed up, she turns a signed sheet around so that the whole room can read it.
+Seated across from her with his pen: the workshop site manager, a sturdy medium-height insectoid humanoid: tan-brown chitin head, large dark compound eyes, two short antennae, small mandibles, tan five-fingered hands; tobacco-brown work jacket, cream button shirt, graphite trousers, dark-brown shoes. Mature and administrative, never menacing.
+In the background by the door: Oris: a slim, long-limbed young man of about twenty-seven, light and quick, always ready to turn toward someone. Light-brown skin, narrow face, slightly convex nose, thick dark brows, hazel-amber eyes, an open, slightly hesitant smile; wavy dark-brown hair, unruly at the front, short at the nape. Waist-length muted bottle-green canvas work jacket worn open, flap pockets, cuffs rolled once; rust-red crew-neck knit beneath; a black compact communicator clipped on the left chest, a folded white list in the left hip pocket, a cream bar cloth hanging from the right back pocket; slim charcoal-brown trousers, scuffed dark-brown lace-up work boots. No headphones, no microphone. He faces a bearded man in a long charcoal coat who keeps a soft brown holdall at his feet; Oris holds his folded list against his chest and shifts his weight. It reads as a correction, never as a humiliation. The other workers wait on the chairs.
+This card is seen BEFORE the chapter is read: it shows the situation at the start of the chapter, never its outcome.
+Avoid: the release handle or anyone touching it, a bent guide, shoving or injuries, the company foreman and his workers, D. Donut, numbers or readable writing.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Ada Vey: face, hair, linen shirt, plum waistcoat, apron.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-adavey-contracts-accounts-service-seven-views.png
+The workshop site manager (insectoid, rev2).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-gestoredelsito-workshop-site-manager-insectoid-seven-views-rev2.png
+Oris: face, hair, bottle-green jacket, rust knit.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oris-hall-lists-invitations-seven-views.png
+The workshop waiting room with its mismatched chairs.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-salaattesaofficina-pressurised-workshop-waiting-room-seven-views-v4.png
+The six workers and their bags (rev2).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-seilavoratori-seven_view-rev2.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\lore\
+Use the filename: LN-02_Capitolo 02 - La partenza contesa.png

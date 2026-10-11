@@ -1,0 +1,37 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE landscape illustration in 1.91:1 (1200 × 630), used as the link preview of the website on Discord, WhatsApp and Telegram. Many apps crop it to a centred square: keep the inn and its lit window inside the central square (the middle half of the width), the dome below it and the Velo above. Big, simple shapes that read at thumbnail size; no small detail carries the meaning. If the generator only offers 3:2, compose for 1.91:1 anyway and keep every essential element inside the central 1.91:1 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: night on the asteroid Dorso. The restored Nebula Inn, seen from a little below on its rock shoulder, in a three-quarter view from the front-right, so that the lantern-lit entrance front and the great window on the right flank both show.
+The restored Nebula Inn of today (the old Casa Nona, refurbished): a two-level Japanese inn of dark timber posts and beams, cream plaster infill and a graphite steel plinth under charcoal tile roofs with lifted eaves, sitting on the rock shoulder of the asteroid Dorso ABOVE Concordia's dome, inside its own sealed pressure shell. From the guest entrance looking in: the long timber bar and reception on the LEFT, the great clipped-corner window onto the Velo on the RIGHT, a double-height hall with honey-toned plank floors in between, an open L-shaped timber gallery along the LEFT and REAR walls (never in front of the window), the stair at the REAR-LEFT, the kitchen behind the bar. Many warm amber box lanterns at different heights; a restrained number of signs and boards whose faces stay BLANK, framed by thin coral-pink and violet neon tubes; cyan only on tiny indicators.
+Outside: the stone steps and the centred lattice-glass double doors under one horizontal sign, tall vertical signs on the corner posts, all with blank warm faces framed by thin coral-pink and violet neon tubes; sealed box lanterns along posts and eaves; through the two-storey glazed front, the warm hall and the gallery railing, with only tiny warm silhouettes, none identifiable. Seen from outside, the great window shows the lit room and faint reflections, not a painted nebula.
+Below: Concordia, a vertical city inside its own transparent dome sunk into a bowl of violet-grey rock: terraces of timber-and-stone houses with steep roofs, countless small amber windows, a central spired tower and a band of lit tram windows; a ring of lit tram windows around the dome's base. Inside the dome only a dusky violet sky, never clouds, sunsets or mountains.
+Above and behind: the Velo: a vast field of clumpy cloud masses in deep indigo, navy and blue-violet, split by a broad luminous band of pale cream-peach dust running diagonally from lower left to upper right, small coral glows near its edges and sparse pin-point stars; not a spiral galaxy, a planet or a face.
+Mood: a small warm house in a vast space, a welcome without fanfare.
+Avoid: people, plants, noren or fabric outside in vacuum; ships, engine plumes, flames; letters or pseudo-kanji on any sign; a torii or temple look; rain outside the dome.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+The restored Nebula Inn of today from outside: roofs, glazed front, entrance doors, box lanterns, blank neon sign frames, the great window on the right flank.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\01_Nebula Inn - esterno complessivo.png
+Dorso: the asteroid, its tram ring, Concordia's dome low on the front, the inn as a tiny speck on the upper shoulder.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-dorso-seven-views-rev3.png
+Concordia's dome seen from above. Never copy the sunset, clouds or mountains painted inside the dome.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-concordia-seven-views-from-dorso-rev3.png
+The Velo: cloud masses, the pale diagonal band of dust, sparse stars.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-velo-space-single-view.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-02_Anteprima social - La locanda sulla spalla.png

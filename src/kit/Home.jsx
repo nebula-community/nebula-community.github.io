@@ -13,7 +13,7 @@ function useDiscordCounts() {
       if (c && Date.now() - c.t < DC_TTL) { setData(c); setState('ok'); return; }
       fetch('https://discord.com/api/v10/invites/' + NB_DATA.site.discordCode + '?with_counts=true')
         .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(j => { if (!alive) return; const v = { members: j.approximate_member_count, online: j.approximate_presence_count, t: Date.now() }; localStorage.setItem(DC_KEY, JSON.stringify(v)); setData(v); setState('ok'); })
+        .then(j => { if (!alive) return; const v = { members: j.approximate_member_count, online: j.approximate_presence_count, t: Date.now() }; try { localStorage.setItem(DC_KEY, JSON.stringify(v)); } catch (e) {} setData(v); setState('ok'); })
         .catch(() => alive && setState(navigator.onLine ? 'error' : 'offline'));
     };
     load();
@@ -56,29 +56,30 @@ function About() {
   </section>;
 }
 
-function GamesPreview({ go }) {
+function GamesPreview() {
   const { GameCard, Button } = DS_H;
   return <section className="kit-section" style={{ background: 'var(--surface-1)' }} data-screen-label="Giochi">{/* game events & info live on each game page */}
     <div className="kit-container">
       <Reveal className="kit-head"><div className="nb-eyebrow">I tavoli</div><h2 className="kit-h2">Ogni gioco ha il suo tavolo. La casa è una.</h2><p className="kit-lead">Le sezioni si aprono solo se le chiedi tu, ognuna con la sua porta.</p></Reveal>
       <div className="kit-grid">
-        {NB_DATA.games.map((g, i) => <Reveal key={g.slug} delay={i * 120}><GameCard {...g} href={'#game/' + g.slug} onClick={(e) => { e.preventDefault(); !g.placeholder && go('game/' + g.slug); }} /></Reveal>)}
+        {NB_DATA.games.map((g, i) => <Reveal key={g.slug} delay={i * 120}><GameCard {...g} href={g.placeholder ? undefined : NB_HREF('game/' + g.slug)} /></Reveal>)}
       </div>
-      <div style={{ marginTop: 32 }}><Button variant="secondary" iconRight="arrow-right" onClick={() => go('games')}>Tutti i giochi</Button></div>
+      <div style={{ marginTop: 32 }}><Button variant="secondary" iconRight="arrow-right" href={NB_HREF('games')}>Tutti i giochi</Button></div>
     </div>
   </section>;
 }
 
-function LoreBand({ go }) {
+function LoreBand() {
   const { Button } = DS_H;
+  const book = NB_DATA.book, first = NB_DATA.chapters[0];
   return <section className="kit-section" data-screen-label="Lore">
     <div className="kit-container">
       <Reveal className="kit-band" style={{ backgroundImage: `url(${NB_DATA.site.images.homeLore})` }}>
         <div className="kit-band__in">
-          <div className="nb-eyebrow" style={{ color: '#FDA877' }}>La storia · La Rotta Bassa</div>
-          <h2 className="kit-h1" style={{ fontSize: 'var(--fs-display-m)' }}>Una notte di deposito</h2>
-          <p className="kit-lead">Sopra Concordia, oltre il bordo della cupola, c’è una casa che non chiude mai. L’Oste ha già preso una tazza.</p>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}><Button size="lg" icon="book-open" onClick={() => go('read/p')}>Leggi il prologo</Button><Button size="lg" variant="ghost" onClick={() => go('lore')} style={{ color: '#F3EEF7' }}>Tutti i capitoli</Button></div>
+          <div className="nb-eyebrow" style={{ color: '#FDA877' }}>{['La storia', book.kind].filter(Boolean).join(' · ')}</div>
+          <h2 className="kit-h1" style={{ fontSize: 'var(--fs-display-m)' }}>{book.title}</h2>
+          <p className="kit-lead">{book.teaser}</p>
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>{first && <Button size="lg" icon="book-open" href={NB_HREF('read/' + first.id)}>Inizia a leggere</Button>}<Button size="lg" variant="ghost" href={NB_HREF('lore')} style={{ color: '#F3EEF7' }}>Tutti i capitoli</Button></div>
         </div>
       </Reveal>
     </div>
@@ -100,37 +101,56 @@ function EventsPreview({ go }) {
 
 function Join({ standalone }) {
   const { Button, Input, Select, Checkbox, Toast } = DS_H;
-  const [sent, setSent] = React.useState(false);
+  // The form appears only when a real receiving service is set in content/site.json → contact: never a form that pretends to send.
+  const contact = NB_DATA.site.contact || {};
+  const endpoint = contact.formEndpoint;
+  const [state, setState] = React.useState('idle'); // idle · sending · ok · error
+  React.useEffect(() => { if (state !== 'ok' && state !== 'error') return; const t = setTimeout(() => setState('idle'), 6000); return () => clearTimeout(t); }, [state]);
+  const submit = async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    setState('sending');
+    try {
+      const r = await fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) });
+      if (!r.ok) throw new Error(String(r.status));
+      form.reset();
+      setState('ok');
+    } catch (err) { setState('error'); }
+  };
   return <section className="kit-section" style={{ background: 'var(--surface-1)', paddingTop: standalone ? 'calc(var(--header-h) + 72px)' : undefined }} data-screen-label="Unisciti">
-    <div className="kit-container kit-join">
+    <div className={'kit-container kit-join' + (endpoint ? '' : ' kit-join--solo')}>
       <Reveal>
         <div className="kit-head">
           <div className="nb-eyebrow">Unisciti a noi</div>
-          <h2 className={standalone ? 'kit-h1' : 'kit-h2'}>C’è una cosa sola da fare.</h2>
+          {standalone ? <h1 className="kit-h1">C’è una cosa sola da fare.</h1> : <h2 className="kit-h2">C’è una cosa sola da fare.</h2>}
           <p className="kit-lead">Entra nel Discord e vai in <b style={{ color: 'var(--text-1)' }}>presentati</b>: dicci chi sei, due righe bastano. Non è obbligatorio e non ha una scadenza — ma da lì in poi qualcuno ti conosce per nome.</p>
         </div>
         <div style={{ display: 'grid', gap: 12, justifyItems: 'start' }}>
           <Button variant="neon" size="lg" icon="message-circle" href={NB_DATA.site.discord} target="_blank" rel="noopener">Apri il Discord</Button>
         </div>
       </Reveal>
-      <Reveal delay={120}>
-        <form className="kit-form nb-card nb-card--pad" onSubmit={(e) => { e.preventDefault(); setSent(true); setTimeout(() => setSent(false), 4200); }}>
+      {endpoint && <Reveal delay={120}>
+        <form className="kit-form nb-card nb-card--pad" onSubmit={submit}>
           <div style={{ font: 'var(--type-h3)' }}>Preferisci scriverci?</div>
-          <Input label="Come ti chiamiamo?" placeholder="Il tuo nick" required />
-          <Input label="Email" type="email" placeholder="nomade@esempio.it" required />
-          <Select label="Per cosa ci scrivi?" options={['Voglio entrare', 'Proporre un evento', 'Collaborazioni', 'Altro']} />
-          <Input label="Due righe su di te" multiline rows={3} hint="Il form passa da un servizio esterno (Formspree o Web3Forms): nessun dato resta sul sito." />
-          <Checkbox label="Ho letto l’Editto della Locanda" required />
-          <Button type="submit" size="lg" iconRight="send">Invia</Button>
+          {contact.accessKey && <input type="hidden" name="access_key" value={contact.accessKey} />}
+          <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ display: 'none' }} />
+          <Input label="Come ti chiamiamo?" name="nick" autoComplete="nickname" placeholder="Il tuo nick" required />
+          <Input label="Email" name="email" type="email" autoComplete="email" placeholder="nomade@esempio.it" required />
+          <Select label="Per cosa ci scrivi?" name="motivo" options={['Voglio entrare', 'Proporre un evento', 'Collaborazioni', 'Altro']} />
+          <Input label="Due righe su di te" name="messaggio" multiline rows={3} hint="Il form passa da un servizio esterno (Formspree o Web3Forms): nessun dato resta sul sito." />
+          <Checkbox label="Ho letto l’Editto della Locanda" name="editto" value="sì" required />
+          <Button type="submit" size="lg" iconRight="send" disabled={state === 'sending'}>{state === 'sending' ? 'Invio in corso…' : 'Invia'}</Button>
         </form>
-      </Reveal>
+      </Reveal>}
     </div>
-    {sent && <div className="kit-toasts"><Toast tone="ok" title="Messaggio arrivato" onClose={() => setSent(false)}>Ti rispondiamo entro tre giorni.</Toast></div>}
+    {endpoint && <div className="kit-toasts" role="status">{state === 'ok'
+      ? <Toast tone="ok" title="Messaggio arrivato" onClose={() => setState('idle')}>Ti rispondiamo entro tre giorni.</Toast>
+      : state === 'error' ? <Toast tone="err" title="Il messaggio non è partito" onClose={() => setState('idle')}>Riprova fra poco, oppure scrivici su Discord.</Toast> : null}</div>}
   </section>;
 }
 
 function HomePage({ go }) {
-  return <main><Hero go={go} /><About /><WelcomeChannels go={go} /><GamesPreview go={go} /><LoreBand go={go} /><Join /></main>;
+  return <main><Hero /><About /><WelcomeChannels /><GamesPreview /><LoreBand /><Join /></main>;
 }
 
 Object.assign(globalThis, { HomePage, Join });

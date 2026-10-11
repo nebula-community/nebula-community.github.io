@@ -1,0 +1,32 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: the first is the approved rev4 concept sheet of this character, so match the design exactly. Compose one single finished portrait illustration.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE portrait illustration in 2:3, for a card on the website's "Chi siamo" page, shown about 210 to 300 pixels wide in a grid of nine portraits. Three-quarter-length figure (from the knees up) of ONE person, camera at his own eye level, head in the upper third, body slightly turned, a natural pose that belongs to the place. It is part of a series of nine: the same lens, distance, light and background treatment for everyone. Keep 6% margins around the figure. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+PORTRAIT:
+Oris: a slim, long-limbed young man of about twenty-seven, light and quick, always ready to turn toward someone. Light-brown skin, narrow face, slightly convex nose, thick dark brows, hazel-amber eyes, an open, slightly hesitant smile; wavy dark-brown hair, unruly at the front, short at the nape. Waist-length muted bottle-green canvas work jacket worn open, flap pockets, cuffs rolled once; rust-red crew-neck knit beneath; a black compact communicator clipped on the left chest, a folded white list in the left hip pocket, a cream bar cloth hanging from the right back pocket; slim charcoal-brown trousers, scuffed dark-brown lace-up work boots. No headphones, no microphone.
+Setting: the landing outside the inner door at the top of the enclosed lantern stair, his folded list in one hand, the communicator clipped on, half-turned toward someone coming up the stairs. Alert, a quick hesitant smile.
+Background: the restored Nebula Inn of today, softly out of focus — dark timber, cream plaster, warm amber box lanterns and a hint of thin coral-violet neon frames with blank faces — lit by the same warm practical light from the upper left as the rest of the series.
+Avoid: headphones, a microphone, a key in his hand. No lettering anywhere: papers, sheets and screens stay blank.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Oris: face, hair, bottle-green jacket, rust knit.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\cofounder-oris-hall-lists-invitations-seven-views.png
+The enclosed lantern stair gallery that climbs to the inn.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\lantern-station-shoulder-house-pedestrian-stair-seven-views.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\team\
+Use the filename: TEAM-oris_Ritratto - Oris.png

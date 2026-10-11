@@ -1,0 +1,35 @@
+Create a new, original image. Attach the reference images listed under REFERENCES: they are the approved rev4 concept sheets of the characters, places, structures and vehicles in this scene, so match their designs exactly. Compose one single finished illustration of the scene described below.
+
+STYLE:
+Late-1990s Japanese anime cel aesthetic, space-western mood, clean visible
+line art, flat cel shading, slightly desaturated palette, warm film grain.
+The character rendered to a finished illustration standard — resolved anatomy, detailed face and hands.
+
+LAYOUT:
+ONE landscape illustration in 16:9, used as a darkened full-page background behind a centred message and one button: keep the CENTRE plain, calm and low in detail, and put the details at the sides. If the generator only offers 3:2, compose for 16:9 anyway and keep every essential element inside the central 16:9 area; the site crops the top and bottom edges. One finished illustration, one camera angle, one moment: not a turnaround, not a seven-view sheet, not split panels. Use the attached sheets for design only: no studio backdrop, no panel grid, no cutaway edges, no rock pedestals, no flat studio lighting, no neutral turnaround poses.
+
+SCENE:
+The scene: a quiet stretch of upper corridor in the restored inn, late at night: timber wainscot, cream plaster, a clean matte timber floor, small lantern sconces at rest height.
+In the centre: a plain stretch of cream plaster wall.
+In the right third: the scar of a doorway that was moved — a filled outline in the plaster, filled hinge holes, the faint mark of an old frame, and a leftover lantern bracket with no lantern.
+On the floor: an old faded painted line curves and runs under the wall where the door used to be; a newer, clearer line crosses it and bends away toward the warm light of the hall at the left edge of the frame.
+Nuuk, lying prone in a place he chose himself: an autonomous robotic bear as long as a small sofa and as bulky as a real adult bear, front legs stretched forward with paws flat, hind legs folded under the heavy body, head raised above the paws. Short, dense, plush cream-white covering with faint stitched panel seams; a graphite segmented collar from neck to shoulders, graphite wrist bands, round graphite joint discs at the elbows and hind knees; a rectangular flatter, greyer repair patch on his LEFT flank; small glossy black eyes that never glow, black nose, small rounded ears, dark claws. Never a mascot, a footrest or a pet on a leash. He lies at the bend of the new line, head raised, looking toward the hall.
+Mood: gentle and a little amused. Nothing is erased here; the house keeps its layers.
+Avoid: a closed door, horror lighting, ghosts, room numbers or signs, lettering.
+
+REFERENCES:
+Attach these images, in this order of importance (if your tool accepts fewer, attach the first ones). Each is a seven-view concept sheet of ONE character, place, structure or vehicle: use it for the design only.
+Casa Nona's vestibule: the faded ochre floor line and the clearer teal one crossing it.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\locations\loc-casanonavestibolo-shoulder-house-entrance-vestibule-seven-views.png
+Nuuk lying down (the chosen rev2 model).
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\characters\npc-nuukdisteso-autonomous-white-robotic-bear-seven-views-rev2.png
+The restored Nebula Inn of today: layout of the double-height hall, the L-shaped gallery, the bar on the LEFT and the great window on the RIGHT, materials and lanterns. Ignore its cutaways and its mirrored rear view.
+E:\repository\nebula-community\discord\community\lore\artworks\png\rev4\structures\nebula-inn-restaurata\00_Nebula Inn - modello architettonico generale.png
+
+RULES:
+Consistent proportions, outfit, colours and details across all views.
+No title, no subject name, no writing of any kind anywhere in the image.
+No labels, no arrows, no callouts, no colour swatches. Any required in-world lettering will be typeset separately.
+Create and save the generated image in PNG format in the following output directory:
+E:\repository\nebula-community\nebula-community\docs\artwork\rev4\png\sito\
+Use the filename: SITO-10_Pagina 404 - La porta spostata.png

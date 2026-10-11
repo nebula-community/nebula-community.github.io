@@ -10,6 +10,9 @@ export async function loadContent() {
   const ROOT = path.join(process.cwd(), 'content');
   const MEDIA = 'media/'; // served from public/media, resolved against <base href>
   const media = (p) => (p && p.startsWith('media/') ? MEDIA + p.slice(6) : p);
+  // Lore images are wired before they are generated: a path whose file is not in public/ yet resolves to null (the page shows its fallback).
+  const exists = (p) => !!p && p.startsWith('media/') && fs.existsSync(path.join(process.cwd(), 'public', p));
+  const mediaIf = (p) => (exists(p) ? media(p) : null);
   const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
   const get = async (p) => {
     if (p === 'lore/index.json') return { chapters: fs.readdirSync(path.join(ROOT, 'lore')).filter((f) => /^\d\d-.*\.md$/.test(f)).sort().map((f) => ({ id: frontmatter(read('lore/' + f)).data.id, file: f })) };
@@ -42,8 +45,8 @@ export async function loadContent() {
   const dm = (d) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d || ''); const M = ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic']; return m ? [m[3], M[+m[2] - 1]] : ['[[GG]]', '[[MES]]']; };
 
   window.NB_READY = (async () => {
-    const [site, locanda, editto, reg, loreIdx, gamesIdx] = await Promise.all([get('site.json'), get('pages/locanda.md'), get('pages/editto.md'), get('pages/regolamento.json'), get('lore/index.json'), get('games/index.json')]);
-    const chapters = await Promise.all(loreIdx.chapters.map(async (c) => { const { data, body } = frontmatter(await get('lore/' + c.file)); const text = body.trim(); return { id: data.id, n: data.numeral, kind: data.kind, title: data.title, cover: media(data.cover), minutes: data.minutes, body: text.startsWith('[[') ? null : paras(text) }; }));
+    const [site, locanda, editto, reg, loreIdx, gamesIdx, book, team] = await Promise.all([get('site.json'), get('pages/locanda.md'), get('pages/editto.md'), get('pages/regolamento.json'), get('lore/index.json'), get('games/index.json'), get('lore/libro.json'), get('pages/fondatori.json')]);
+    const chapters = await Promise.all(loreIdx.chapters.map(async (c) => { const { data, body } = frontmatter(await get('lore/' + c.file)); const text = body.trim(); return { id: data.id, n: data.numeral, kind: data.kind, title: data.title, cover: mediaIf(data.cover), minutes: data.minutes, plates: (Array.isArray(data.plates) ? data.plates : []).filter((p) => exists(p.src)).map((p) => ({ src: media(p.src), alt: p.alt || '' })), body: text.startsWith('[[') ? null : paras(text) }; }));
     chapters.sort((a, b) => loreIdx.chapters.findIndex((c) => c.id === a.id) - loreIdx.chapters.findIndex((c) => c.id === b.id));
     const games = await Promise.all(gamesIdx.games.map((s) => get('games/' + s + '/game.json')));
     games.sort((a, b) => a.order - b.order);
@@ -57,8 +60,9 @@ export async function loadContent() {
     const fit = (x) => !x.onlyIf || x.onlyIf === mode;
 
     window.NB_DATA = {
-      site: { name: site.name, place: site.place, tagline: site.tagline, discord: site.discord.invite, discordCode: site.discord.code, heroVideo: site.hero.video, heroPoster: media(site.hero.poster), ogImage: media(site.seo.ogImage), images: Object.fromEntries(Object.entries(site.images).map(([k, v]) => [k, media(v)])), social: site.social },
+      site: { name: site.name, place: site.place, tagline: site.tagline, discord: site.discord.invite, discordCode: site.discord.code, heroVideo: site.hero.video, heroPoster: media(site.hero.poster), ogImage: media(site.seo.ogImage), images: Object.fromEntries(Object.entries(site.images).map(([k, v]) => [k, media(v)])), social: site.social, contact: site.contact || null },
       games: games.map((g) => ({ slug: g.slug, placeholder: !!g.placeholder, title: g.title, section: g.section, status: g.status, genre: g.genre, tags: g.tags, image: media(g.card.image), logo: media(g.card.logo), description: g.card.description, heroImage: media((g.hero || g.card).image), lead: g.hero && g.hero.lead })),
+      book: { title: book.title, author: book.author, kind: book.kind, genre: book.genre, teaser: book.teaser, presentation: book.presentation, cover: mediaIf(book.cover) },
       chapters,
       events: [],
       wow: { spec: [...wow.info.server.map((s) => [s.label, s.value]), ['Fazioni', (wow.factions || []).filter((f) => f.active).map((f) => f.name + ' (' + f.faction + ')').join(' · ')]], patto: wow.pact.rules.map((r) => [r.icon, r.title, r.text]), nonFa: wow.pact.notForYou, gallery: gallery.items.map((i) => ({ ...i, src: media(i.src) })) }
@@ -66,6 +70,7 @@ export async function loadContent() {
     window.NB_CONTENT = {
       locanda: { title: L.data.title, sub: L.data.subtitle, teaser: L.data.teaser, cover: media(L.data.cover), blocks: blocks(L.body) },
       editto: { title: E.data.title, sub: E.data.subtitle, teaser: E.data.teaser, cover: media(E.data.cover), blocks: blocks(E.body) },
+      founders: { title: team.title, lead: team.lead, groups: team.groups.map((g) => ({ title: g.title, text: g.text, people: g.people.map((p) => ({ ...p, image: mediaIf(p.image) })) })), photo: team.photo && { ...team.photo, src: mediaIf(team.photo.src) } },
       regolamento: { title: reg.title, sub: reg.subtitle, teaser: reg.teaser, groups: reg.groups.map((g) => ({ t: g.title, icon: g.icon, items: g.rules.map((r) => [r.rule, r.why]) })), toxic: reg.toxicity, scale: reg.scale.map((s) => [s.step, s.text]), apply: reg.enforcement.map((e) => [e.title, e.text]) }
     };
     window.NB_WOW = {

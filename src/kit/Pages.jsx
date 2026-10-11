@@ -77,15 +77,15 @@ function Tok({ text }) {
 }
 
 // Founders and co-founders (content/pages/fondatori.json), closed by the group photo.
-function Founders() {
+function Founders({ head = true }) {
   const F = NB_CONTENT.founders;
   if (!F) return null;
-  return <section className="kit-founders" aria-labelledby="fondatori">
-    <Reveal className="kit-head" style={{ marginBottom: 0 }}>
+  return <section className="kit-founders" aria-labelledby={head ? 'fondatori' : undefined}>
+    {head && <Reveal className="kit-head" style={{ marginBottom: 0 }}>
       <div className="nb-eyebrow">Chi siamo · Fondatori e co-fondatori</div>
       <h2 className="kit-h2" id="fondatori">{F.title}</h2>
       {F.lead && <p className="kit-lead">{F.lead}</p>}
-    </Reveal>
+    </Reveal>}
     {F.groups.map((g) => <div key={g.title} className="kit-founders__group">
       <Reveal className="kit-founders__gh"><h3>{g.title}</h3>{g.text && <p>{g.text}</p>}</Reveal>
       <div className="kit-people">
@@ -111,6 +111,7 @@ function Founders() {
 
 const ABOUT_TABS = [
   { value: 'locanda', label: 'La Locanda', route: 'about' },
+  { value: 'fondatori', label: 'I fondatori', route: 'about/fondatori' },
   { value: 'editto', label: 'L’Editto', route: 'about/editto' },
   { value: 'regolamento', label: 'Regolamento', route: 'about/regolamento' },
 ];
@@ -121,6 +122,7 @@ function AboutPage({ sub }) {
   const tab = ABOUT_TABS.some((t) => t.value === sub) ? sub : 'locanda';
   const [title, lead] = {
     locanda: ['La Locanda', C.locanda.sub],
+    fondatori: [C.founders ? C.founders.title : 'I fondatori', C.founders && C.founders.lead],
     editto: [C.editto.title, C.editto.sub],
     regolamento: ['Il Regolamento', 'Il perché sta nell’Editto. Qui c’è il poco che serve perché portare e sostenere restino possibili.'],
   }[tab];
@@ -136,7 +138,10 @@ function AboutPage({ sub }) {
       <div key={tab} className="kit-page">
         {tab === 'locanda' && <>
           <div className="kit-narrow" style={{ maxWidth: 820 }}><Blocks blocks={C.locanda.blocks} /></div>
-          <Founders />
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" iconRight="arrow-right" href={NB_HREF('about/fondatori')}>I fondatori</Button></div>
+        </>}
+        {tab === 'fondatori' && <>
+          <Founders head={false} />
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" icon="scroll-text" href={NB_HREF('about/editto')}>Leggi l’Editto</Button></div>
         </>}
         {tab === 'editto' && <div className="kit-narrow" style={{ maxWidth: 760 }}>

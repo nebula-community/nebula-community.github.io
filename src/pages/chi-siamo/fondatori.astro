@@ -1,0 +1,6 @@
+---
+import Page from '../../layouts/Page.astro';
+import { loadContent } from '../../lib/content.mjs';
+const { founders } = (await loadContent()).NB_CONTENT;
+---
+<Page route="about/fondatori" title={(founders ? founders.title : 'I fondatori') + ' · Nebula Inn'} description={founders && founders.lead} image={founders && founders.photo && founders.photo.src} />

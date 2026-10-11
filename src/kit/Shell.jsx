@@ -66,7 +66,7 @@ function SiteFooter() {
             {social.map(([k, label]) => <a key={k} className="nb-btn nb-btn--secondary nb-btn--icon" href={NB_DATA.site.social[k]} target="_blank" rel="noopener" aria-label={label}><Icon name={k} /></a>)}
           </div>
         </div>
-        <div><h2>La locanda</h2><ul>{l('about', 'Chi siamo')}{l('lore', 'La storia')}{l('join', 'Unisciti')}</ul></div>
+        <div><h2>La locanda</h2><ul>{l('about', 'Chi siamo')}{l('about/fondatori', 'I fondatori')}{l('lore', 'La storia')}{l('join', 'Unisciti')}</ul></div>
         <div><h2>Tavoli</h2><ul>{l('game/wow-forever', 'WoW Forever')}{l('games', 'Tutti i giochi')}</ul></div>
         <div><h2>Casa</h2><ul>{l('about/editto', 'Editto della Locanda')}{l('about/regolamento', 'Regolamento')}{l('join', 'Contatti')}</ul></div>
       </div>

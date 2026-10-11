@@ -141,14 +141,16 @@ function AboutPage({ sub }) {
     <section className="kit-container" style={{ padding: '56px var(--gutter) var(--section-y)' }}>
       <div key={tab} className="kit-page">
         {tab === 'locanda' && <>
-          <div className="kit-narrow" style={{ maxWidth: 820 }}><Blocks blocks={C.locanda.blocks} /></div>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" iconRight="arrow-right" href={NB_HREF('about/fondatori')}>I fondatori</Button></div>
+          <div className="kit-about-col">
+            <Blocks blocks={C.locanda.blocks} />
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" iconRight="arrow-right" href={NB_HREF('about/fondatori')}>I fondatori</Button></div>
+          </div>
         </>}
         {tab === 'fondatori' && <>
           <Founders head={false} />
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" icon="scroll-text" href={NB_HREF('about/editto')}>Leggi l’Editto</Button></div>
         </>}
-        {tab === 'editto' && <div className="kit-narrow" style={{ maxWidth: 760 }}>
+        {tab === 'editto' && <div className="kit-about-col">
           <div className="nb-eyebrow" style={{ marginBottom: 28 }}>La voce del Bardo</div>
           <article className="kit-prose"><Blocks blocks={C.editto.blocks} read /></article>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 48 }}><Button icon="message-circle" href={NB_HREF('join')}>Entra e presentati</Button><Button variant="secondary" iconRight="arrow-right" href={NB_HREF('about/regolamento')}>Il Regolamento</Button></div>

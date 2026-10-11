@@ -58,7 +58,7 @@ function About() {
 
 function GamesPreview() {
   const { GameCard, Button } = DS_H;
-  return <section className="kit-section" style={{ background: 'var(--surface-1)' }} data-screen-label="Giochi">{/* game events & info live on each game page */}
+  return <section className="kit-section" data-screen-label="Giochi">{/* game events & info live on each game page */}
     <div className="kit-container">
       <Reveal className="kit-head"><div className="nb-eyebrow">I tavoli</div><h2 className="kit-h2">Ogni gioco ha il suo tavolo. La casa è una.</h2><p className="kit-lead">Le sezioni si aprono solo se le chiedi tu, ognuna con la sua porta.</p></Reveal>
       <div className="kit-grid">
@@ -72,7 +72,7 @@ function GamesPreview() {
 function LoreBand() {
   const { Button } = DS_H;
   const book = NB_DATA.book, first = NB_DATA.chapters[0];
-  return <section className="kit-section" data-screen-label="Lore">
+  return <section className="kit-section" style={{ background: 'var(--surface-1)' }} data-screen-label="Lore">
     <div className="kit-container">
       <Reveal className="kit-band" style={{ backgroundImage: `url(${NB_DATA.site.images.homeLore})` }}>
         <div className="kit-band__in">
@@ -117,7 +117,7 @@ function Join({ standalone }) {
       setState('ok');
     } catch (err) { setState('error'); }
   };
-  return <section className="kit-section" style={{ background: 'var(--surface-1)', paddingTop: standalone ? 'calc(var(--header-h) + 72px)' : undefined }} data-screen-label="Unisciti">
+  return <section className="kit-section" style={{ background: standalone ? 'var(--surface-1)' : undefined, paddingTop: standalone ? 'calc(var(--header-h) + 72px)' : undefined }} data-screen-label="Unisciti">
     <div className={'kit-container kit-join' + (endpoint ? '' : ' kit-join--solo')}>
       <Reveal>
         <div className="kit-head">

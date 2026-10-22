@@ -311,19 +311,19 @@
       "title": "Tre passi, e il primo l’hai già fatto.",
       "steps": [
         {
-          "title": "Sblocca la sezione",
-          "text": "Sei qui a leggere, quindi è fatta."
+          "title": "Leggi le informazioni",
+          "text": "Dieci minuti. Sei qui a leggere, quindi sei già a buon punto."
         },
         {
-          "title": "Apri candidatura",
-          "text": "Dentro c’è il modulo da copiare. Si compila in dieci minuti, anche dal telefono."
+          "title": "Apri un nuovo post",
+          "text": "Nel canale candidatura: titolo, tag e il modulo qui sotto, compilato con calma."
         },
         {
-          "title": "Scrivi e aspetta",
-          "text": "Ti rispondiamo entro tre giorni. Poi due chiacchiere in vocale: nessun esame."
+          "title": "Due chiacchiere",
+          "text": "Ti rispondiamo entro tre giorni. Poi venti minuti in vocale: niente prova pratica."
         }
       ],
-      "next": "→ Il prossimo passo è uno solo: apri candidatura e scrivi il tuo nome nel Registro della Locanda."
+      "next": "→ Hai letto tutto? Premi Nuovo post, incolla il modulo e raccontaci chi sei. Il Registro è aperto."
     },
     "progress": {
       "title": "Il progress di gilda.",

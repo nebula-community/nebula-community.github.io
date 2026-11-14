@@ -1,5 +1,5 @@
 {
-  "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). Ogni spec ha la sua priorità: cambia solo quella riga.",
+  "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). classes[].wanted: posti disponibili per classe, in grassetto e colorati (1–2 rosso, 3–5 giallo, 6–10 verde). Ogni spec ha la sua priorità: cambia solo quella riga.",
   "open": true,
   "headline": "Chiunque è ben accetto.",
   "text": "Non serve essere al passo, non serve avere il personaggio pronto. Puntiamo a 10 giocatori per classe: qui trovi i posti ancora da coprire e il bilanciamento per specializzazione. Priorità alta per i Rogue; Warrior Protection, Paladin Protection e Shaman Restoration sono al completo. I posti condivisi tra più spec si contano una sola volta.",
@@ -32,7 +32,8 @@
   "classes": [
     {
       "class": "warrior",
-      "note": "7 posti · Ricerca attiva: Arms e Fury. Protection al completo.",
+      "wanted": 7,
+      "note": "Ricerca attiva: Arms e Fury. Protection al completo.",
       "specs": [
         {
           "name": "Arms",
@@ -53,7 +54,8 @@
     },
     {
       "class": "paladin",
-      "note": "7 posti · Ricerca attiva: 3 Holy, 4 Retribution. Protection al completo.",
+      "wanted": 7,
+      "note": "Ricerca attiva: 3 Holy, 4 Retribution. Protection al completo.",
       "specs": [
         {
           "name": "Holy",
@@ -74,7 +76,8 @@
     },
     {
       "class": "hunter",
-      "note": "6 posti condivisi tra Beast Mastery, Marksmanship e Survival · Da valutare in base al ruolo nel raid.",
+      "wanted": 6,
+      "note": "Condivisi tra Beast Mastery, Marksmanship e Survival · Da valutare in base al ruolo nel raid.",
       "specs": [
         {
           "name": "Beast Mastery",
@@ -95,7 +98,8 @@
     },
     {
       "class": "rogue",
-      "note": "10 posti condivisi tra Assassination, Combat e Subtlety · Priorità alta.",
+      "wanted": 10,
+      "note": "Condivisi tra Assassination, Combat e Subtlety · Priorità alta.",
       "specs": [
         {
           "name": "Assassination",
@@ -116,7 +120,8 @@
     },
     {
       "class": "mage",
-      "note": "5 posti condivisi tra Arcane, Fire e Frost · Da valutare in base al ruolo nel raid.",
+      "wanted": 5,
+      "note": "Condivisi tra Arcane, Fire e Frost · Da valutare in base al ruolo nel raid.",
       "specs": [
         {
           "name": "Arcane",
@@ -137,7 +142,8 @@
     },
     {
       "class": "warlock",
-      "note": "1 posto tra Affliction, Demonology e Destruction · Disponibilità più limitata.",
+      "wanted": 1,
+      "note": "Tra Affliction, Demonology e Destruction · Disponibilità più limitata.",
       "specs": [
         {
           "name": "Affliction",
@@ -158,7 +164,8 @@
     },
     {
       "class": "priest",
-      "note": "8 posti · Ricerca attiva: 5 tra Holy e Discipline, 3 tra Shadow e Smite.",
+      "wanted": 8,
+      "note": "Ricerca attiva: 5 tra Holy e Discipline, 3 tra Shadow e Smite.",
       "specs": [
         {
           "name": "Holy",
@@ -184,7 +191,8 @@
     },
     {
       "class": "druid",
-      "note": "7 posti · Ricerca attiva: 1 Guardian, 1 Restoration, 5 tra Balance e Feral.",
+      "wanted": 7,
+      "note": "Ricerca attiva: 1 Guardian, 1 Restoration, 5 tra Balance e Feral.",
       "specs": [
         {
           "name": "Balance",
@@ -210,7 +218,8 @@
     },
     {
       "class": "shaman",
-      "note": "4 posti tra Elemental e Enhancement · Da valutare in base al ruolo nel raid. Restoration al completo.",
+      "wanted": 4,
+      "note": "Tra Elemental e Enhancement · Da valutare in base al ruolo nel raid. Restoration al completo.",
       "specs": [
         {
           "name": "Elemental",

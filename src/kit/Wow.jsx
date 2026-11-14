@@ -318,8 +318,9 @@ function WowRecruitment() {
         <div className="kit-legend"><span><i className="is-high" />Priorità</span><span><i className="is-open" />Aperto</span><span><i className="is-closed" />Al completo</span></div>
       </div>
       <div className="kit-specs">{classes.map(c => { const [label, color] = WOW_CLASSES[c.class];
+        const availability = c.wanted >= 1 && c.wanted <= 2 ? 'low' : c.wanted >= 3 && c.wanted <= 5 ? 'medium' : c.wanted >= 6 && c.wanted <= 10 ? 'high' : undefined;
         return <div key={c.class} className="kit-specs__card" style={{ '--c': color }}>
-          <div className="kit-specs__head"><i /><b>{label}</b>{c.note && <span className="kit-table__dim" style={{ font: 'var(--type-small)' }}>{c.note}</span>}</div>
+          <div className="kit-specs__head"><i /><b>{label}</b>{(c.wanted != null || c.note) && <span className="kit-table__dim" style={{ font: 'var(--type-small)' }}>{c.wanted != null && <><strong className="kit-specs__count" data-availability={availability}>{c.wanted}</strong> {c.wanted === 1 ? 'posto' : 'posti'}{c.note && ' · '}</>}{c.note}</span>}</div>
           <ul>{c.specs.map(s => <li key={s.name} className={'is-' + s.priority}><Icon name={ROLE_ICON[s.role]} size={15} /><span>{label} – {s.name}</span><em>{s.priority === 'high' ? 'Priorità' : s.priority === 'open' ? 'Aperto' : 'Al completo'}</em></li>)}</ul>
         </div>; })}</div>
     </div>

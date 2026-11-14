@@ -1,5 +1,5 @@
 {
-  "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). classes[].wanted: posti disponibili per classe, in grassetto e colorati (1–2 rosso, 3–5 giallo, 6–10 verde). Ogni spec ha la sua priorità: cambia solo quella riga.",
+  "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). classes[].wanted: posti disponibili per classe, in grassetto e colorati (0–2 rosso, 3–5 giallo, 6–10 verde). Ogni spec ha la sua priorità: cambia solo quella riga.",
   "open": true,
   "headline": "Chiunque è ben accetto.",
   "text": "Non serve essere al passo, non serve avere il personaggio pronto. Puntiamo a 10 giocatori per classe: qui trovi i posti ancora da coprire e il bilanciamento per specializzazione. Priorità alta per i Rogue; Warlock, Warrior Protection, Paladin Protection e Shaman Restoration sono al completo. I posti condivisi tra più spec si contano una sola volta.",

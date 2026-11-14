@@ -15,13 +15,13 @@
       "role": "healer",
       "label": "Healer",
       "priority": "open",
-      "wanted": 9
+      "wanted": 8
     },
     {
       "role": "dps",
       "label": "DPS",
       "priority": "high",
-      "wanted": 45
+      "wanted": 44
     }
   ],
   "targets": {
@@ -32,7 +32,7 @@
   "classes": [
     {
       "class": "warrior",
-      "wanted": 7,
+      "wanted": 6,
       "note": "Ricerca attiva: Arms e Fury. Protection al completo.",
       "specs": [
         {
@@ -164,8 +164,8 @@
     },
     {
       "class": "priest",
-      "wanted": 8,
-      "note": "Ricerca attiva: 5 tra Holy e Discipline, 3 tra Shadow e Smite.",
+      "wanted": 7,
+      "note": "Ricerca attiva: 4 tra Holy e Discipline, 3 tra Shadow e Smite.",
       "specs": [
         {
           "name": "Holy",

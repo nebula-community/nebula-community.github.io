@@ -275,16 +275,13 @@ function WowCalendar() {
 const ROLE_ICON = { tank: 'shield', healer: 'heart-pulse', dps: 'swords' };
 const PRIO = { high: ['Priorità', 'accent'], open: ['Aperto', 'ok'], closed: ['Chiuso', 'neutral'] };
 
-const PRIO_ORDER = { high: 0, open: 1, closed: 2 };
-const classPriority = (cl) => cl.specs.reduce((best, s) => PRIO_ORDER[s.priority] < PRIO_ORDER[best] ? s.priority : best, 'closed');
-
 function WowRecruitment() {
   const { Badge, Icon, Card } = DS_W;
   const R = NB_WOW.recruitment;
   const active = NB_WOW.factions.map(x => x.name);
   const roster = NB_WOW.roster.players.filter(p => active.includes(p.faction));
   const wanted = (r) => r.wanted != null ? r.wanted : Math.max(0, (R.targets[r.role] || 0) - roster.filter(p => p.role === r.role).length);
-  const classes = [...R.classes].sort((a, b) => PRIO_ORDER[classPriority(a)] - PRIO_ORDER[classPriority(b)]);
+  const classes = [...R.classes].sort((a, b) => (b.wanted ?? 0) - (a.wanted ?? 0));
   return <div style={{ display: 'grid', gap: 40 }}>
     <div className="kit-recruit">
       <div style={{ display: 'grid', gap: 12 }}>

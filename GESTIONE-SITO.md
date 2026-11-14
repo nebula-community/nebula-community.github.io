@@ -184,7 +184,7 @@ Ogni cartella genera una pagina, ad esempio `/giochi/wow-forever`. **Un file man
 ```
 - **Ruoli:** ogni card mostra **quanti cerchiamo**. Con `"wanted": null` il numero si calcola da solo (`targets` meno i giocatori di quel ruolo in `roster.json`). Scrivi un numero per forzarlo; con `0` o `"priority": "closed"` la card diventa "Al completo".
 - **Combinazioni:** una riga per ogni classe–spec, 28 in tutto, compresa Priest – Smite. Per cambiare chi cerchiamo, modifica solo `priority` sulla riga della spec: `high` = priorità, `open` = aperto, `closed` = al completo (barrata).
-- **Ordine:** automatico. Prima le classi con almeno una spec in priorità, poi le aperte, poi quelle al completo.
+- **Ordine:** automatico, per posti disponibili (`classes[].wanted`) dal maggiore al minore. A parità di posti si mantiene l'ordine del file; le classi senza un numero indicato sono trattate come 0.
 - **note:** una riga facoltativa sotto il nome della classe, ad esempio "Cerchiamo main con attunement".
 - **Posti per classe (`classes[].wanted`):** numero mostrato in grassetto nella card, rosso da 0 a 2, giallo da 3 a 5, verde da 6 a 10. Il colore si aggiorna automaticamente quando cambia il numero; scrivi le altre indicazioni in `note`.
 - **highlight:** il testo del badge in testata; mettilo vuoto `""` per non mostrarlo. **open: false** chiude il reclutamento in tutto il sito.

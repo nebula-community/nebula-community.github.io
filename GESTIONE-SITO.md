@@ -153,7 +153,7 @@ Ogni cartella genera una pagina, ad esempio `/giochi/wow-forever`. **Un file man
 |---|---|---|---|
 | `game.json` | card, hero, Info, Il patto, regole loot, **fazioni** | Presidente / GM | raramente |
 | `recruitment.json` | Chi cerchiamo, badge in testata | officers | quando cambiano le priorità |
-| `application.json` | Come entrare → modulo | officers | raramente |
+| `application.json` | Come entrare → video obbligatori, modulo Google e percorso di candidatura | officers | raramente |
 | `roster.json` | Roster | officers | a ogni cambio di roster |
 | `progress.json` | Progress | officers | dopo ogni first kill |
 | `loot.json` | Loot | officers | dopo ogni serata |
@@ -193,6 +193,7 @@ Ogni cartella genera una pagina, ad esempio `/giochi/wow-forever`. **Un file man
 #### Tab, testi e galleria (`game.json` → `tabs`, `copy`, `hero`)
 - **`tabs`:** ordine ed etichette delle tab. Togli una voce per nasconderla; `id` validi: `info pact faq ranks recruitment join progress roster loot calendar gallery`.
 - **`copy`:** i titoli e i testi introduttivi di ogni tab, ad esempio `copy.loot.title` o `copy.join.steps` (i tre passi di "Come entrare").
+- **Candidatura:** in `application.json`, `playlistUrl` è il link alla playlist YouTube, `requiredVideos` contiene titolo, descrizione (`text`) e `url` dei video obbligatori; `formUrl` è il modulo ufficiale Google Forms. `lead`, `videosTitle`, `videosIntro`, `formTitle`, `intro`, `note`, `after` (titolo e testo di ogni passaggio) e `closing` sono i contenuti della pagina. Nei passi `copy.join.steps`, `link: "discord"`, `"playlist"` o `"form"` e `linkLabel` aggiungono il relativo pulsante.
 - **`hero`:** i badge in testata (`badges`), l'immagine, la frase sotto il titolo e le etichette dei due pulsanti.
 - **Galleria (`gallery.json`):** le immagini stanno in `media/gallery/<slug>/`, con nomi numerati `01-…`, `02-…`. Nel sito reale, se `items` è vuoto il build prende da solo tutte le immagini della cartella; compila `items` solo per aggiungere didascalie o cambiare l'ordine.
 

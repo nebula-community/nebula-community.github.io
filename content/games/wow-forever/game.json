@@ -308,22 +308,28 @@
       "specsLead": "Classe per classe, spec per spec. Se la tua non è in priorità, candidati lo stesso: si parla con le persone, non con le caselle."
     },
     "join": {
-      "title": "Tre passi, e il primo l’hai già fatto.",
+      "title": "Tre passi per entrare.",
       "steps": [
         {
-          "title": "Leggi le informazioni",
-          "text": "Dieci minuti. Sei qui a leggere, quindi sei già a buon punto."
+          "title": "Entra su Discord",
+          "text": "Entra nel server della comunità: da lì comincia il percorso di candidatura.",
+          "link": "discord",
+          "linkLabel": "Entra su Discord"
         },
         {
-          "title": "Apri un nuovo post",
-          "text": "Nel canale candidatura: titolo, tag e il modulo qui sotto, compilato con calma."
+          "title": "Guarda la playlist YouTube",
+          "text": "È obbligatorio guardare e comprendere i video FAQ, INFO e REGOLAMENTO prima di candidarti.",
+          "link": "playlist",
+          "linkLabel": "Guarda la playlist"
         },
         {
-          "title": "Due chiacchiere",
-          "text": "Ti rispondiamo entro tre giorni. Poi venti minuti in vocale: niente prova pratica."
+          "title": "Compila il modulo Google",
+          "text": "Dopo i video, compila il modulo ufficiale Google Forms, indicato anche nel canale candidatura su Discord.",
+          "link": "form",
+          "linkLabel": "Compila la candidatura"
         }
       ],
-      "next": "→ Hai letto tutto? Premi Nuovo post, incolla il modulo e raccontaci chi sei. Il Registro è aperto."
+      "next": "Il Registro della Locanda è aperto. — Gli Officers"
     },
     "progress": {
       "title": "Il progress di gilda.",

@@ -172,43 +172,31 @@ function WowInfo() {
 function WowApplication() {
   const { Button, Card, Icon } = DS_W;
   const A = NB_WOW.application;
-  // which block was just copied: 'all' or a group title
-  const [copied, setCopied] = React.useState(null);
-  let n = 0;
-  const blocks = A.groups.map(([g, qs]) => ({ g, text: '## ' + g + '\n' + qs.map(q => (++n) + '. ' + q).join('\n') }));
-  n = 0;
-  const copy = (key, text) => {
-    const done = () => { setCopied(key); setTimeout(() => setCopied(c => c === key ? null : c), 2200); };
-    const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } finally { t.remove(); } };
-    navigator.clipboard ? navigator.clipboard.writeText(text).then(done, fallback) : fallback();
-  };
-  const list = (items, icon) => <ul className="kit-list">{items.map(t => <li key={t}><Icon name={icon} /><span>{t}</span></li>)}</ul>;
   return <div style={{ display: 'grid', gap: 28 }}>
-    {A.lead && <p className="kit-lead">{A.lead}</p>}
-    {(A.before.length > 0 || A.open.length > 0) && <div className="kit-two">
-      {A.before.length > 0 && <Card style={{ display: 'grid', gap: 14 }}><div style={{ font: 'var(--type-h4)' }}>Prima di scrivere</div>{list(A.before, 'book-open')}</Card>}
-      {A.open.length > 0 && <Card style={{ display: 'grid', gap: 14 }}><div style={{ font: 'var(--type-h4)' }}>Come si apre la candidatura</div>{list(A.open, 'square-pen')}</Card>}
-    </div>}
-    <div className="kit-app">
-      <div className="kit-app__head">
-        <div style={{ display: 'grid', gap: 6 }}><div className="nb-eyebrow">Il Registro della Locanda</div><h3 style={{ font: 'var(--type-h3)' }}>Il modulo di candidatura</h3></div>
-        <Button size="sm" variant={copied === 'all' ? 'secondary' : 'primary'} icon={copied === 'all' ? 'check' : 'copy'} onClick={() => copy('all', blocks.map(b => b.text).join('\n\n'))}>{copied === 'all' ? 'Copiato' : 'Copia il modulo'}</Button>
-      </div>
-      <p style={{ color: 'var(--text-2)' }}>{A.intro}</p>
-      <div className="kit-app__form">
-        {A.groups.map(([g, qs], i) => <div key={g} className="kit-app__group">
-          <div className="kit-app__g"><span>## {g}</span><Button size="sm" variant="ghost" icon={copied === g ? 'check' : 'copy'} onClick={() => copy(g, blocks[i].text)}>{copied === g ? 'Copiata' : 'Copia sezione'}</Button></div>
-          <ol className="kit-app__qs" start={n + 1}>{qs.map(q => { n++; return <li key={q}><span className="kit-app__n">{n}.</span><span>{q}</span></li>; })}</ol>
-        </div>)}
-      </div>
-      {A.aside && <p style={{ color: 'var(--text-2)' }}>{A.aside}</p>}
-      <div className="kit-note"><Icon name="info" size={18} /><span>{A.note}</span></div>
-      <p style={{ color: 'var(--text-3)', font: 'var(--type-small)' }}>Si incolla in un nuovo post nel canale candidatura su Discord e si compila lì, anche dal telefono.</p>
+    <div style={{ display: 'grid', gap: 16 }}>
+      <h3 style={{ font: 'var(--type-h3)' }}>{A.videosTitle}</h3>
+      <p style={{ color: 'var(--text-2)' }}>{A.videosIntro}</p>
+      <div className="kit-steps">{A.requiredVideos.map(video => <Card key={video.title} style={{ display: 'grid', gap: 12, alignContent: 'start' }}>
+        <h4 style={{ font: 'var(--type-h4)' }}>{video.title}</h4>
+        <p style={{ color: 'var(--text-2)' }}>{video.text}</p>
+        <div><Button size="sm" variant="secondary" iconRight="external-link" href={video.url} target="_blank" rel="noopener noreferrer">Guarda {video.title}</Button></div>
+      </Card>)}</div>
     </div>
+    <Card style={{ display: 'grid', gap: 16 }}>
+      <h3 style={{ font: 'var(--type-h4)' }}>{A.formTitle}</h3>
+      <p style={{ color: 'var(--text-2)' }}>{A.intro}</p>
+      <div><Button icon="square-pen" href={A.formUrl} target="_blank" rel="noopener noreferrer">Compila la candidatura</Button></div>
+      {A.note && <div className="kit-note"><Icon name="info" size={18} /><strong>{A.note}</strong></div>}
+    </Card>
     {A.after.length > 0 && <div style={{ display: 'grid', gap: 16 }}>
       <h3 style={{ font: 'var(--type-h3)' }}>Cosa succede dopo</h3>
-      <div className="kit-steps" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(min(100%,220px),1fr))' }}>{A.after.map((t, i) => <Card key={t} style={{ display: 'grid', gap: 8 }}><span className="kit-step__n">0{i + 1}</span><p style={{ color: 'var(--text-2)' }}>{t}</p></Card>)}</div>
+      <div className="kit-steps" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(min(100%,220px),1fr))' }}>{A.after.map(({ title, text }, i) => <Card key={title} style={{ display: 'grid', gap: 8, alignContent: 'start' }}><span className="kit-step__n">0{i + 1}</span><h4 style={{ font: 'var(--type-h4)' }}>{title}</h4><p style={{ color: 'var(--text-2)' }}>{text}</p></Card>)}</div>
     </div>}
+    <div style={{ display: 'grid', gap: 14 }}>
+      <h3 style={{ font: 'var(--type-h3)' }}>{A.closing.title}</h3>
+      <p style={{ color: 'var(--text-2)' }}>{A.closing.text}</p>
+      <p style={{ color: 'var(--text-1)', fontWeight: 600 }}>{A.closing.quote}</p>
+    </div>
   </div>;
 }
 

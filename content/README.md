@@ -22,7 +22,7 @@ content/
 │   ├── wow-forever/             one folder = one page /giochi/wow-forever
 │   │   ├── game.json            card, hero, info, pact, loot rules, links
 │   │   ├── faq.json             FAQ in groups
-│   │   ├── application.json     application form (Come entrare tab)
+│   │   ├── application.json     application instructions, required videos and official Google Form (Come entrare tab)
 │   │   ├── ranks.json           ranks and roles (Ranghi tab)
 │   │   ├── roster.json          active raid roster by faction (Roster tab)
 │   │   ├── progress.json        instances → bosses → first-kill date per faction (Progress tab)

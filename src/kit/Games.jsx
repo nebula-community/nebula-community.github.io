@@ -39,6 +39,7 @@ function GamePage() {
   const TABS = NB_WOW.tabs || [];
   const [tab, setTab] = useHashTab(TABS.map((t) => t.id), 'wow-panel');
   const C = NB_WOW.copy, H = NB_WOW.hero || {};
+  const joinLinks = { discord: NB_DATA.site.discord, playlist: NB_WOW.application.playlistUrl, form: NB_WOW.application.formUrl };
   const [img, setImg] = React.useState(null);
   // "Candidati" in the hero: opens the tab and brings it on screen, otherwise the change happens out of sight
   const apply = () => {
@@ -65,7 +66,8 @@ function GamePage() {
         {tab === 'progress' && <WowProgress />}
         {tab === 'join' && <div style={{ display: 'grid', gap: 28 }}>
           <h2 className="kit-h2">{C.join.title}</h2>
-          <div className="kit-steps">{C.join.steps.map(({ title: t, text: d }, i) => <Card key={t} style={{ display: 'grid', gap: 10 }}><span className="kit-step__n">0{i + 1}</span><div style={{ font: 'var(--type-h4)' }}>{t}</div><p style={{ color: 'var(--text-2)' }}>{d}</p></Card>)}</div>
+          <p className="kit-lead">{NB_WOW.application.lead}</p>
+          <div className="kit-steps">{C.join.steps.map(({ title: t, text: d, link, linkLabel }, i) => <Card key={t} style={{ display: 'grid', gap: 10, alignContent: 'start' }}><span className="kit-step__n">0{i + 1}</span><div style={{ font: 'var(--type-h4)' }}>{t}</div><p style={{ color: 'var(--text-2)' }}>{d}</p>{joinLinks[link] && <div><Button size="sm" variant="secondary" href={joinLinks[link]} target="_blank" rel="noopener noreferrer" iconRight="external-link">{linkLabel}</Button></div>}</Card>)}</div>
           <WowApplication />
           <p style={{ color: 'var(--text-2)' }}>{C.join.next}</p>
         </div>}

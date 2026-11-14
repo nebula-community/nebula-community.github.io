@@ -1,86 +1,50 @@
 {
-  "lead": "Questa non è una selezione: è il momento in cui ci presentiamo. Tu ci racconti chi sei, noi ti diciamo com’è fatta la casa, e poi si decide insieme. Non cerchiamo giocatori forti. Cerchiamo persone con cui abbia senso passare due sere a settimana per i prossimi anni.",
-  "before": [
-    "Leggi le informazioni — dieci minuti. A metà delle domande qui sotto rispondono già da sole.",
-    "Rispondi come sei, non come pensi che ci piaccia — se ti travesti per entrare, poi ti tocca restare travestito.",
-    "Non serve un curriculum — non guardiamo gear score, log o quante volte hai visto cadere un boss."
-  ],
-  "open": [
-    "Premi Nuovo post nel canale candidatura su Discord.",
-    "Titolo: [Tipo candidatura] Nome personaggio – Classe – Fazione. Per esempio [Social] Thalor – Druido – Orda, oppure [Raider] Nukka – Hunter – Orda.",
-    "Tag: scegli la fazione e il ruolo che vuoi giocare. Se ancora non lo sai, esiste il tag apposta: è una risposta legittima.",
-    "Testo: copia il modulo qui sotto e rispondi sotto ogni riga.",
-    "Un post a testa. Se ti interessano entrambe le fazioni, scrivilo dentro lo stesso post."
-  ],
-  "intro": "Prenditi il tuo tempo e rispondi a ogni domanda nel modo più completo e sincero possibile. Per noi non è una formalità: è il primo passo per conoscerci, e il tempo che dedichi al modulo è già una piccola dimostrazione dell’impegno che vorresti portare nella comunità. Discord ha un limite di caratteri: conviene copiare e compilare una sezione alla volta, così niente viene tagliato.",
-  "groups": [
+  "lead": "Benvenuto nel Registro della Locanda: il primo passo per entrare in NEBULA. Vogliamo costruire una community destinata a durare, anche quando WoW non sarà più il nostro gioco principale. Non cerchiamo necessariamente i giocatori più forti, più esperti o con più tempo libero: cerchiamo persone con cui condividere esperienze, affrontare difficoltà e costruire qualcosa che vada oltre un singolo videogioco.",
+  "playlistUrl": "https://www.youtube.com/watch?v=9VUf5dDnADc&list=PLd4aC3mY20FI",
+  "videosTitle": "Prima di candidarti: tre video obbligatori",
+  "videosIntro": "Guarda i video FAQ, INFO e REGOLAMENTO e assicurati di averne compreso i contenuti prima di procedere con la candidatura.",
+  "requiredVideos": [
     {
-      "title": "CHI SEI",
-      "questions": [
-        "Tre righe su di te: quanti anni hai, cosa fai fuori dal gioco, come sei fatto?",
-        "Hai passioni o hobby oltre a WoW e videogiochi?",
-        "Da dove arrivi: qual è stata la tua ultima gilda e perché non ci sei più?",
-        "Ti è mai capitato di avere problemi con qualcuno in una gilda? Come li hai gestiti?"
-      ]
+      "title": "FAQ",
+      "text": "Le risposte alle domande più frequenti.",
+      "url": "https://www.youtube.com/watch?v=Oxp7SoZaJcY"
     },
     {
-      "title": "IN GIOCO",
-      "questions": [
-        "Che nome, classe e ruolo sceglieresti?",
-        "Hai mai giocato a WoW? Se sì, da quanto tempo?",
-        "Giochi anche altri giochi?",
-        "Preferiresti un ruolo da raider o da social?",
-        "Dove ti vedi tra sei mesi su WoW Forever?"
-      ]
+      "title": "INFO",
+      "text": "La nostra identità, gli obiettivi e l’organizzazione di NEBULA.",
+      "url": "https://www.youtube.com/watch?v=9VUf5dDnADc"
     },
     {
-      "title": "IL TUO TEMPO",
-      "questions": [
-        "Quante sere a settimana riesci a esserci e in che fascia oraria?",
-        "Le sere di raid (due sere da decidere, 20:00-24:00) ti tornano?",
-        "Se per qualche settimana non puoi giocare come prima, cosa fai?",
-        "Cosa cerchi da noi e cosa ti aspetti?"
-      ]
-    },
-    {
-      "title": "COME VIVI IL GRUPPO",
-      "questions": [
-        "Quando entri in una gilda, cosa ti fa capire che hai trovato \"casa\"?",
-        "Cos'è più importante per te: divertirti tu o far funzionare il gruppo?",
-        "Una cosa che in un gruppo non sopporti.",
-        "Raccontaci un errore che hai fatto in raid o in una gilda e cosa hai imparato."
-      ]
-    },
-    {
-      "title": "SITUAZIONI REALI",
-      "questions": [
-        "Sono le 23:40 ed è il nono wipe sullo stesso boss. Cosa scrivi in chat?",
-        "Cade l'oggetto che aspetti da un mese e lo prende un altro. Cosa fai nei dieci secondi dopo?",
-        "Un officer prende una decisione che secondo te è sbagliata. Come te la giochi?"
-      ]
-    },
-    {
-      "title": "FEDELTÀ AL PROGETTO",
-      "questions": [
-        "Il tuo gruppo storico di amici decide di giocare altrove. Cosa fai e perché?",
-        "Entri in una gilda e ti trovi bene, ma dopo qualche tempo ricevi un'offerta più vantaggiosa da un'altra gilda. Cosa valuti prima di decidere?",
-        "Per quale motivo un giorno potresti decidere di lasciare la gilda?"
-      ]
-    },
-    {
-      "title": "CHIUSURA",
-      "questions": [
-        "Come ci hai trovati? (amici, Discord, Facebook, sito web, ecc.)",
-        "Cosa pensi che una gilda possa aspettarsi da te come membro?"
-      ]
+      "title": "REGOLAMENTO",
+      "text": "Le regole di convivenza e partecipazione.",
+      "url": "https://www.youtube.com/watch?v=p5HY3rQTg0w"
     }
   ],
-  "aside": "Le ultime domande non hanno una risposta giusta. Servono a capire come stai in un gruppo quando qualcosa va storto — che poi è l’unica cosa che conta davvero.",
-  "note": "L’età la chiediamo per un motivo solo: qui la media è alta e vogliamo che tu ti trovi bene, non per metterti un numero accanto al nome.",
+  "formTitle": "Come presentare la candidatura",
+  "formUrl": "https://forms.gle/HFPcQoUtSbuee6oH6",
+  "intro": "La candidatura si svolge esclusivamente attraverso il nostro modulo ufficiale Google Forms, indicato anche nel canale candidatura su Discord. Rispondi in modo sincero e personale: non cerchiamo risposte perfette o preparate per impressionarci. Il questionario ci aiuta a comprendere le tue aspettative, la tua mentalità e il modo in cui vivi la collaborazione con gli altri.",
+  "note": "Non pubblicare le risposte nei canali Discord. Le candidature vengono raccolte tramite il modulo e valutate riservatamente dallo staff.",
   "after": [
-    "Entro tre giorni ti rispondiamo nel tuo post — se al quarto non hai ancora risposta, scrivi di nuovo lì: non ti abbiamo ignorato, ci è sfuggito.",
-    "Ti proponiamo due chiacchiere in vocale nel canale accettazione — venti minuti, niente prova pratica: serve a sentirci la voce.",
-    "Si decide in più di uno, mai una persona sola. Se è sì, arrivano l’invito in gilda e il ruolo su Discord.",
-    "Se è no, te lo diciamo e ti diciamo perché — un no spiegato si può ribaltare fra sei mesi, un silenzio no."
-  ]
+    {
+      "title": "Presa in carico",
+      "text": "Entro 3 giorni dall’invio, lo staff prenderà in carico la candidatura e ti comunicherà i passaggi successivi."
+    },
+    {
+      "title": "Colloquio conoscitivo",
+      "text": "Se la candidatura prosegue, ti inviteremo a una conversazione vocale di circa 20 minuti. Non sono previste prove pratiche: vogliamo conoscerci e capire se condividiamo aspettative compatibili."
+    },
+    {
+      "title": "Valutazione dello staff",
+      "text": "La decisione viene presa collegialmente, mai da una sola persona."
+    },
+    {
+      "title": "Esito",
+      "text": "Riceverai una comunicazione riservata con l’esito della selezione. In caso di ammissione, riceverai l’invito in gilda e l’accesso ai canali."
+    }
+  ],
+  "closing": {
+    "title": "Una community si costruisce insieme",
+    "text": "Entrare in NEBULA significa scegliere di far parte di un gruppo in cui ognuno possa contribuire, secondo le proprie possibilità, a costruire un ambiente rispettoso, accogliente e duraturo.",
+    "quote": "Non cerchiamo numeri da aggiungere a una lista. Cerchiamo persone con cui valga la pena condividere il nostro tempo."
+  }
 }

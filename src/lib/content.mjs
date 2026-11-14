@@ -79,7 +79,7 @@ export async function loadContent() {
       roles: wow.info.roles.map((r) => [r.icon, r.title, r.text]), firstDay: wow.info.firstDay.map((f) => [f.title, f.text]),
       loot: { rules: wow.loot.rules.map((r) => [r.title, r.text]), costs: wow.loot.costs.map((c) => [String(c.credits), c.what]), source: wow.loot.source },
       faq: faq.groups.map((g) => [g.title, g.items.filter(fit).map((i) => [i.q, i.a])]),
-      application: { lead: app.lead, before: app.before || [], open: app.open || [], intro: app.intro, groups: app.groups.map((g) => [g.title, g.questions]), aside: app.aside, note: app.note, after: app.after || [] },
+      application: app,
       ranks,
       calendar: events, progress, roster, recruitment
     };

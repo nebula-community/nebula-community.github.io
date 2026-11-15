@@ -165,7 +165,7 @@
     {
       "class": "priest",
       "wanted": 6,
-      "note": "Ricerca attiva: 4 tra Holy e Discipline, 2 tra Shadow e Smite.",
+      "note": "Ricerca attiva: 4 Holy, 2 tra Shadow e Smite. Discipline al completo.",
       "specs": [
         {
           "name": "Holy",
@@ -175,7 +175,7 @@
         {
           "name": "Discipline",
           "role": "healer",
-          "priority": "open"
+          "priority": "closed"
         },
         {
           "name": "Shadow",

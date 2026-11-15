@@ -2,26 +2,26 @@
   "_readme": "Chi cerchiamo (tab \"Chi cerchiamo\"). priority: \"high\" = priorità · \"open\" = aperto · \"closed\" = al completo. roles[].wanted: quanti cerchiamo (null = calcolato da targets − roster). classes[].wanted: posti disponibili per classe, in grassetto e colorati (0–2 rosso, 3–5 giallo, 6–10 verde). Ogni spec ha la sua priorità: cambia solo quella riga.",
   "open": true,
   "headline": "Chiunque è ben accetto.",
-  "text": "Non serve essere al passo, non serve avere il personaggio pronto. Puntiamo a 10 giocatori per classe: qui trovi i posti ancora da coprire e il bilanciamento per specializzazione. Priorità alta per i Rogue; Warlock, Warrior Protection, Paladin Protection e Shaman Restoration sono al completo. I posti condivisi tra più spec si contano una sola volta.",
-  "highlight": "Priorità Rogue",
+  "text": "Non serve essere al passo, non serve avere il personaggio pronto. Puntiamo a 10 giocatori per classe: i posti indicati si basano sui giocatori confermati e non includono le candidature ancora in valutazione. Cerchiamo soprattutto Rogue, Holy Paladin, Balance Druid ed Elemental Shaman. I posti da tank principale sono al completo. I posti condivisi tra più spec si contano una sola volta.",
+  "highlight": "Priorità Rogue e Holy Paladin",
   "roles": [
     {
       "role": "tank",
       "label": "Tank",
-      "priority": "open",
-      "wanted": 1
+      "priority": "closed",
+      "wanted": 0
     },
     {
       "role": "healer",
       "label": "Healer",
-      "priority": "open",
-      "wanted": 8
+      "priority": "high",
+      "wanted": 10
     },
     {
       "role": "dps",
       "label": "DPS",
       "priority": "high",
-      "wanted": 43
+      "wanted": 45
     }
   ],
   "targets": {
@@ -32,7 +32,7 @@
   "classes": [
     {
       "class": "warrior",
-      "wanted": 6,
+      "wanted": 7,
       "note": "Ricerca attiva: Arms e Fury. Protection al completo.",
       "specs": [
         {
@@ -54,13 +54,13 @@
     },
     {
       "class": "paladin",
-      "wanted": 7,
-      "note": "Ricerca attiva: 3 Holy, 4 Retribution. Protection al completo.",
+      "wanted": 9,
+      "note": "Ricerca attiva: 4 Holy, 5 Retribution. Preferenza Holy; Protection al completo.",
       "specs": [
         {
           "name": "Holy",
           "role": "healer",
-          "priority": "open"
+          "priority": "high"
         },
         {
           "name": "Protection",
@@ -120,7 +120,7 @@
     },
     {
       "class": "mage",
-      "wanted": 5,
+      "wanted": 6,
       "note": "Condivisi tra Arcane, Fire e Frost · Da valutare in base al ruolo nel raid.",
       "specs": [
         {
@@ -142,23 +142,23 @@
     },
     {
       "class": "warlock",
-      "wanted": 0,
-      "note": "Al completo in tutte le specializzazioni.",
+      "wanted": 1,
+      "note": "Ultimo posto condiviso tra Affliction, Demonology e Destruction · Disponibilità limitata.",
       "specs": [
         {
           "name": "Affliction",
           "role": "dps",
-          "priority": "closed"
+          "priority": "open"
         },
         {
           "name": "Demonology",
           "role": "dps",
-          "priority": "closed"
+          "priority": "open"
         },
         {
           "name": "Destruction",
           "role": "dps",
-          "priority": "closed"
+          "priority": "open"
         }
       ]
     },
@@ -191,13 +191,13 @@
     },
     {
       "class": "druid",
-      "wanted": 7,
-      "note": "Ricerca attiva: 1 Guardian, 1 Restoration, 5 tra Balance e Feral.",
+      "wanted": 6,
+      "note": "Ricerca attiva: 2 Restoration, 4 tra Balance e Feral DPS. Preferenza Balance; Guardian al completo.",
       "specs": [
         {
           "name": "Balance",
           "role": "dps",
-          "priority": "open"
+          "priority": "high"
         },
         {
           "name": "Feral",
@@ -207,7 +207,7 @@
         {
           "name": "Guardian",
           "role": "tank",
-          "priority": "open"
+          "priority": "closed"
         },
         {
           "name": "Restoration",
@@ -218,18 +218,18 @@
     },
     {
       "class": "shaman",
-      "wanted": 4,
-      "note": "Tra Elemental e Enhancement · Da valutare in base al ruolo nel raid. Restoration al completo.",
+      "wanted": 3,
+      "note": "Ricerca attiva: 3 Elemental. Restoration ed Enhancement al completo.",
       "specs": [
         {
           "name": "Elemental",
           "role": "dps",
-          "priority": "open"
+          "priority": "high"
         },
         {
           "name": "Enhancement",
           "role": "dps",
-          "priority": "open"
+          "priority": "closed"
         },
         {
           "name": "Restoration",
